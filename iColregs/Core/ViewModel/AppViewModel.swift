@@ -10,7 +10,10 @@ import Foundation
 final class AppViewModel: ObservableObject {
     
     @Published var colregs: ColregsModel?
+    @Published var annexes: AnnexesModel?
+    
     let jsonFileName = "colregs"
+    let annexFileName = "annexes"
     
     // MARK: - Init
     // ————————————
@@ -27,8 +30,12 @@ final class AppViewModel: ObservableObject {
     
     func fetchData() {
         if let jsonData = readLocalJSONFile(forName: jsonFileName),
-           let colregs = parseJsonData(jsonData: jsonData){
+           let colregs = parseColregsData(jsonData: jsonData){
             self.colregs = colregs
+        }
+        if let annexJsonData = readLocalJSONFile(forName: annexFileName),
+           let annexes = parseAnnexesData(jsonData: annexJsonData){
+            self.annexes = annexes
         }
     }
     
@@ -49,13 +56,27 @@ final class AppViewModel: ObservableObject {
         return nil
     }
     
-    /// Parse Json data
+    /// Parse Colregs data
     /// - Parameter jsonData: raw Json data returned from the file
     /// - Returns: decoded data
 
-    func parseJsonData(jsonData: Data) -> ColregsModel? {
+    func parseColregsData(jsonData: Data) -> ColregsModel? {
         do {
             let decodedData = try JSONDecoder().decode(ColregsModel.self, from: jsonData)
+            return decodedData
+        } catch {
+            print("error: \(error)")
+        }
+        return nil
+    }
+    
+    /// Parse Annexes data
+    /// - Parameter jsonData: raw Json data returned from the file
+    /// - Returns: decoded data
+
+    func parseAnnexesData(jsonData: Data) -> AnnexesModel? {
+        do {
+            let decodedData = try JSONDecoder().decode(AnnexesModel.self, from: jsonData)
             return decodedData
         } catch {
             print("error: \(error)")

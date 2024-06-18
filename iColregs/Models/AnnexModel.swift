@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct AnnexModel: Identifiable, Decodable {
+    let id: String
+    let title: String
+    let subtitle: String
+    let content: [ContentModel]
+}

@@ -30,11 +30,24 @@ extension ColregsView {
     
     @ViewBuilder
     var partListView: some View {
-        if let colregs = appVM.colregs?.colregs {
-            List {
-                ForEach(colregs) { part in
-                    NavigationLink(part.title) {
-                        ruleListView(part: part)
+        List {
+            if let colregs = appVM.colregs?.colregs {
+                Section("Colregs") {
+                    ForEach(colregs) { part in
+                        NavigationLink(part.title) {
+                            ruleListView(part: part)
+                        }
+                    }
+                }
+                
+            }
+            
+            if let annexes = appVM.annexes?.annexes {
+                Section("Annexes") {
+                    ForEach(annexes) { annex in
+                        NavigationLink(annex.title) {
+                            AnnexView(annex: annex)
+                        }
                     }
                 }
             }
@@ -91,7 +104,28 @@ extension ColregsView {
             }
         }
     }
+    
+    /// Annex cell View
+    /// –––––––––––––
+    
+    func annexCellView(_ annex: AnnexModel) -> some View {
+        NavigationLink {
+            //AnnexView(annex: annex)
+        } label: {
+            HStack(alignment: .center) {
+                Image(systemName: "\(annex.id).square.fill")
+                    .foregroundColor(Color.accentColor)
+                    .font(.title)
+                
+                Text("\(annex.title)")
+            }
+        }
+    }
 }
+
+
+// MARK: - Previews
+// ————————————————
 
 #Preview {
     ColregsView()

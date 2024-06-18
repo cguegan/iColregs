@@ -21,6 +21,10 @@
 		EF2C63E72C21D55C00948AAA /* ColregsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E62C21D55C00948AAA /* ColregsView.swift */; };
 		EF2C63E92C21D59000948AAA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E82C21D59000948AAA /* AboutView.swift */; };
 		EF2C63EB2C21EB2400948AAA /* RuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63EA2C21EB2400948AAA /* RuleView.swift */; };
+		EFE5CC7D2C2221610018F367 /* annexes.json in Resources */ = {isa = PBXBuildFile; fileRef = EFE5CC7C2C2221610018F367 /* annexes.json */; };
+		EFE5CC7F2C2238060018F367 /* AnnexesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5CC7E2C2238060018F367 /* AnnexesModel.swift */; };
+		EFE5CC812C2238800018F367 /* AnnexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5CC802C2238800018F367 /* AnnexModel.swift */; };
+		EFE5CC832C223E880018F367 /* AnnexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5CC822C223E880018F367 /* AnnexView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +43,10 @@
 		EF2C63E62C21D55C00948AAA /* ColregsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColregsView.swift; sourceTree = "<group>"; };
 		EF2C63E82C21D59000948AAA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		EF2C63EA2C21EB2400948AAA /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
+		EFE5CC7C2C2221610018F367 /* annexes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = annexes.json; sourceTree = "<group>"; };
+		EFE5CC7E2C2238060018F367 /* AnnexesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnexesModel.swift; sourceTree = "<group>"; };
+		EFE5CC802C2238800018F367 /* AnnexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnexModel.swift; sourceTree = "<group>"; };
+		EFE5CC822C223E880018F367 /* AnnexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnexView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				EF2C63D12C21AF1900948AAA /* colregs.json */,
+				EFE5CC7C2C2221610018F367 /* annexes.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -122,6 +131,8 @@
 				EF2C63D62C21B12500948AAA /* SectionModel.swift */,
 				EF2C63DA2C21B29F00948AAA /* RuleModel.swift */,
 				EF2C63DE2C21B39F00948AAA /* ContentModel.swift */,
+				EFE5CC7E2C2238060018F367 /* AnnexesModel.swift */,
+				EFE5CC802C2238800018F367 /* AnnexModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,6 +142,7 @@
 			children = (
 				EF2C63C22C21AE2800948AAA /* ContentView.swift */,
 				EF2C63E62C21D55C00948AAA /* ColregsView.swift */,
+				EFE5CC822C223E880018F367 /* AnnexView.swift */,
 				EF2C63EA2C21EB2400948AAA /* RuleView.swift */,
 				EF2C63E82C21D59000948AAA /* AboutView.swift */,
 			);
@@ -204,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2C63D22C21AF2800948AAA /* colregs.json in Resources */,
+				EFE5CC7D2C2221610018F367 /* annexes.json in Resources */,
 				EF2C63C82C21AE2900948AAA /* Preview Assets.xcassets in Resources */,
 				EF2C63C52C21AE2900948AAA /* Assets.xcassets in Resources */,
 			);
@@ -217,8 +230,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2C63E22C21BEEB00948AAA /* AppViewModel.swift in Sources */,
+				EFE5CC812C2238800018F367 /* AnnexModel.swift in Sources */,
 				EF2C63E72C21D55C00948AAA /* ColregsView.swift in Sources */,
+				EFE5CC7F2C2238060018F367 /* AnnexesModel.swift in Sources */,
 				EF2C63C32C21AE2800948AAA /* ContentView.swift in Sources */,
+				EFE5CC832C223E880018F367 /* AnnexView.swift in Sources */,
 				EF2C63D72C21B12500948AAA /* SectionModel.swift in Sources */,
 				EF2C63E92C21D59000948AAA /* AboutView.swift in Sources */,
 				EF2C63EB2C21EB2400948AAA /* RuleView.swift in Sources */,
@@ -363,11 +379,14 @@
 				DEVELOPMENT_TEAM = AFN965WVDV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iColregs;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,11 +411,14 @@
 				DEVELOPMENT_TEAM = AFN965WVDV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iColregs;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -33,7 +33,7 @@ struct AboutView: View {
                 
                 Text(
 """
-Christophe Guegan is qualified MCA Master 3000 (Professional captain) and iOS amateur programmer. This app has been made in the purpose of self-teaching SwiftUI© and iOS© programming.
+Christophe Guegan is qualified MCA Master 3000 (Professional captain), ISM DPA and iOS amateur programmer. This app has been made in the purpose of self-teaching SwiftUI© and iOS© programming.
 """
                 )
                     .padding(.bottom)
