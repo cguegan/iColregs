@@ -17,6 +17,8 @@
 		EF2C63D92C21B1BE00948AAA /* PartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63D82C21B1BE00948AAA /* PartModel.swift */; };
 		EF2C63DB2C21B29F00948AAA /* RuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63DA2C21B29F00948AAA /* RuleModel.swift */; };
 		EF2C63DF2C21B39F00948AAA /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63DE2C21B39F00948AAA /* ContentModel.swift */; };
+		EF2C63E22C21BEEB00948AAA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E12C21BEEB00948AAA /* ContentViewModel.swift */; };
+		EF2C63E52C21C5FB00948AAA /* ColregsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E42C21C5FB00948AAA /* ColregsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		EF2C63D82C21B1BE00948AAA /* PartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartModel.swift; sourceTree = "<group>"; };
 		EF2C63DA2C21B29F00948AAA /* RuleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleModel.swift; sourceTree = "<group>"; };
 		EF2C63DE2C21B39F00948AAA /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		EF2C63E12C21BEEB00948AAA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		EF2C63E42C21C5FB00948AAA /* ColregsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColregsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +96,8 @@
 		EF2C63CF2C21AEC600948AAA /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EF2C63C22C21AE2800948AAA /* ContentView.swift */,
+				EF2C63E02C21BED700948AAA /* Views */,
+				EF2C63E32C21BEF200948AAA /* ViewModel */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -109,12 +114,29 @@
 		EF2C63D52C21B10900948AAA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EF2C63E42C21C5FB00948AAA /* ColregsModel.swift */,
 				EF2C63D82C21B1BE00948AAA /* PartModel.swift */,
 				EF2C63D62C21B12500948AAA /* SectionModel.swift */,
 				EF2C63DA2C21B29F00948AAA /* RuleModel.swift */,
 				EF2C63DE2C21B39F00948AAA /* ContentModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EF2C63E02C21BED700948AAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF2C63C22C21AE2800948AAA /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF2C63E32C21BEF200948AAA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EF2C63E12C21BEEB00948AAA /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,10 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2C63E22C21BEEB00948AAA /* ContentViewModel.swift in Sources */,
 				EF2C63C32C21AE2800948AAA /* ContentView.swift in Sources */,
 				EF2C63D72C21B12500948AAA /* SectionModel.swift in Sources */,
 				EF2C63D92C21B1BE00948AAA /* PartModel.swift in Sources */,
 				EF2C63D42C21AFAF00948AAA /* JsonLoader.swift in Sources */,
+				EF2C63E52C21C5FB00948AAA /* ColregsModel.swift in Sources */,
 				EF2C63C12C21AE2800948AAA /* iColregsApp.swift in Sources */,
 				EF2C63DF2C21B39F00948AAA /* ContentModel.swift in Sources */,
 				EF2C63DB2C21B29F00948AAA /* RuleModel.swift in Sources */,

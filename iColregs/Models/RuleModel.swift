@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct RuleModel {
+struct RuleModel: Identifiable, Decodable {
     let id: String
     let title: String
-    let contents: String
+    let content: [ContentModel]
 }

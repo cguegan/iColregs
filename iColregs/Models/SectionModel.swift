@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SectionModel {
+struct SectionModel: Identifiable, Decodable {
     let id: String
     let title: String
     let rules: [RuleModel]

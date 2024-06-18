@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PartModel {
+struct PartModel: Identifiable, Decodable {
     let id: String
     let title: String
     let sections: [SectionModel]

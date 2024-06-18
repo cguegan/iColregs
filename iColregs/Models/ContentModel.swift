@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct ContentModel {
-    let id: String
+struct ContentModel: Identifiable, Decodable {
+    let id: String = UUID().uuidString
     let indent: String
     let text: String
 }
