@@ -11,4 +11,6 @@ struct RuleModel: Identifiable, Decodable {
     let id: String
     let title: String
     let content: [ContentModel]
+    
+    
 }

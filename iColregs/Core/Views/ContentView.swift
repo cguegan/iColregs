@@ -27,6 +27,10 @@ struct ContentView: View {
     }
 }
 
+
+// MARK: - Previews
+// ————————————————
+
 #Preview {
     ContentView()
 }

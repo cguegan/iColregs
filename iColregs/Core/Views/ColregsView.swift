@@ -26,6 +26,8 @@ struct ColregsView: View {
 extension ColregsView {
     
     /// Parts list View
+    /// –––––––––––
+    
     @ViewBuilder
     var partListView: some View {
         if let colregs = appVM.colregs?.colregs {
@@ -39,7 +41,9 @@ extension ColregsView {
         }
     }
     
-    // Rule List view
+    /// Rule List view
+    /// –––––––––––
+
     func ruleListView(part: PartModel) -> some View {
         List {
             ForEach(part.sections) { section in
@@ -71,13 +75,20 @@ extension ColregsView {
         .navigationBarTitleDisplayMode(.inline)
     }
     
+    /// Rule cell View
+    /// –––––––––––
+    
     func ruleCellView(_ rule: RuleModel) -> some View {
-        HStack(alignment: .center) {
-            Image(systemName: "\(rule.id).square.fill")
-                .foregroundColor(Color.accentColor)
-                .font(.title)
-            
-            Text("\(rule.title)")
+        NavigationLink {
+            RuleView(rule: rule)
+        } label: {
+            HStack(alignment: .center) {
+                Image(systemName: "\(rule.id).square.fill")
+                    .foregroundColor(Color.accentColor)
+                    .font(.title)
+                
+                Text("\(rule.title)")
+            }
         }
     }
 }

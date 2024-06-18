@@ -6,9 +6,34 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ContentModel: Identifiable, Decodable {
     let id: String = UUID().uuidString
     let indent: String
     let text: String
+    
+    var content: LocalizedStringKey {
+        return LocalizedStringKey(text)
+    }
+    
+    var levels: String {
+        var currentLevel = ""
+        for level in indent.components(separatedBy: "_") {
+            // Paragraph
+            if level == "p" {
+                return ""
+            // Add
+            } else if level != "" && level != "•" {
+                currentLevel = currentLevel + "(\(level))\t"
+            } else if level == "•" {
+                // Add
+                currentLevel = currentLevel + "\(level)"
+            } else {
+                // Add tab if -
+                currentLevel = currentLevel + "\t"
+            }
+        }
+        return currentLevel
+    }
 }

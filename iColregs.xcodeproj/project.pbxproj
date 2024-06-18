@@ -20,6 +20,7 @@
 		EF2C63E52C21C5FB00948AAA /* ColregsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E42C21C5FB00948AAA /* ColregsModel.swift */; };
 		EF2C63E72C21D55C00948AAA /* ColregsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E62C21D55C00948AAA /* ColregsView.swift */; };
 		EF2C63E92C21D59000948AAA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E82C21D59000948AAA /* AboutView.swift */; };
+		EF2C63EB2C21EB2400948AAA /* RuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63EA2C21EB2400948AAA /* RuleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EF2C63E42C21C5FB00948AAA /* ColregsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColregsModel.swift; sourceTree = "<group>"; };
 		EF2C63E62C21D55C00948AAA /* ColregsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColregsView.swift; sourceTree = "<group>"; };
 		EF2C63E82C21D59000948AAA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		EF2C63EA2C21EB2400948AAA /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			children = (
 				EF2C63C22C21AE2800948AAA /* ContentView.swift */,
 				EF2C63E62C21D55C00948AAA /* ColregsView.swift */,
+				EF2C63EA2C21EB2400948AAA /* RuleView.swift */,
 				EF2C63E82C21D59000948AAA /* AboutView.swift */,
 			);
 			path = Views;
@@ -218,6 +221,7 @@
 				EF2C63C32C21AE2800948AAA /* ContentView.swift in Sources */,
 				EF2C63D72C21B12500948AAA /* SectionModel.swift in Sources */,
 				EF2C63E92C21D59000948AAA /* AboutView.swift in Sources */,
+				EF2C63EB2C21EB2400948AAA /* RuleView.swift in Sources */,
 				EF2C63D92C21B1BE00948AAA /* PartModel.swift in Sources */,
 				EF2C63E52C21C5FB00948AAA /* ColregsModel.swift in Sources */,
 				EF2C63C12C21AE2800948AAA /* iColregsApp.swift in Sources */,
