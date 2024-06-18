@@ -9,16 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject private var viewModel = ContentViewModel()
+    @StateObject private var appVM = AppViewModel()
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            ColregsView()
+                .tabItem {
+                    Label("Colregs", systemImage: "list.bullet.rectangle.portrait.fill")
+                }
+            
+            AboutView()
+                .tabItem {
+                    Label("About", systemImage: "info.circle.fill")
+                }
         }
-        .padding()
+        .environmentObject(appVM)
     }
 }
 

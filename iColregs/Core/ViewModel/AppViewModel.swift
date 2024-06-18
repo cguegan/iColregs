@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class ContentViewModel: ObservableObject {
+final class AppViewModel: ObservableObject {
     
     @Published var colregs: ColregsModel?
     let jsonFileName = "colregs"
@@ -29,7 +29,6 @@ final class ContentViewModel: ObservableObject {
         if let jsonData = readLocalJSONFile(forName: jsonFileName),
            let colregs = parseJsonData(jsonData: jsonData){
             self.colregs = colregs
-            print("colregs: \(colregs)")
         }
     }
     
@@ -63,4 +62,5 @@ final class ContentViewModel: ObservableObject {
         }
         return nil
     }
+    
 }

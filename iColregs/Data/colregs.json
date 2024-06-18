@@ -672,7 +672,7 @@
         "sections": [
             {
                 "id": "1",
-                "title": "none",
+                "title": "",
                 "rules":[
                     {
                         "id": "20",
@@ -1252,7 +1252,7 @@
         "sections": [
             {
                 "id": "1",
-                "title": "none",
+                "title": "",
                 "rules":[
                     {
                         "id": "32",
@@ -1456,7 +1456,7 @@
         "sections": [
             {
                 "id": "1",
-                "title": "none",
+                "title": "",
                 "rules":[
                     {
                         "id": "38",
