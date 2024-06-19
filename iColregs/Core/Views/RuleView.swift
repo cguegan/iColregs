@@ -51,7 +51,7 @@ struct RuleView: View {
             
         ]
     )
-    NavigationStack {
+    return NavigationStack {
         RuleView(rule: ruleModel)
     }
 }
