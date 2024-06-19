@@ -63,7 +63,5 @@ struct AnnexView: View {
             ),
         ]
     )
-    
-    
     AnnexView(annex: annexModel)
 }
