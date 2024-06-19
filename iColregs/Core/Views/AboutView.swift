@@ -68,6 +68,24 @@ The UK version of the COLREGs is provided by the MCA, in the Merchant Shipping (
 Pour la version française, seule la version publiée au Journal Officiel de la république française fait foi. Les données de Légifrance sont mises à disposition pour une réutilisation gratuite comme disposé par l'Arrêté du 24 juin 2014 relatif à la gratuité de la réutilisation des bases de données juridiques de la direction de l'information légale et administrative.
 """
                 )
+                
+                Image("LogoSquare")
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
+                
+                Text("This application is made available to users, free of charge, generously sponsored by:")
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal)
+                
+                HStack {
+                    Spacer()
+                    Link("Yachting Concept Monaco", destination: URL(string: "https://www.yachtingconceptmonaco.com")!)
+                        .bold()
+                        .foregroundStyle(Color.accentColor)
+                    Spacer()
+                }
+                    
             }
             .padding()
         }
