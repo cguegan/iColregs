@@ -74,7 +74,7 @@ extension ColregsView {
                         Text(section.title.uppercased())
                             .font(.caption)
                             .bold()
-                            .listRowBackground(Color.accentColor.opacity(0.1))
+                            .listRowBackground(Color.white.opacity(0.8))
                         
                         ForEach(section.rules) { rule in
                             ruleCellView(rule)
