@@ -9,16 +9,21 @@ import Foundation
 import SwiftUI
 
 struct ContentModel: Identifiable, Decodable {
-    let id: String = UUID().uuidString
     let indent: String
     let text: String
+    
+    var id: String {
+        UUID().uuidString
+    }
     
     var content: LocalizedStringKey {
         return LocalizedStringKey(text)
     }
     
     var levels: String {
+        
         var currentLevel = ""
+        
         for level in indent.components(separatedBy: "_") {
             // Paragraph
             if level == "p" {
@@ -34,6 +39,8 @@ struct ContentModel: Identifiable, Decodable {
                 currentLevel = currentLevel + "\t"
             }
         }
+        
         return currentLevel
+        
     }
 }
