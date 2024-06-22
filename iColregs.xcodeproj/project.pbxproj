@@ -21,6 +21,11 @@
 		EF2C63E72C21D55C00948AAA /* ColregsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E62C21D55C00948AAA /* ColregsView.swift */; };
 		EF2C63E92C21D59000948AAA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E82C21D59000948AAA /* AboutView.swift */; };
 		EF2C63EB2C21EB2400948AAA /* RuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63EA2C21EB2400948AAA /* RuleView.swift */; };
+		EF51699C2C241EF700F0ED95 /* ripam.json in Resources */ = {isa = PBXBuildFile; fileRef = EF51699B2C241EF700F0ED95 /* ripam.json */; };
+		EF51699E2C2426A100F0ED95 /* RipamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51699D2C2426A100F0ED95 /* RipamView.swift */; };
+		EF5169A02C2427B700F0ED95 /* RipamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51699F2C2427B700F0ED95 /* RipamModel.swift */; };
+		EFB78D052C26CA0900AB7108 /* Colregs.md in Resources */ = {isa = PBXBuildFile; fileRef = EFB78D042C26CA0900AB7108 /* Colregs.md */; };
+		EFB78D092C26D8AE00AB7108 /* Ripam.md in Resources */ = {isa = PBXBuildFile; fileRef = EFB78D082C26D8AE00AB7108 /* Ripam.md */; };
 		EFE5CC7D2C2221610018F367 /* annexes.json in Resources */ = {isa = PBXBuildFile; fileRef = EFE5CC7C2C2221610018F367 /* annexes.json */; };
 		EFE5CC7F2C2238060018F367 /* AnnexesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5CC7E2C2238060018F367 /* AnnexesModel.swift */; };
 		EFE5CC812C2238800018F367 /* AnnexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5CC802C2238800018F367 /* AnnexModel.swift */; };
@@ -43,6 +48,12 @@
 		EF2C63E62C21D55C00948AAA /* ColregsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColregsView.swift; sourceTree = "<group>"; };
 		EF2C63E82C21D59000948AAA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		EF2C63EA2C21EB2400948AAA /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
+		EF51699A2C238DB800F0ED95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EF51699B2C241EF700F0ED95 /* ripam.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ripam.json; sourceTree = "<group>"; };
+		EF51699D2C2426A100F0ED95 /* RipamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipamView.swift; sourceTree = "<group>"; };
+		EF51699F2C2427B700F0ED95 /* RipamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipamModel.swift; sourceTree = "<group>"; };
+		EFB78D042C26CA0900AB7108 /* Colregs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Colregs.md; sourceTree = "<group>"; };
+		EFB78D082C26D8AE00AB7108 /* Ripam.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Ripam.md; sourceTree = "<group>"; };
 		EFE5CC7C2C2221610018F367 /* annexes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = annexes.json; sourceTree = "<group>"; };
 		EFE5CC7E2C2238060018F367 /* AnnexesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnexesModel.swift; sourceTree = "<group>"; };
 		EFE5CC802C2238800018F367 /* AnnexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnexModel.swift; sourceTree = "<group>"; };
@@ -79,6 +90,7 @@
 		EF2C63BF2C21AE2800948AAA /* iColregs */ = {
 			isa = PBXGroup;
 			children = (
+				EF51699A2C238DB800F0ED95 /* Info.plist */,
 				EF2C63CE2C21AEB600948AAA /* App */,
 				EF2C63CF2C21AEC600948AAA /* Core */,
 				EF2C63D52C21B10900948AAA /* Models */,
@@ -118,6 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				EF2C63D12C21AF1900948AAA /* colregs.json */,
+				EFB78D042C26CA0900AB7108 /* Colregs.md */,
+				EFB78D082C26D8AE00AB7108 /* Ripam.md */,
+				EF51699B2C241EF700F0ED95 /* ripam.json */,
 				EFE5CC7C2C2221610018F367 /* annexes.json */,
 			);
 			path = Data;
@@ -127,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				EF2C63E42C21C5FB00948AAA /* ColregsModel.swift */,
+				EF51699F2C2427B700F0ED95 /* RipamModel.swift */,
 				EF2C63D82C21B1BE00948AAA /* PartModel.swift */,
 				EF2C63D62C21B12500948AAA /* SectionModel.swift */,
 				EF2C63DA2C21B29F00948AAA /* RuleModel.swift */,
@@ -142,6 +158,7 @@
 			children = (
 				EF2C63C22C21AE2800948AAA /* ContentView.swift */,
 				EF2C63E62C21D55C00948AAA /* ColregsView.swift */,
+				EF51699D2C2426A100F0ED95 /* RipamView.swift */,
 				EFE5CC822C223E880018F367 /* AnnexView.swift */,
 				EF2C63EA2C21EB2400948AAA /* RuleView.swift */,
 				EF2C63E82C21D59000948AAA /* AboutView.swift */,
@@ -218,7 +235,10 @@
 				EF2C63D22C21AF2800948AAA /* colregs.json in Resources */,
 				EFE5CC7D2C2221610018F367 /* annexes.json in Resources */,
 				EF2C63C82C21AE2900948AAA /* Preview Assets.xcassets in Resources */,
+				EF51699C2C241EF700F0ED95 /* ripam.json in Resources */,
+				EFB78D052C26CA0900AB7108 /* Colregs.md in Resources */,
 				EF2C63C52C21AE2900948AAA /* Assets.xcassets in Resources */,
+				EFB78D092C26D8AE00AB7108 /* Ripam.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,10 +254,12 @@
 				EF2C63E72C21D55C00948AAA /* ColregsView.swift in Sources */,
 				EFE5CC7F2C2238060018F367 /* AnnexesModel.swift in Sources */,
 				EF2C63C32C21AE2800948AAA /* ContentView.swift in Sources */,
+				EF5169A02C2427B700F0ED95 /* RipamModel.swift in Sources */,
 				EFE5CC832C223E880018F367 /* AnnexView.swift in Sources */,
 				EF2C63D72C21B12500948AAA /* SectionModel.swift in Sources */,
 				EF2C63E92C21D59000948AAA /* AboutView.swift in Sources */,
 				EF2C63EB2C21EB2400948AAA /* RuleView.swift in Sources */,
+				EF51699E2C2426A100F0ED95 /* RipamView.swift in Sources */,
 				EF2C63D92C21B1BE00948AAA /* PartModel.swift in Sources */,
 				EF2C63E52C21C5FB00948AAA /* ColregsModel.swift in Sources */,
 				EF2C63C12C21AE2800948AAA /* iColregsApp.swift in Sources */,
@@ -374,12 +396,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"iColregs/Preview Content\"";
-				DEVELOPMENT_TEAM = AFN965WVDV;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AFN965WVDV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iColregs/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iColregs;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -395,6 +421,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Net.Silex.iColregs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Colregs Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -411,12 +439,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_ASSET_PATHS = "\"iColregs/Preview Content\"";
-				DEVELOPMENT_TEAM = AFN965WVDV;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AFN965WVDV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iColregs/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = iColregs;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -432,6 +464,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Net.Silex.iColregs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Colregs Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

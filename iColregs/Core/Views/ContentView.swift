@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+enum version: Codable {
+    case colregs
+    case ripam
+}
+
 struct ContentView: View {
     
     @StateObject private var appVM = AppViewModel()
@@ -16,6 +21,11 @@ struct ContentView: View {
             ColregsView()
                 .tabItem {
                     Label("Colregs", systemImage: "list.bullet.rectangle.portrait.fill")
+                }
+            
+            RipamView()
+                .tabItem {
+                    Label("Ripam", systemImage: "list.bullet.rectangle.portrait.fill")
                 }
             
             AboutView()

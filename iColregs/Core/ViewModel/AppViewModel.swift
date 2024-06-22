@@ -11,9 +11,11 @@ final class AppViewModel: ObservableObject {
     
     @Published var colregs: ColregsModel?
     @Published var annexes: AnnexesModel?
+    @Published var ripam: RipamModel?
     
     let jsonFileName = "colregs"
     let annexFileName = "annexes"
+    let ripamFileName = "ripam"
     
     // MARK: - Init
     // ————————————
@@ -29,14 +31,19 @@ final class AppViewModel: ObservableObject {
     /// Load Json file when the main screen appears
     
     func fetchData() {
-        if let jsonData = readLocalJSONFile(forName: jsonFileName),
-           let colregs = parseColregsData(jsonData: jsonData){
+        if let colregsJsonData = readLocalJSONFile(forName: jsonFileName),
+           let colregs = parseColregsData(jsonData: colregsJsonData){
             self.colregs = colregs
         }
         if let annexJsonData = readLocalJSONFile(forName: annexFileName),
            let annexes = parseAnnexesData(jsonData: annexJsonData){
             self.annexes = annexes
         }
+        if let ripamJsonData = readLocalJSONFile(forName: ripamFileName),
+           let ripam = parseRipamData(jsonData: ripamJsonData){
+            self.ripam = ripam
+        }
+        
     }
     
     /// Read json file from main bundle (i.e: the file structure distribured with the app)
@@ -51,7 +58,7 @@ final class AppViewModel: ObservableObject {
                 return data
             }
         } catch {
-            print("error: \(error)")
+            print("ERROR: \(error)")
         }
         return nil
     }
@@ -79,7 +86,21 @@ final class AppViewModel: ObservableObject {
             let decodedData = try JSONDecoder().decode(AnnexesModel.self, from: jsonData)
             return decodedData
         } catch {
-            print("error: \(error)")
+            print("ERROR: \(error)")
+        }
+        return nil
+    }
+    
+    /// Parse Ripam data
+    /// - Parameter jsonData: raw Json data returned from the file
+    /// - Returns: decoded data
+
+    func parseRipamData(jsonData: Data) -> RipamModel? {
+        do {
+            let decodedData = try JSONDecoder().decode(RipamModel.self, from: jsonData)
+            return decodedData
+        } catch {
+            print("ERROR: \(error)")
         }
         return nil
     }
