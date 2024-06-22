@@ -42,7 +42,7 @@ extension ColregsView {
                 
             }
             
-            if let annexes = appVM.annexes?.annexes {
+            if let annexes = appVM.annexesEn?.annexes {
                 Section("Annexes") {
                     ForEach(annexes) { annex in
                         NavigationLink(annex.title) {

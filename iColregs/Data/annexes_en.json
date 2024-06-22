@@ -46,11 +46,7 @@
                     "text": "One of the two or three masthead lights prescribed for a power-driven vessel  when engaged in towing or pushing another vessel shall be placed in the same position as either the forward masthead light or the after masthead light; provided that, if carried on the aftermast, the lowest after masthead lights shall be at least 4.5 metres vertically higher than the forwards masthead light."
                 },
                 {
-                    "indent": "_f",
-                    "text": ""
-                },
-                {
-                    "indent": "__i",
+                    "indent": "_f_i",
                     "text": "The masthead light or lights prescribed in Rule 23 (a) shall be so placed as to be above and clear of all other lights and obstructions except as described in subparagraph (ii)."
                 },
                 {
@@ -103,7 +99,11 @@
                 },
                 {
                     "indent": "c",
-                    "text": "When the lights prescribed in Rule 27 (b) (i) or Rule 28 are placed vertically between the forward masthead light(s) and the after masthead light(s) these all-round lights shall be placed at a horizontal distance of not less than 2 metres from the fore and aft centreline of the vessel in the athwartship direction."
+                    "text": "When the lights prescribed in Rule 27(b)(i) or Rule 28 are placed vertically between the forward masthead light(s) and the after masthead light(s) these all-round lights shall be placed at a horizontal distance of not less than 2 metres from the fore and aft centreline of the vessel in the athwartship direction."
+                },
+                {
+                    "indent": "d",
+                    "text": "When only one masthead light is prescribed for a power driven vessel, this light shall be exhibited forward of amidships; except that a vessel of less than 20 metres in length need not exhibit this light forward of amidships but shall exhibit it as far forward as is practicable."
                 },
                 {
                     "indent": "4",
@@ -122,7 +122,7 @@
                     "text": "Screens for sidelights"
                 },
                 {
-                    "indent": "",
+                    "indent": "p",
                     "text": "The sidelights of vessels of 20 metres or more in length shall be fitted with inboard screens painted matt black, and meeting the requirements of Section 9 of this Annex. On vessels of less than 20 metres in length the sidelights, if necessary to meet the requirements of Section 9 of this Annex, shall be fitted  with inboard matt screens. With a combined lantern, using a single vertical filament and a very narrow division between the green and red sections, external screens need not be fitted."
                 },
                 {
@@ -146,7 +146,7 @@
                     "text": "a cylinder shall have a diameter of at least 0.6 metre and a height of twice its diameter;"
                 },
                 {
-                    "indent": "___iv",
+                    "indent": "__iv",
                     "text": "a diamond shape shall consist of two cones as defined in (ii) above having a common base."
                 },
                 {
@@ -223,7 +223,7 @@
                 },
                 {
                     "indent": "____",
-                    "text": "I = 3.43 X 166 X T2 X D X K-D"
+                    "text": "I = 3.43 x 10^6 x T x D^2 x K^–D"
                 },
                 {
                     "indent": "",
@@ -262,24 +262,28 @@
                     "text": "Horizontal sectors"
                 },
                 {
-                    "indent": "_a",
-                    "text": ""
-                },
-                {
-                    "indent": "__i",
+                    "indent": "_a_i",
                     "text": "In the forward direction, sidelights as fitted on the vessel shall show the minimum required intensities. The intensities shall decrease to reach practical cut-off between 1 degree and 3 degrees outside the prescribed sectors."
                 },
                 {
                     "indent": "__ii",
-                    "text": "For sternlights and masthead lights and at 22.5 degrees abaft the beam for sidelights, the minimum required intensities shall be maintained over the arc of the horizon up to 5 degrees within the limits of the sectors prescribed in Rule 21. From 5 degrees within the prescribed sectors the intensity may decrease by 50 per cent up to the prescribed limits; it shall decrease steadily to reach practical cut-off at not more than 5 degrees outside the prescribed sectors."
+                    "text": "For sternlights and masthead lights and at 22.5° abaft the beam for sidelights, the minimum required intensities shall be maintained over the arc of the horizon up to 5 degrees within the limits of the sectors prescribed in Rule 21. From 5 degrees within the prescribed sectors the intensity may decrease by 50 per cent up to the prescribed limits; it shall decrease steadily to reach practical cut-off at not more than 5 degrees outside the prescribed sectors."
+                },
+                {
+                    "indent": "_b_i",
+                    "text": "All-round lights shall be so located as not to be obscured by masts, topmasts or structures within angular sectors of more than 6 degrees, except anchor lights prescribed in Rule 30, which need not be placed at an impracticable height above the hull."
+                },
+                {
+                    "indent": "__ii",
+                    "text": "If it is impracticable to comply with paragraph (b)(i) of this section by exhibiting only one all-round light, two all-round lights shall be used suitably positioned or screened so that they appear, as far as practicable, as one light at a distance of one mile."
                 },
                 {
                     "indent": "10",
-                    "text": "All-round lights shall be so located as not to be obscured by masts, top masts or structures within angular sectors of more than 6 degrees, except anchor light prescribed in Rule 30 which need not be placed at an impractical height above the hull."
+                    "text": "Vertical sectors"
                 },
                 {
                     "indent": "_a",
-                    "text": "The vertical sectors of electric lights, as fitted, with the exception of lights on sailing vessels shall ensure that:"
+                    "text": "The vertical sectors of electric lights as fitted, with the exception of lights on sailing vessels underway shall ensure that:"
                 },
                 {
                     "indent": "__i",
@@ -287,11 +291,11 @@
                 },
                 {
                     "indent": "__ii",
-                    "text": "at least 60 per cent of the required intensity is maintained from 7.5 degrees above to 7.5 degrees below the horizontal."
+                    "text": "at least 60 per cent of the required minimum intensity is maintained from 7.5 degrees above to 7.5 degrees below the horizontal."
                 },
                 {
                     "indent": "_b",
-                    "text": "In the case of sailing vessels the vertical sectors of electric lights as fitted shall ensure that:"
+                    "text": "In the case of sailing vessels underway the vertical sectors of electric lights as fitted shall ensure that:"
                 },
                 {
                     "indent": "__i",
@@ -315,6 +319,11 @@
                 },
                 {
                     "indent": "12",
+                    "text": "Manoeuvring light"
+                    
+                },
+                {
+                    "indent": "p",
                     "text": "Notwithstanding the provisions of paragraph 2 (f) of this Annex the manoeuvring light described in Rule 34 (b) shall be placed in the same fore and aft vertical plane as the masthead light or lights and, where practicable, at a minimum height of 2 metres vertically above the forward masthead light, provided that it shall be carried not less than 2 metres vertically above or below the after masthead light. On a vessel where only one masthead light is carried the manoeuvring light is carried the manoeuvring light, if fitted, shall be carried where it can best be seen, not less than 2 metres vertically apart from the masthead light."
                 },
                 {
@@ -354,7 +363,7 @@
                     "text": "Approval"
                 },
                 {
-                    "indent": "",
+                    "indent": "p",
                     "text": "The construction of light and shapes and the installation of lights on board the vessel shall be to the satisfaction of the appropriate authority of the State whose flag the vessel in entitled to fly."
                 }
             ]
@@ -369,7 +378,7 @@
                     "text": "General"
                 },
                 {
-                    "indent": "",
+                    "indent": "p",
                     "text": "The lights mentioned herein shall, is exhibited in pursuance of Rule 26 (d), be places where they can best be seen. They shall be at least 0.9 metres apart but at a lower level than lights prescribed in Rule 26 (b) (i) and (c) (i). The lights shall be visible all round the horizon at a distance of at least 1 mile but at a lesser distance then the lights prescribed by these Rules for fishing vessels."
                 },
                 {
@@ -432,12 +441,8 @@
                     "text": "Frequencies and range of audibility"
                 },
                 {
-                    "indent": "_",
-                    "text": "The fundamental frequency of the signal shall lie within the range 70-700 Hz."
-                },
-                {
-                    "indent": "_",
-                    "text": "The range of audibility of the signal from a whistle shall be determined by those frequencies, which may include the fundamental and/or one or more higher frequencies, which lie within the range 180-700Hz (± 1 per cent) for a vessel of 20m or more in length, or 180-2100 Hz(±1 per cent) for a vessel of less than 20 in length and which provide and provide the sound pressure levels specified in paragraph 1 (c) below."
+                    "indent": "__",
+                    "text": "The fundamental frequency of the signal shall lie within the range 70-700Hz. The range of audibility of the signal from a whistle shall be determined by those frequencies, which may include the fundamental and/or one or more higher frequencies, which lie within the range 180-700Hz (+/-1%) for a vessel of 20 metres or more in length, or 180-2100Hz (+/-1%) for a vessel of less than 20 metres in length and which provide the sound pressure levels specified in paragraph 1(c) below."
                 },
                 {
                     "indent": "_b",
@@ -603,16 +608,24 @@
                     "text": "the radiotelegraph alarm signal;"
                 },
                 {
+                    "indent": "__i",
+                    "text": "VHF channel 70, or"
+                },
+                {
+                    "indent": "__ii",
+                    "text": "MF/HF on the frequencies 2187.5 kHz, 8414.5 kHz, 4207.5 kHz, 6312 kHz, 12577 kHz or 16804.5 kHz;"
+                },
+                {
                     "indent": "_m",
-                    "text": "the radiotelephone alarm signal;"
+                    "text": "a ship-to-shore distress alert transmitted by the ship’s Inmarsat or other mobile satellite service provider ship earth station;"
                 },
                 {
                     "indent": "_n",
-                    "text": "signals transmitted by emergency position-indicating radio beacons."
+                    "text": "signals transmitted by emergency position-indicating radio beacons;"
                 },
                 {
                     "indent": "_o",
-                    "text": "approved signals transmitted by radiocommunication systems, including survival craft radar transponders."
+                    "text": "approved signals transmitted by radiocommunications systems, including survival craft radar transponders."
                 },
                 {
                     "indent": "2",

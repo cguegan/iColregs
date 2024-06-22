@@ -300,7 +300,7 @@ Except where Rules 9, 10 and 13 otherwise require:
 
     (e) The lights and shapes specified in these Rules shall comply with the provisions of Annex I to these Regulations.
 
-#### Rule - 21 Definitions
+#### Rule 21 - Definitions
 
     (a) “Masthead light” means a white light placed over the fore and aft centreline of the vessel showing an unbroken light over an arc of the horizon of 225 degrees and so fixed as to show the light from right ahead to 22.5 degrees abaft the beam on either side of the vessel.
 
@@ -875,7 +875,7 @@ The lights mentioned herein shall, if exhibited in pursuance of Rule 26(d), be p
 
 Vessels engaged in fishing with purse seine gear may exhibit two yellow lights in a vertical line. These lights shall flash alternately every second and with equal light and occultation duration. These lights may be exhibited only when the vessel is hampered by its fishing gear.
 
-## Annex Ill - Technical Details of Sound Signal Appliances
+## Annex III - Technical Details of Sound Signal Appliances
 
 #### 1. Whistles
 

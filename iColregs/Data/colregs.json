@@ -371,11 +371,11 @@
                                 "text": "A vessel shall, so far as practicable, avoid crossing traffic lanes but if obliged to do so shall cross on a heading as nearly as practicable at right angles to the general direction of traffic flow."
                             },
                             {
-                                "indent": "d",
+                                "indent": "d-i",
                                 "text": "A vessel shall not use an inshore traffic zone when she can safely use the appropriate traffic lane within the adjacent traffic separation scheme. However, vessels of less than 20 metres in length, sailing vessels and vessels engaged in fishing may use the inshore traffic zone."
                             },
                             {
-                                "indent": "_i",
+                                "indent": "_ii",
                                 "text": "Notwithstanding sub-paragraph d i, a vessel may use an inshore traffic zone when en route to or from a port, offshore installation or structure, pilot station or any other place situated within the inshore traffic zone, or to avoid immediate danger."
                             },
                             {
@@ -458,7 +458,7 @@
                             },
                             {
                                 "indent": "b",
-                                "text": "For the purposes of this Rule the windward side shall be deemed to be the side opposite to that on which the mainsail is carried or, in the case of a square-rigged vessel, the side opposite to that on which the largest fore-and-aft sail is carried. "
+                                "text": "For the purposes of this Rule the windward side shall be deemed to be the side opposite to that on which the mainsail is carried or, in the case of a square-rigged vessel, the side opposite to that on which the largest fore-and-aft sail is carried."
                             }
                         ]
                     },
@@ -541,6 +541,10 @@
                             {
                                 "indent": "c",
                                 "text": "A power-driven vessel which takes action in a crossing situation in accordance with sub-paragraph ai of this Rule to avoid collision with another power-driven vessel shall, if the circumstances of the case admit, not alter course to port for a vessel on her own port side."
+                            },
+                            {
+                                "indent": "d",
+                                "text": "This Rule does not relieve the give-way vessel of her obligation to keep out of the way."
                             }
                         ]
                     },
@@ -601,8 +605,8 @@
                                 "text": "a vessel restricted in her ability to manoeuvre."
                             },
                             {
-                                "indent": "d-i",
-                                "text": "Any vessel other than a vessel not under command or a vessel restricted in her ability to manoeuvre shall, if the circumstances of the case admit, avoid impeding the safe passage of a vessel constrained by her draught, exhibiting the signals in Rule 28."
+                                "indent": "d_i",
+                                "text": "Any vessel other than a vessel not under command or a vessel restricted in her ability to manoeuvre shall, if the circumstances of the case admit, avoid impeding the safe passage of a vessel constrained by her draught, exhibiting the signals in Rule 28;"
                             },
                             {
                                 "indent": "_ii",
@@ -613,11 +617,11 @@
                                 "text": "A seaplane on the water shall, in general, keep well clear of all vessels and avoid impeding their navigation. In circumstances, however, where risk of collision exists, she shall comply with the Rules of this Part."
                             },
                             {
-                                "indent": "f-i",
+                                "indent": "f_i",
                                 "text": "A WIG craft shall, when taking off, landing and in flight near the surface, keep well clear of all other vessels and avoid impeding their navigation;"
                             },
                             {
-                                "indent": "i",
+                                "indent": "_ii",
                                 "text": "A WIG craft operating on the water surface shall comply with the Rules of this Part as a power-driven vessel."
                             }
                         ]
@@ -780,7 +784,7 @@
                             },
                             {
                                 "indent": "_•",
-                                "text": "a sternlight, 2 miles;"
+                                "text": "a towing light, 2 miles;"
                             },
                             {
                                 "indent": "_•",

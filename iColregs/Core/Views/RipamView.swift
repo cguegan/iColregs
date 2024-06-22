@@ -39,7 +39,7 @@ extension RipamView {
                 
             }
             
-            if let annexes = appVM.annexes?.annexes {
+            if let annexes = appVM.annexesFr?.annexes {
                 Section("Annexes") {
                     ForEach(annexes) { annex in
                         NavigationLink(annex.title) {

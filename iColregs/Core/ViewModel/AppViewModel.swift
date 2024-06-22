@@ -10,13 +10,15 @@ import Foundation
 final class AppViewModel: ObservableObject {
     
     @Published var colregs: ColregsModel?
-    @Published var annexes: AnnexesModel?
+    @Published var annexesEn: AnnexesModel?
     @Published var ripam: RipamModel?
-    
+    @Published var annexesFr: AnnexesModel?
+
     let jsonFileName = "colregs"
-    let annexFileName = "annexes"
+    let annexEnFileName = "annexes_en"
     let ripamFileName = "ripam"
-    
+    let annexFrFileName = "annexes_fr"
+
     // MARK: - Init
     // ————————————
     
@@ -35,15 +37,18 @@ final class AppViewModel: ObservableObject {
            let colregs = parseColregsData(jsonData: colregsJsonData){
             self.colregs = colregs
         }
-        if let annexJsonData = readLocalJSONFile(forName: annexFileName),
+        if let annexJsonData = readLocalJSONFile(forName: annexEnFileName),
            let annexes = parseAnnexesData(jsonData: annexJsonData){
-            self.annexes = annexes
+            self.annexesEn = annexes
         }
         if let ripamJsonData = readLocalJSONFile(forName: ripamFileName),
            let ripam = parseRipamData(jsonData: ripamJsonData){
             self.ripam = ripam
         }
-        
+        if let annexJsonData = readLocalJSONFile(forName: annexFrFileName),
+           let annexes = parseAnnexesData(jsonData: annexJsonData){
+            self.annexesFr = annexes
+        }
     }
     
     /// Read json file from main bundle (i.e: the file structure distribured with the app)
@@ -77,7 +82,7 @@ final class AppViewModel: ObservableObject {
         return nil
     }
     
-    /// Parse Annexes data
+    /// Parse Annexes English data
     /// - Parameter jsonData: raw Json data returned from the file
     /// - Returns: decoded data
 
@@ -104,5 +109,5 @@ final class AppViewModel: ObservableObject {
         }
         return nil
     }
-    
+
 }
