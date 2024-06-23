@@ -25,9 +25,6 @@
 		EF51699E2C2426A100F0ED95 /* RipamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51699D2C2426A100F0ED95 /* RipamView.swift */; };
 		EF5169A02C2427B700F0ED95 /* RipamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51699F2C2427B700F0ED95 /* RipamModel.swift */; };
 		EFE5CC7D2C2221610018F367 /* annexes_en.json in Resources */ = {isa = PBXBuildFile; fileRef = EFE5CC7C2C2221610018F367 /* annexes_en.json */; };
-		EFE5CC7F2C2238060018F367 /* AnnexesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5CC7E2C2238060018F367 /* AnnexesModel.swift */; };
-		EFE5CC812C2238800018F367 /* AnnexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5CC802C2238800018F367 /* AnnexModel.swift */; };
-		EFE5CC832C223E880018F367 /* AnnexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE5CC822C223E880018F367 /* AnnexView.swift */; };
 		EFED4F652C270B4E00149FD9 /* Ripam.md in Resources */ = {isa = PBXBuildFile; fileRef = EFED4F632C270B4E00149FD9 /* Ripam.md */; };
 		EFED4F662C270B4E00149FD9 /* Colregs.md in Resources */ = {isa = PBXBuildFile; fileRef = EFED4F622C270B4E00149FD9 /* Colregs.md */; };
 		EFED4F6A2C276BCA00149FD9 /* annexes_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = EFED4F692C276BCA00149FD9 /* annexes_fr.json */; };
@@ -54,9 +51,6 @@
 		EF51699D2C2426A100F0ED95 /* RipamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipamView.swift; sourceTree = "<group>"; };
 		EF51699F2C2427B700F0ED95 /* RipamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipamModel.swift; sourceTree = "<group>"; };
 		EFE5CC7C2C2221610018F367 /* annexes_en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = annexes_en.json; sourceTree = "<group>"; };
-		EFE5CC7E2C2238060018F367 /* AnnexesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnexesModel.swift; sourceTree = "<group>"; };
-		EFE5CC802C2238800018F367 /* AnnexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnexModel.swift; sourceTree = "<group>"; };
-		EFE5CC822C223E880018F367 /* AnnexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnexView.swift; sourceTree = "<group>"; };
 		EFED4F622C270B4E00149FD9 /* Colregs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Colregs.md; sourceTree = "<group>"; };
 		EFED4F632C270B4E00149FD9 /* Ripam.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Ripam.md; sourceTree = "<group>"; };
 		EFED4F692C276BCA00149FD9 /* annexes_fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = annexes_fr.json; sourceTree = "<group>"; };
@@ -149,8 +143,6 @@
 				EF2C63D62C21B12500948AAA /* SectionModel.swift */,
 				EF2C63DA2C21B29F00948AAA /* RuleModel.swift */,
 				EF2C63DE2C21B39F00948AAA /* ContentModel.swift */,
-				EFE5CC7E2C2238060018F367 /* AnnexesModel.swift */,
-				EFE5CC802C2238800018F367 /* AnnexModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,7 +153,6 @@
 				EF2C63C22C21AE2800948AAA /* ContentView.swift */,
 				EF2C63E62C21D55C00948AAA /* ColregsView.swift */,
 				EF51699D2C2426A100F0ED95 /* RipamView.swift */,
-				EFE5CC822C223E880018F367 /* AnnexView.swift */,
 				EF2C63EA2C21EB2400948AAA /* RuleView.swift */,
 				EF2C63E82C21D59000948AAA /* AboutView.swift */,
 			);
@@ -262,12 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2C63E22C21BEEB00948AAA /* AppViewModel.swift in Sources */,
-				EFE5CC812C2238800018F367 /* AnnexModel.swift in Sources */,
 				EF2C63E72C21D55C00948AAA /* ColregsView.swift in Sources */,
-				EFE5CC7F2C2238060018F367 /* AnnexesModel.swift in Sources */,
 				EF2C63C32C21AE2800948AAA /* ContentView.swift in Sources */,
 				EF5169A02C2427B700F0ED95 /* RipamModel.swift in Sources */,
-				EFE5CC832C223E880018F367 /* AnnexView.swift in Sources */,
 				EF2C63D72C21B12500948AAA /* SectionModel.swift in Sources */,
 				EF2C63E92C21D59000948AAA /* AboutView.swift in Sources */,
 				EF2C63EB2C21EB2400948AAA /* RuleView.swift in Sources */,

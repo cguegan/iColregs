@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentModel: Identifiable, Decodable {
     let indent: String
     let text: String
+    let image: String?
     
     var id: String {
         UUID().uuidString

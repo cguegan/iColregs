@@ -149,7 +149,7 @@ extension ColregsView {
     
     func annexCellView(_ rule: RuleModel) -> some View {
         NavigationLink {
-            RuleView(rule: rule, title: "Part")
+            RuleView(rule: rule, title: "Article")
         } label: {
             HStack(alignment: .top) {
                 Image(systemName: "\(rule.id).square.fill")

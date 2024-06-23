@@ -145,7 +145,7 @@ extension RipamView {
     
     func annexCellView(_ rule: RuleModel) -> some View {
         NavigationLink {
-            RuleView(rule: rule, title: "Partie")
+            RuleView(rule: rule, title: "Article")
         } label: {
             HStack(alignment: .top) {
                 Image(systemName: "\(rule.id).square.fill")

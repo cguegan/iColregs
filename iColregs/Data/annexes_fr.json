@@ -181,51 +181,51 @@
                                     "text": "La chromaticité de tous les feux de navigation doit être conforme aux normes suivantes, qui se situent dans les limites indiquées par le diagramme de chromaticité de la Commission internationale de l’éclairage (CIE). Les limites de la zone des différentes couleurs sont données par les coordonnées des sommets des angles, qui sont les suivantes:"
                                 },
                                 {
-                                    "indent": "_i",
+                                    "indent": "i",
                                     "text": "Blanc"
                                 },
                                 {
-                                    "indent": "___x",
-                                    "text": "0.525 0.525 0/.452 0.310 0.310 0.443"
+                                    "indent": "_x",
+                                    "text": "0.525 0.525 0.452 0.310 0.310 0.443"
                                 },
                                 {
-                                    "indent": "___y",
+                                    "indent": "_y",
                                     "text": "0.382 0.440 0.440 0.348 0.283 0.382"
                                 },
                                 {
-                                    "indent": "_ii",
+                                    "indent": "ii",
                                     "text": "Vert"
                                 },
                                 {
-                                    "indent": "___x",
+                                    "indent": "_x",
                                     "text": "0.028 0.009 0.300 0.203"
                                 },
                                 {
-                                    "indent": "___y",
+                                    "indent": "_y",
                                     "text": "0.385 0.723 0.511 0.356"
                                 },
                                 {
-                                    "indent": "_iii",
+                                    "indent": "iii",
                                     "text": "Rouge"
                                 },
                                 {
-                                    "indent": "___x",
+                                    "indent": "_x",
                                     "text": "0.680 0.660 0.735 0.721"
                                 },
                                 {
-                                    "indent": "___y",
+                                    "indent": "_y",
                                     "text": "0.320 0.320 0.265 0.259"
                                 },
                                 {
-                                    "indent": "_iv",
+                                    "indent": "iv",
                                     "text": "Jaune"
                                 },
                                 {
-                                    "indent": "___x",
+                                    "indent": "_x",
                                     "text": "0.612 0.618 0.575 0.575"
                                 },
                                 {
-                                    "indent": "___y",
+                                    "indent": "_y",
                                     "text": "0.382 0.382 0.425 0.406"
                                 }
                             ]
@@ -469,7 +469,7 @@
                             "title": "Signaux pour navires pêchant à la grande seine",
                             "content": [
                                 {
-                                    "indent": "",
+                                    "indent": "p",
                                     "text": "Les navires en train de pêcher à la grande seine peuvent montrer deux feux jaunes superposés. Ceux-ci doivent s’allumer alternativement toutes les secondes, avec des durées de lumière et d’obscurité égales. Ils ne peuvent être montrés que lorsque le navire est gêné par ses apparaux de pêche."
                                 }
                             ]
@@ -528,7 +528,8 @@
                                     },
                                     {
                                         "indent": "",
-                                        "text": "octave.png"
+                                        "text": "",
+                                        "image": "octave"
                                     },
                                     {
                                         "indent": "",

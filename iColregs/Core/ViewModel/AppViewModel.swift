@@ -90,19 +90,6 @@ final class AppViewModel: ObservableObject {
         return nil
     }
     
-    /// Parse Annexes English data
-    /// - Parameter jsonData: raw Json data returned from the file
-    /// - Returns: decoded data
-
-    func parseAnnexesData(jsonData: Data) -> AnnexesModel? {
-        do {
-            let decodedData = try JSONDecoder().decode(AnnexesModel.self, from: jsonData)
-            return decodedData
-        } catch {
-            print("ERROR: \(error)")
-        }
-        return nil
-    }
     
     /// Parse Ripam data
     /// - Parameter jsonData: raw Json data returned from the file
