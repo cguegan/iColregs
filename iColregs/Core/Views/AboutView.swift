@@ -69,10 +69,12 @@ Pour la version française, seule la version publiée au Journal Officiel de la 
 """
                 )
                 
+                
                 Image("LogoSquare")
                     .resizable()
                     .scaledToFit()
-                    .padding()
+                    .frame(maxWidth: .infinity, alignment: .center)
+                    .frame(height: 350)
                 
                 Text("This application is made available to users, free of charge, generously sponsored by:")
                     .multilineTextAlignment(.center)
