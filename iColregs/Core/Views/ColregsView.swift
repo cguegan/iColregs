@@ -10,6 +10,7 @@ import SwiftUI
 struct ColregsView: View {
     
     @EnvironmentObject var appVM: AppViewModel
+    @Environment(\.colorScheme) var cs
     
     var body: some View {
         NavigationStack {
@@ -74,7 +75,11 @@ extension ColregsView {
                         Text(section.title.uppercased())
                             .font(.caption)
                             .bold()
-                            .listRowBackground(Color.secondary.opacity(0.25))
+                            .listRowBackground(
+                                cs == .dark ?
+                                Color.secondary.opacity(0.25) :
+                                    Color.white.opacity(0.8)
+                            )
                         
                         ForEach(section.rules) { rule in
                             ruleCellView(rule)

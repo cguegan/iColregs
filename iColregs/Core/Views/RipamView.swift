@@ -9,7 +9,9 @@ import SwiftUI
 
 struct RipamView: View {
     
-    @EnvironmentObject var appVM: AppViewModel
+    @EnvironmentObject var appVM: AppViewModel    
+    @Environment(\.colorScheme) var cs
+
     
     var body: some View {
         NavigationStack {
@@ -70,7 +72,10 @@ extension RipamView {
                         Text(section.title.uppercased())
                             .font(.caption)
                             .bold()
-                            .listRowBackground(Color.white.opacity(0.8))
+                            .listRowBackground(
+                                cs == .dark ?
+                                Color.secondary.opacity(0.25) :
+                                    Color.white.opacity(0.8))
                         
                         ForEach(section.rules) { rule in
                             ruleCellView(rule)
