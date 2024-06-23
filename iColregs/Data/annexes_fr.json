@@ -1,657 +1,734 @@
 {
-    "annexes": [
+    "ripam": [
         {
             "id": "1",
             "title": "Annexe I",
-            "subtitle": "Emplacement et caractéristiques techniques des feux et marques",
-            "content": [
-                {
-                    "indent": "1",
-                    "text": "**Définition**"
-                },
-                {
-                    "indent": "",
-                     "text": "L’expression **«hauteur au-dessus du plat-bord»** désigne la hauteur au-dessus du pont continu le plus élevé. Cette hauteur doit être mesurée à partir de l’endroit situé sous le feu à la verticale de celui-ci."
-                },
-                {
-                    "indent": "2",
-                    "text": "**Emplacement et espacement des feux sur le plan vertical**"
-                },
-                {
-                    "indent": "_a",
-                    "text": "A bord des navires à propulsion mécanique de longueur égale ou supérieure à 20 mètres, les feux de tête de mât doivent être disposés comme suit:"
-                },
-                {
-                    "indent": "__i",
-                    "text": "le feu de tête de mât avant ou, le cas échéant, le feu unique, doit se trouver à une hauteur de 6 mètres au moins au-dessus du plat-bord et, si la largeur du navire dépasse 6 mètres, à une hauteur au-dessus du plat-bord au moins égale à cette largeur, sans qu’il soit toutefois nécessaire que cette hauteur dépasse 12 m;"
-                },
-                {
-                    "indent": "__ii",
-                    "text": "lorsqu’il existe deux feux de tête de mât, le feu arrière doit se trouver au moins 4,5 mètres plus haut que le feu avant."
-                },
-                {
-                    "indent": "_b",
-                    "text": "La distance verticale entre les feux de tête de mât des navires à propulsion mécanique doit être telle que le feu arrière puisse toujours être vu distinctement au- dessus du feu avant, à une distance de 1 000 mètres de l’avant du navire au niveau de la mer, dans toutes les conditions normales d’assiette."
-                },
-                {
-                    "indent": "_c",
-                    "text": "Le feu de tête de mât d’un navire à propulsion mécanique de longueur égale ou supérieure à 12 mètres, mais inférieure à 20 mètres, doit se trouver à une hauteur de 2,5 mètres au moins au-dessus du plat-bord."
-                },
-                {
-                    "indent": "_d",
-                    "text": "Un navire à propulsion mécanique de longueur inférieure à 12 mètres peut avoir son feu le plus élevé à une hauteur inférieure à 2,5 mètres au-dessus du plat-bord. Toutefois, lorsqu’il porte un feu de tête de mât en plus des feux de côté et du feu de poupe, ou bien le feu visible sur tout l’horizon prescrit à la règle 23 c) i) en plus des feux de côté, ce feu de tête de mât ou ce feu visible sur tout l’horizon, doit se trouver à 1 mètre au moins au-dessus des feux de côté."
-                },
-                {
-                    "indent": "_e",
-                    "text": "L’un des deux ou trois feux de tête de mât prescrits pour un navire à propulsion mécanique qui remorque ou pousse un autre navire doit se trouver au même emplacement que le feu de tête de mât avant ou arrière, étant entendu que, si le feu inférieur de tête de mât arrière se trouve sur le mât arrière, il doit se trouver au moins à 4,5 mètres plus haut que le feu de tête de mât avant."
-                },
-                {
-                    "indent": "_f_i",
-                    "text": "Le feu ou les feux de tête de mât prescrits par la règle 23(a) doivent être placés au-dessus et à bonne distance des autres feux et obstructions, à l’exception de ceux qui sont décrits à l’alinéa (ii)."
-                },
-                {
-                    "indent": "__ii",
-                    "text": "Lorsqu’il n’est pas possible de placer au-dessous des feux de tête de mât les feux visibles sur tout l’horizon prescrits par la règle 27 b) i) ou par la règle 28, ces feux peuvent être placés au-dessus du feu ou des feux de tête de mât arrière ou, sur un plan vertical, entre le feu ou les feux de tête de mât avant et le feu ou les feux de tête de mât arrière à condition que, dans ce dernier cas, il soit satisfait aux prescriptions du paragraphe c) de la section 3 de la présente Annexe."
-                },
-                {
-                    "indent": "_g",
-                    "text": "Les feux de côté d’un navire à propulsion mécanique doivent se trouver à une hauteur au-dessus du plat-bord ne dépassant pas les trois quarts de la hauteur du feu de tête de mât avant. Ils ne doivent pas être placés trop bas pour ne pas se confondre avec les lumières de pont."
-                },
-                {
-                    "indent": "_h",
-                    "text": "Lorsqu’ils sont réunis en un fanal combiné et portés par un navire à propulsion mécanique de longueur inférieure à 20 mètres, les feux de côté doivent se trouver à 1 mètre au moins au-dessous du feu de tête de mât."
-                },
-                {
-                    "indent": "_i",
-                    "text": "Lorsque les règles prescrivent deux ou trois feux superposés, ceux-ci doivent être espacés de la manière suivante:"
-                },
-                {
-                    "indent": "__i",
-                    "text": "à bord d’un navire de longueur égale ou supérieure à 20 mètres, ces feux doivent être espacés de 2 mètres au moins; le feu inférieur doit se trouver à une hauteur de 4 mètres au moins au-dessus du plat-bord, sauf si le navire est tenu de porter un feu de remorquage."
-                },
-                {
-                    "indent": "__ii",
-                    "text": "à bord d’un navire de longueur inférieure à 20 mètres, les feux doivent être espacés de 1 mètre au moins; le feu inférieur doit se trouver à une hauteur de 2 mètres au moins au-dessus du plat-bord, sauf si le navire est tenu de porter un feu de remorquage;"
-                },
-                {
-                    "indent": "__iii",
-                    "text": "lorsque trois feux sont portés, ils doivent être placés à intervalles réguliers."
-                },
-                {
-                    "indent": "_j",
-                    "text": "Le feu le plus bas des deux feux visibles sur tout l’horizon prescrits pour les navires en train de pêcher doit se trouver à une hauteur au-dessus des feux de côté au moins égale à deux fois la distance qui sépare les deux feux verticaux."
-                },
-                {
-                    "indent": "_k",
-                    "text": "Lorsque le navire porte deux feux de mouillage, le feu de mouillage avant prescrit par la règle 30 a) i) doit se trouver 4,5 mètres au moins plus haut que le feu arrière. A bord d’un navire de longueur égale ou supérieure à 50 mètres, le feu de mouillage avant doit se trouver à une hauteur de 6 mètres au moins au-dessus du platbord."
-                },
-                {
-                    "indent": "3",
-                    "text": "**Emplacement et espacement des feux sur le plan horizontal**"
-                },
-                {
-                    "indent": "_a",
-                    "text": "Lorsque deux feux de tête de mât sont prescrits pour un navire à propulsion mécanique, la distance horizontale qui les sépare doit être au moins égale à la moitié de la longueur du navire sans toutefois qu’il soit nécessaire que cette distance dépasse 100 mètres. Le feu avant ne doit pas être situé, par rapport à l’avant du navire, à une distance supérieure au quart de la longueur du navire."
-                },
-                {
-                    "indent": "_b",
-                    "text": "A bord d’un navire à propulsion mécanique de longueur égale ou supérieure à 20 mètres, les feux de côté ne doivent pas se trouver sur l’avant des feux de tête de mât avant. Ils doivent se trouver sur le côté du navire ou à proximité de celui-ci."
-                },
-                {
-                    "indent": "_c",
-                    "text": "Lorsque les feux prescrits par la règle 27(b)(i) ou par la règle 28 sont placés, sur un plan vertical, entre le feu ou les feux de tête de mât avant et le feu ou les feux de tête de mât arrière, ces feux visibles sur tout l’horizon doivent se trouver à une distance horizontale de 2 mètres au moins de l’axe longitudinal du navire dans le sens transversal."
-                },
-                {
-                    "indent": "_d",
-                    "text": "Lorsqu’un seul feu de mât est prescrit pour un navire à propulsion mécanique, ce feu doit se trouver en avant de la demi-longueur du navire, si ce n’est qu’un navire de longueur inférieure à 20 mètres n’a pas à placer ce feu en avant de la demi- longueur du navire mais doit le placer aussi à l’avant qu’il est possible dans la pratique."
-                },
-                {
-                    "indent": "4",
-                    "text": "Détail concernant l’emplacement des feux de direction pour les navires de pêche, les dragues et les navires effectuant des travaux sous-marins."
-                },
-                {
-                    "indent": "_a",
-                    "text": "Le feu de direction de l’engin déployé d’un navire en train de pêcher, prescrit par la règle 26(c)(ii), doit être situé à une distance horizontale de 2 mètres au moins et de 6 mètres au plus des deux feux rouge et blanc visibles sur tout l’horizon. Ce feu doit être placé à une hauteur qui ne soit ni supérieure à celle du feu blanc visible sur tout l’horizon prescrit par la règle 26(c)(i), ni inférieure à celle des feux de côté."
-                },
-                {
-                    "indent": "_b",
-                    "text": "La distance horizontale entre les feux et marques indiquant à bord d’un navire en train de draguer ou d’effectuer des travaux sous-marins le côté obstrué et/ou le côté sur lequel on peut passer sans danger, tels que prescrits à la règle 27(d)(i) et (ii) et les feux et les marques prescrits à la règle 27(b)(i) et (ii), doit être aussi grande que possible et, en tout cas, d’au moins 2 mètres. Le plus élevé de ces feux ou marques ne doit en aucun cas être placé plus haut que le feu inférieur ou la marque inférieure faisant partie de la série des trois feux ou marques prescrits par la règle 27(b)(i) et (ii)."
-                },
-                {
-                    "indent": "5",
-                    "text": "**Écrans des feux de côté**"
-                },
-                {
-                    "indent": "p",
-                    "text": "Les feux de côté des navires de longueur égale ou supérieure à 20 mètres doivent être munis du côté du navire d’écrans peints en noir avec une peinture mate et être conformes aux prescriptions de la section 9 de la présente Annexe. A bord des navires de longueur inférieure à 20 mètres, les feux de côté, s’ils sont nécessaires pour satisfaire aux prescriptions de la section 9 de la présente Annexe doivent être munis, du côté du navire, d’écrans de couleur noire mate. Dans le cas d’un fanal combiné qui utilise un filament vertical unique et une cloison très étroite entre le secteur vert et le secteur rouge, il n’est pas nécessaire de prévoir d’écrans extérieurs."
-                },
-                {
-                    "indent": "6",
-                    "text": "**Marques**"
-                },
-                {
-                    "indent": "_a",
-                    "text": "Les marques doivent être noires et avoir les dimensions suivantes:"
-                },
-                {
-                    "indent": "__i",
-                    "text": "une boule doit avoir au moins 0,6 mètre de diamètre;"
-                },
-                {
-                    "indent": "__ii",
-                    "text": "un cône doit avoir un diamètre de base de 0,6 mètre au moins et une hauteur égale à son diamètre;"
-                },
-                {
-                    "indent": "__iii",
-                    "text": "une marque cylindrique doit avoir un diamètre de 0,6 mètre au moins et une hauteur double de son diamètre;"
-                },
-                {
-                    "indent": "__iv",
-                    "text": "un bicône se compose de deux cônes définis à l’alinéa (ii) ci-dessus ayant une base commune."
-                },
-                {
-                    "indent": "_b",
-                    "text": "La distance verticale entre les marques doit être d’au moins 1,5 mètre."
-                },
-                {
-                    "indent": "_c",
-                    "text": "A bord d’un navire de longueur inférieure à 20 mètres, les marques peuvent avoir des dimensions inférieures, mais en rapport avec les dimensions du navire et la distance qui les sépare peut être réduite en conséquence."
-                },
-                {
-                    "indent": "7",
-                    "text": "**Couleur des feux**"
-                },
-                {
-                    "indent": "p",
-                    "text": "La chromaticité de tous les feux de navigation doit être conforme aux normes suivantes, qui se situent dans les limites indiquées par le diagramme de chromaticité de la Commission internationale de l’éclairage (CIE). Les limites de la zone des différentes couleurs sont données par les coordonnées des sommets des angles, qui sont les suivantes:"
-                },
-                {
-                    "indent": "_i",
-                    "text": "Blanc"
-                },
-                {
-                    "indent": "___x",
-                    "text": "0.525 0.525 0/.452 0.310 0.310 0.443"
-                },
-                {
-                    "indent": "___y",
-                    "text": "0.382 0.440 0.440 0.348 0.283 0.382"
-                },
-                {
-                    "indent": "_ii",
-                    "text": "Vert"
-                },
-                {
-                    "indent": "___x",
-                    "text": "0.028 0.009 0.300 0.203"
-                },
-                {
-                    "indent": "___y",
-                    "text": "0.385 0.723 0.511 0.356"
-                },
-                {
-                    "indent": "_iii",
-                    "text": "Rouge"
-                },
-                {
-                    "indent": "___x",
-                    "text": "0.680 0.660 0.735 0.721"
-                },
-                {
-                    "indent": "___y",
-                    "text": "0.320 0.320 0.265 0.259"
-                },
-                {
-                    "indent": "_iv",
-                    "text": "Jaune"
-                },
-                {
-                    "indent": "___x",
-                    "text": "0.612 0.618 0.575 0.575"
-                },
-                {
-                    "indent": "___y",
-                    "text": "0.382 0.382 0.425 0.406"
-                },
-                {
-                    "indent": "8",
-                    "text": "Intensité des feux"
-                },
-                {
-                    "indent": "_a",
-                    "text": "L’intensité minimale des feux doit être calculée à l’aide de la formule:"
-                },
-                {
-                    "indent": "____",
-                    "text": "I = 3.43 x 10^6 x T x D^2 x K^–D"
-                },
-                {
-                    "indent": "",
-                    "text": "où"
-                },
-                {
-                    "indent": "",
-                    "text": "I = Intensité lumineuse en candelas dans les conditions de service"
-                },
-                {
-                    "indent": "",
-                    "text": "T = Seuil d’éclairement 2 X 10-7 lux"
-                },
-                {
-                    "indent": "",
-                    "text": "D = Distance de visibilité (portée lumineuse) du feu en milles marins"
-                },
-                {
-                    "indent": "",
-                    "text": "K = Coefficient de transmission atmosphérique."
-                },
-                {
-                    "indent": "",
-                    "text": "Pour les feux prescrits, K est égal à 0,8 ce qui correspond à une visibilité météorologique d’environ 13 milles marins."
-                },
-                {
-                    "indent": "_b",
-                    "text": "Le tableau suivant présente quelques valeurs obtenues à l’aide de cette formule:"
-                },
-                {
-                    "indent": "",
-                    "text": "rangeTable"
-                },
-                {
-                    "indent": "Note:",
-                    "text": "L’intensité lumineuse maximale des feux de navigation devrait être limitée de manière à éviter des reflets gênants. Cette limitation de l’intensité lumineuse ne doit pas être obtenue au moyen d’une commande variable."
-                },
-                {
-                    "indent": "9",
-                    "text": "**Secteurs horizontaux de visibilité**"
-                },
-                {
-                    "indent": "_a_i",
-                    "text": "Les feux de côté doivent, une fois installés à bord, avoir vers l’avant les intensités minimales requises. Les intensités doivent diminuer jusqu’à devenir pratiquement nulles entre 1 et 3 degrés en dehors des secteurs prescrits."
-                },
-                {
-                    "indent": "__ii",
-                    "text": "Pour les feux de poupe et les feux de tête de mât ainsi que pour les feux de côté à la limite du secteur de visibilité située à 22,5 degrés sur l’arrière du travers, les intensités minimales requises doivent être maintenues sur l’arc d’horizon des secteurs prescrits par la règle 21, jusqu’à 5 degrés à l’intérieur de ces secteurs. A partir de 5 degrés à l’intérieur des secteurs prescrits, l’intensité peut diminuer à concurrence de 50 p. 100 jusqu’aux limites de secteurs prescrites; puis elle doit diminuer constamment jusqu’à devenir pratiquement nulle à 5 degrés au plus en dehors des secteurs prescrits."
-                },
-                {
-                    "indent": "_b_i",
-                    "text": "A l’exception des feux de mouillage prescrits à la règle 30 qu’il n’est pas nécessaire de placer trop haut au-dessus du plat-bord, les feux visibles sur tout l’horizon doivent être placés de manière à ne pas être cachés par des mâts, des mâts de hune ou toutes autres structures sur des secteurs angulaires supérieurs à 6 degrés."
-                },
-                {
-                    "indent": "__ii",
-                    "text": "S’il est impossible dans la pratique de satisfaire à l’alinéa b) i) de la présente section en plaçant un seul feu visible sur tout l’horizon, deux feux visibles sur tout l’horizon doivent être utilisés et convenablement placés ou masqués de manière à être perçus, dans toute la mesure du possible, comme un feu unique à une distance de un mille."
-                },
-                {
-                    "indent": "10",
-                    "text": "**Secteurs verticaux de visibilité**"
-                },
-                {
-                    "indent": "_a",
-                    "text": "Les secteurs verticaux de visibilité des feux électriques une fois installés, à l’exception des feux installés à bord des navires à voile faisant route, doivent être de nature à maintenir:"
-                },
-                {
-                    "indent": "__i",
-                    "text": "au moins l’intensité minimale requise de 5 degrés au-dessus du plan horizontal à 5 degrés au-dessous de ce plan;"
-                },
-                {
-                    "indent": "__ii",
-                    "text": "au moins 60 p. 100 de l’intensité minimale requise de 7,5 degrés au-dessus du plan horizontal à 7,5 degrés au-dessous de ce plan;"
-                },
-                {
-                    "indent": "_b",
-                    "text": "Dans le cas des navires à voile faisant route, les secteurs verticaux de visibilité des feux électriques une fois installés doivent être de nature à maintenir:"
-                },
-                {
-                    "indent": "__i",
-                    "text": "au moins l’intensité minimale requise de 5 degrés au-dessus du plan horizontal à 5 degrés au-dessous de ce plan;"
-                },
-                {
-                    "indent": "__ii",
-                    "text": "au moins 50 p. 100 de l’intensité minimale requise de 25 degrés au-dessus du plan horizontal à 25 degrés au-dessous de ce plan."
-                },
-                {
-                    "indent": "_c",
-                    "text": "Pour les feux autres qu’électriques, ces spécifications doivent être observées d’aussi près que possible."
-                },
-                {
-                    "indent": "11",
-                    "text": "Intensité des feux non électriques"
-                },
-                {
-                    "indent": "p",
-                    "text": "Les feux non électriques doivent avoir autant que possible les intensités minimales spécifiées au tableau de la section 8 de la présente Annexe."
-                },
-                {
-                    "indent": "12",
-                    "text": "**Feux de manœuvre**"
-                },
-                {
-                    "indent": "p",
-                    "text": "Nonobstant les dispositions de la section 2 f) de la présente Annexe, le feu de manœuvre décrit à la règle 34 b) doit être situé dans le même plan axial que le feu ou les feux de tête de mât et, lorsque cela est possible, à une distance verticale de 2 mètres au moins au-dessus du feu de tête de mât avant, à condition d’être porté à une distance verticale d’au moins 2 mètres au-dessus ou au-dessous du feu de tête de mât arrière. S’il n’y a qu’un seul feu de tête de mât, le feu de manœuvre, s’il existe, doit être installé à l’endroit le plus visible, à une distance verticale d’au moins deux mètres du feu de tête de mât."
-                },
-                {
-                    "indent": "13",
-                    "text": "**Engins à grande vitesse**"
-                },
-                {
-                    "indent": "_a",
-                    "text": "Le feu de tête de mât des engins à grande vitesse peut être placé à une hauteur qui, par rapport à la largeur de l’engin, est inférieure à celle prescrite au paragraphe 2 a) i) de la présente annexe, à condition que l’angle à la base du triangle isocèle formé par le feu de tête de mât et les feux de côté, vus de face, ne soit pas inférieur à 27°."
-                },
-                {
-                    "indent": "_b",
-                    "text": "A bord des engins à grande vitesse d’une longueur égale ou supérieure à 50 m, de la distance verticale requise entre le feu du mât avant et celui du mât principal, que le paragraphe 2) a) ii) de la présente annexe fixe à 4.5 m peut être modifiée à la condition que sa valeur ne soit pas inférieure à celle qui est déterminée en appliquant la formule suivante:"
-                },
-                {
-                    "indent": "___",
-                    "text": "Insert formula here"
-                },
-                {
-                    "indent": "__",
-                    "text": "Dans cette formule:"
-                },
-                {
-                    "indent": "___",
-                    "text": "y = est la hauteur, exprimée en mètres, du feu du mât principal au-dessus du feu du mât avant;"
-                },
-                {
-                    "indent": "___",
-                    "text": "a = est la hauteur, exprimée en mètres, du feu du mât avant au-dessus de la surface de l’eau, en cours d’exploitation;"
-                },
-                {
-                    "indent": "___",
-                    "text": "Ψ = est l’assiette en cours d’exploitation, exprimée en degrés;"
-                },
-                {
-                    "indent": "___",
-                    "text": "C = est la distance horizontale qui sépare les feux de tête de mât, exprimée en mètres"
-                },
-                {
-                    "indent": "14",
-                    "text": "Agrément"
-                },
-                {
-                    "indent": "p",
-                    "text": "La construction des feux et des marques et l’installation des feux à bord doivent être jugées satisfaisantes par l’autorité compétente de l’État dont le navire est autorisé à battre pavillon."
+            "sections": [
+                {
+                    "id": "1",
+                    "title": "Emplacement et caractéristiques techniques des feux et marques",
+                    "rules": [
+                        {
+                            "id": "1",
+                            "title": "Définition",
+                            "content": [
+                                {
+                                    "indent": "",
+                                     "text": "L’expression **«hauteur au-dessus du plat-bord»** désigne la hauteur au-dessus du pont continu le plus élevé. Cette hauteur doit être mesurée à partir de l’endroit situé sous le feu à la verticale de celui-ci."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2",
+                            "title": "Emplacement et espacement des feux sur le plan vertical",
+                            "content": [
+                                {
+                                    "indent": "a",
+                                    "text": "A bord des navires à propulsion mécanique de longueur égale ou supérieure à 20 mètres, les feux de tête de mât doivent être disposés comme suit:"
+                                },
+                                {
+                                    "indent": "_i",
+                                    "text": "le feu de tête de mât avant ou, le cas échéant, le feu unique, doit se trouver à une hauteur de 6 mètres au moins au-dessus du plat-bord et, si la largeur du navire dépasse 6 mètres, à une hauteur au-dessus du plat-bord au moins égale à cette largeur, sans qu’il soit toutefois nécessaire que cette hauteur dépasse 12 m;"
+                                },
+                                {
+                                    "indent": "_ii",
+                                    "text": "lorsqu’il existe deux feux de tête de mât, le feu arrière doit se trouver au moins 4,5 mètres plus haut que le feu avant."
+                                },
+                                {
+                                    "indent": "b",
+                                    "text": "La distance verticale entre les feux de tête de mât des navires à propulsion mécanique doit être telle que le feu arrière puisse toujours être vu distinctement au- dessus du feu avant, à une distance de 1 000 mètres de l’avant du navire au niveau de la mer, dans toutes les conditions normales d’assiette."
+                                },
+                                {
+                                    "indent": "c",
+                                    "text": "Le feu de tête de mât d’un navire à propulsion mécanique de longueur égale ou supérieure à 12 mètres, mais inférieure à 20 mètres, doit se trouver à une hauteur de 2,5 mètres au moins au-dessus du plat-bord."
+                                },
+                                {
+                                    "indent": "d",
+                                    "text": "Un navire à propulsion mécanique de longueur inférieure à 12 mètres peut avoir son feu le plus élevé à une hauteur inférieure à 2,5 mètres au-dessus du plat-bord. Toutefois, lorsqu’il porte un feu de tête de mât en plus des feux de côté et du feu de poupe, ou bien le feu visible sur tout l’horizon prescrit à la règle 23 c) i) en plus des feux de côté, ce feu de tête de mât ou ce feu visible sur tout l’horizon, doit se trouver à 1 mètre au moins au-dessus des feux de côté."
+                                },
+                                {
+                                    "indent": "e",
+                                    "text": "L’un des deux ou trois feux de tête de mât prescrits pour un navire à propulsion mécanique qui remorque ou pousse un autre navire doit se trouver au même emplacement que le feu de tête de mât avant ou arrière, étant entendu que, si le feu inférieur de tête de mât arrière se trouve sur le mât arrière, il doit se trouver au moins à 4,5 mètres plus haut que le feu de tête de mât avant."
+                                },
+                                {
+                                    "indent": "f_i",
+                                    "text": "Le feu ou les feux de tête de mât prescrits par la règle 23(a) doivent être placés au-dessus et à bonne distance des autres feux et obstructions, à l’exception de ceux qui sont décrits à l’alinéa (ii)."
+                                },
+                                {
+                                    "indent": "_ii",
+                                    "text": "Lorsqu’il n’est pas possible de placer au-dessous des feux de tête de mât les feux visibles sur tout l’horizon prescrits par la règle 27 b) i) ou par la règle 28, ces feux peuvent être placés au-dessus du feu ou des feux de tête de mât arrière ou, sur un plan vertical, entre le feu ou les feux de tête de mât avant et le feu ou les feux de tête de mât arrière à condition que, dans ce dernier cas, il soit satisfait aux prescriptions du paragraphe c) de la section 3 de la présente Annexe."
+                                },
+                                {
+                                    "indent": "g",
+                                    "text": "Les feux de côté d’un navire à propulsion mécanique doivent se trouver à une hauteur au-dessus du plat-bord ne dépassant pas les trois quarts de la hauteur du feu de tête de mât avant. Ils ne doivent pas être placés trop bas pour ne pas se confondre avec les lumières de pont."
+                                },
+                                {
+                                    "indent": "h",
+                                    "text": "Lorsqu’ils sont réunis en un fanal combiné et portés par un navire à propulsion mécanique de longueur inférieure à 20 mètres, les feux de côté doivent se trouver à 1 mètre au moins au-dessous du feu de tête de mât."
+                                },
+                                {
+                                    "indent": "i",
+                                    "text": "Lorsque les règles prescrivent deux ou trois feux superposés, ceux-ci doivent être espacés de la manière suivante:"
+                                },
+                                {
+                                    "indent": "_i",
+                                    "text": "à bord d’un navire de longueur égale ou supérieure à 20 mètres, ces feux doivent être espacés de 2 mètres au moins; le feu inférieur doit se trouver à une hauteur de 4 mètres au moins au-dessus du plat-bord, sauf si le navire est tenu de porter un feu de remorquage."
+                                },
+                                {
+                                    "indent": "_ii",
+                                    "text": "à bord d’un navire de longueur inférieure à 20 mètres, les feux doivent être espacés de 1 mètre au moins; le feu inférieur doit se trouver à une hauteur de 2 mètres au moins au-dessus du plat-bord, sauf si le navire est tenu de porter un feu de remorquage;"
+                                },
+                                {
+                                    "indent": "_iii",
+                                    "text": "lorsque trois feux sont portés, ils doivent être placés à intervalles réguliers."
+                                },
+                                {
+                                    "indent": "j",
+                                    "text": "Le feu le plus bas des deux feux visibles sur tout l’horizon prescrits pour les navires en train de pêcher doit se trouver à une hauteur au-dessus des feux de côté au moins égale à deux fois la distance qui sépare les deux feux verticaux."
+                                },
+                                {
+                                    "indent": "k",
+                                    "text": "Lorsque le navire porte deux feux de mouillage, le feu de mouillage avant prescrit par la règle 30 a) i) doit se trouver 4,5 mètres au moins plus haut que le feu arrière. A bord d’un navire de longueur égale ou supérieure à 50 mètres, le feu de mouillage avant doit se trouver à une hauteur de 6 mètres au moins au-dessus du platbord."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3",
+                            "title": "Emplacement et espacement des feux sur le plan horizontal",
+                            "content": [
+                                {
+                                    "indent": "_a",
+                                    "text": "Lorsque deux feux de tête de mât sont prescrits pour un navire à propulsion mécanique, la distance horizontale qui les sépare doit être au moins égale à la moitié de la longueur du navire sans toutefois qu’il soit nécessaire que cette distance dépasse 100 mètres. Le feu avant ne doit pas être situé, par rapport à l’avant du navire, à une distance supérieure au quart de la longueur du navire."
+                                },
+                                {
+                                    "indent": "_b",
+                                    "text": "A bord d’un navire à propulsion mécanique de longueur égale ou supérieure à 20 mètres, les feux de côté ne doivent pas se trouver sur l’avant des feux de tête de mât avant. Ils doivent se trouver sur le côté du navire ou à proximité de celui-ci."
+                                },
+                                {
+                                    "indent": "_c",
+                                    "text": "Lorsque les feux prescrits par la règle 27(b)(i) ou par la règle 28 sont placés, sur un plan vertical, entre le feu ou les feux de tête de mât avant et le feu ou les feux de tête de mât arrière, ces feux visibles sur tout l’horizon doivent se trouver à une distance horizontale de 2 mètres au moins de l’axe longitudinal du navire dans le sens transversal."
+                                },
+                                {
+                                    "indent": "_d",
+                                    "text": "Lorsqu’un seul feu de mât est prescrit pour un navire à propulsion mécanique, ce feu doit se trouver en avant de la demi-longueur du navire, si ce n’est qu’un navire de longueur inférieure à 20 mètres n’a pas à placer ce feu en avant de la demi- longueur du navire mais doit le placer aussi à l’avant qu’il est possible dans la pratique."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "4",
+                            "title": "Détail concernant l’emplacement des feux de direction pour les navires de pêche, les dragues et les navires effectuant des travaux sous-marins.",
+                            "content": [
+                                {
+                                    "indent": "a",
+                                    "text": "Le feu de direction de l’engin déployé d’un navire en train de pêcher, prescrit par la règle 26(c)(ii), doit être situé à une distance horizontale de 2 mètres au moins et de 6 mètres au plus des deux feux rouge et blanc visibles sur tout l’horizon. Ce feu doit être placé à une hauteur qui ne soit ni supérieure à celle du feu blanc visible sur tout l’horizon prescrit par la règle 26(c)(i), ni inférieure à celle des feux de côté."
+                                },
+                                {
+                                    "indent": "b",
+                                    "text": "La distance horizontale entre les feux et marques indiquant à bord d’un navire en train de draguer ou d’effectuer des travaux sous-marins le côté obstrué et/ou le côté sur lequel on peut passer sans danger, tels que prescrits à la règle 27(d)(i) et (ii) et les feux et les marques prescrits à la règle 27(b)(i) et (ii), doit être aussi grande que possible et, en tout cas, d’au moins 2 mètres. Le plus élevé de ces feux ou marques ne doit en aucun cas être placé plus haut que le feu inférieur ou la marque inférieure faisant partie de la série des trois feux ou marques prescrits par la règle 27(b)(i) et (ii)."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5",
+                            "title": "Écrans des feux de côté",
+                            "content": [
+                                {
+                                    "indent": "p",
+                                    "text": "Les feux de côté des navires de longueur égale ou supérieure à 20 mètres doivent être munis du côté du navire d’écrans peints en noir avec une peinture mate et être conformes aux prescriptions de la section 9 de la présente Annexe. A bord des navires de longueur inférieure à 20 mètres, les feux de côté, s’ils sont nécessaires pour satisfaire aux prescriptions de la section 9 de la présente Annexe doivent être munis, du côté du navire, d’écrans de couleur noire mate. Dans le cas d’un fanal combiné qui utilise un filament vertical unique et une cloison très étroite entre le secteur vert et le secteur rouge, il n’est pas nécessaire de prévoir d’écrans extérieurs."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "6",
+                            "title": "Marques",
+                            "content": [
+                                {
+                                    "indent": "a",
+                                    "text": "Les marques doivent être noires et avoir les dimensions suivantes:"
+                                },
+                                {
+                                    "indent": "_i",
+                                    "text": "une boule doit avoir au moins 0,6 mètre de diamètre;"
+                                },
+                                {
+                                    "indent": "_ii",
+                                    "text": "un cône doit avoir un diamètre de base de 0,6 mètre au moins et une hauteur égale à son diamètre;"
+                                },
+                                {
+                                    "indent": "_iii",
+                                    "text": "une marque cylindrique doit avoir un diamètre de 0,6 mètre au moins et une hauteur double de son diamètre;"
+                                },
+                                {
+                                    "indent": "_iv",
+                                    "text": "un bicône se compose de deux cônes définis à l’alinéa (ii) ci-dessus ayant une base commune."
+                                },
+                                {
+                                    "indent": "b",
+                                    "text": "La distance verticale entre les marques doit être d’au moins 1,5 mètre."
+                                },
+                                {
+                                    "indent": "c",
+                                    "text": "A bord d’un navire de longueur inférieure à 20 mètres, les marques peuvent avoir des dimensions inférieures, mais en rapport avec les dimensions du navire et la distance qui les sépare peut être réduite en conséquence."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7",
+                            "title": "Couleur des feux",
+                            "content": [
+                                {
+                                    "indent": "p",
+                                    "text": "La chromaticité de tous les feux de navigation doit être conforme aux normes suivantes, qui se situent dans les limites indiquées par le diagramme de chromaticité de la Commission internationale de l’éclairage (CIE). Les limites de la zone des différentes couleurs sont données par les coordonnées des sommets des angles, qui sont les suivantes:"
+                                },
+                                {
+                                    "indent": "_i",
+                                    "text": "Blanc"
+                                },
+                                {
+                                    "indent": "___x",
+                                    "text": "0.525 0.525 0/.452 0.310 0.310 0.443"
+                                },
+                                {
+                                    "indent": "___y",
+                                    "text": "0.382 0.440 0.440 0.348 0.283 0.382"
+                                },
+                                {
+                                    "indent": "_ii",
+                                    "text": "Vert"
+                                },
+                                {
+                                    "indent": "___x",
+                                    "text": "0.028 0.009 0.300 0.203"
+                                },
+                                {
+                                    "indent": "___y",
+                                    "text": "0.385 0.723 0.511 0.356"
+                                },
+                                {
+                                    "indent": "_iii",
+                                    "text": "Rouge"
+                                },
+                                {
+                                    "indent": "___x",
+                                    "text": "0.680 0.660 0.735 0.721"
+                                },
+                                {
+                                    "indent": "___y",
+                                    "text": "0.320 0.320 0.265 0.259"
+                                },
+                                {
+                                    "indent": "_iv",
+                                    "text": "Jaune"
+                                },
+                                {
+                                    "indent": "___x",
+                                    "text": "0.612 0.618 0.575 0.575"
+                                },
+                                {
+                                    "indent": "___y",
+                                    "text": "0.382 0.382 0.425 0.406"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "8",
+                            "title": "Intensité des feux",
+                            "content": [
+                                {
+                                    "indent": "a",
+                                    "text": "L’intensité minimale des feux doit être calculée à l’aide de la formule:"
+                                },
+                                {
+                                    "indent": "__",
+                                    "text": "I = 3.43 x 10^6 x T x D^2 x K^–D"
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "où"
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "I = Intensité lumineuse en candelas dans les conditions de service"
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "T = Seuil d’éclairement 2 X 10-7 lux"
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "D = Distance de visibilité (portée lumineuse) du feu en milles marins"
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "K = Coefficient de transmission atmosphérique."
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "Pour les feux prescrits, K est égal à 0,8 ce qui correspond à une visibilité météorologique d’environ 13 milles marins."
+                                },
+                                {
+                                    "indent": "b",
+                                    "text": "Le tableau suivant présente quelques valeurs obtenues à l’aide de cette formule:"
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "rangeTable"
+                                },
+                                {
+                                    "indent": "Note:",
+                                    "text": "L’intensité lumineuse maximale des feux de navigation devrait être limitée de manière à éviter des reflets gênants. Cette limitation de l’intensité lumineuse ne doit pas être obtenue au moyen d’une commande variable."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "9",
+                            "title": "Secteurs horizontaux de visibilité",
+                            "content": [
+                                {
+                                    "indent": "_a_i",
+                                    "text": "Les feux de côté doivent, une fois installés à bord, avoir vers l’avant les intensités minimales requises. Les intensités doivent diminuer jusqu’à devenir pratiquement nulles entre 1 et 3 degrés en dehors des secteurs prescrits."
+                                },
+                                {
+                                    "indent": "__ii",
+                                    "text": "Pour les feux de poupe et les feux de tête de mât ainsi que pour les feux de côté à la limite du secteur de visibilité située à 22,5 degrés sur l’arrière du travers, les intensités minimales requises doivent être maintenues sur l’arc d’horizon des secteurs prescrits par la règle 21, jusqu’à 5 degrés à l’intérieur de ces secteurs. A partir de 5 degrés à l’intérieur des secteurs prescrits, l’intensité peut diminuer à concurrence de 50 p. 100 jusqu’aux limites de secteurs prescrites; puis elle doit diminuer constamment jusqu’à devenir pratiquement nulle à 5 degrés au plus en dehors des secteurs prescrits."
+                                },
+                                {
+                                    "indent": "_b_i",
+                                    "text": "A l’exception des feux de mouillage prescrits à la règle 30 qu’il n’est pas nécessaire de placer trop haut au-dessus du plat-bord, les feux visibles sur tout l’horizon doivent être placés de manière à ne pas être cachés par des mâts, des mâts de hune ou toutes autres structures sur des secteurs angulaires supérieurs à 6 degrés."
+                                },
+                                {
+                                    "indent": "__ii",
+                                    "text": "S’il est impossible dans la pratique de satisfaire à l’alinéa b) i) de la présente section en plaçant un seul feu visible sur tout l’horizon, deux feux visibles sur tout l’horizon doivent être utilisés et convenablement placés ou masqués de manière à être perçus, dans toute la mesure du possible, comme un feu unique à une distance de un mille."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "10",
+                            "title": "Secteurs verticaux de visibilité",
+                            "content": [
+                                {
+                                    "indent": "_a",
+                                    "text": "Les secteurs verticaux de visibilité des feux électriques une fois installés, à l’exception des feux installés à bord des navires à voile faisant route, doivent être de nature à maintenir:"
+                                },
+                                {
+                                    "indent": "__i",
+                                    "text": "au moins l’intensité minimale requise de 5 degrés au-dessus du plan horizontal à 5 degrés au-dessous de ce plan;"
+                                },
+                                {
+                                    "indent": "__ii",
+                                    "text": "au moins 60 p. 100 de l’intensité minimale requise de 7,5 degrés au-dessus du plan horizontal à 7,5 degrés au-dessous de ce plan;"
+                                },
+                                {
+                                    "indent": "_b",
+                                    "text": "Dans le cas des navires à voile faisant route, les secteurs verticaux de visibilité des feux électriques une fois installés doivent être de nature à maintenir:"
+                                },
+                                {
+                                    "indent": "__i",
+                                    "text": "au moins l’intensité minimale requise de 5 degrés au-dessus du plan horizontal à 5 degrés au-dessous de ce plan;"
+                                },
+                                {
+                                    "indent": "__ii",
+                                    "text": "au moins 50 p. 100 de l’intensité minimale requise de 25 degrés au-dessus du plan horizontal à 25 degrés au-dessous de ce plan."
+                                },
+                                {
+                                    "indent": "_c",
+                                    "text": "Pour les feux autres qu’électriques, ces spécifications doivent être observées d’aussi près que possible."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "11",
+                            "title": "Intensité des feux non électriques",
+                            "content": [
+                                {
+                                    "indent": "p",
+                                    "text": "Les feux non électriques doivent avoir autant que possible les intensités minimales spécifiées au tableau de la section 8 de la présente Annexe."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "12",
+                            "title": "Feux de manœuvre",
+                            "content": [
+                                {
+                                    "indent": "p",
+                                    "text": "Nonobstant les dispositions de la section 2(f) de la présente Annexe, le feu de manœuvre décrit à la règle 34 b) doit être situé dans le même plan axial que le feu ou les feux de tête de mât et, lorsque cela est possible, à une distance verticale de 2 mètres au moins au-dessus du feu de tête de mât avant, à condition d’être porté à une distance verticale d’au moins 2 mètres au-dessus ou au-dessous du feu de tête de mât arrière. S’il n’y a qu’un seul feu de tête de mât, le feu de manœuvre, s’il existe, doit être installé à l’endroit le plus visible, à une distance verticale d’au moins deux mètres du feu de tête de mât."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "13",
+                            "title": "Engins à grande vitesse",
+                            "content": [
+                                {
+                                    "indent": "a",
+                                    "text": "Le feu de tête de mât des engins à grande vitesse peut être placé à une hauteur qui, par rapport à la largeur de l’engin, est inférieure à celle prescrite au paragraphe 2 a) i) de la présente annexe, à condition que l’angle à la base du triangle isocèle formé par le feu de tête de mât et les feux de côté, vus de face, ne soit pas inférieur à 27°."
+                                },
+                                {
+                                    "indent": "b",
+                                    "text": "A bord des engins à grande vitesse d’une longueur égale ou supérieure à 50 m, de la distance verticale requise entre le feu du mât avant et celui du mât principal, que le paragraphe 2) a) ii) de la présente annexe fixe à 4.5 m peut être modifiée à la condition que sa valeur ne soit pas inférieure à celle qui est déterminée en appliquant la formule suivante:"
+                                },
+                                {
+                                    "indent": "__",
+                                    "text": "Insert formula here"
+                                },
+                                {
+                                    "indent": "_",
+                                    "text": "Dans cette formule:"
+                                },
+                                {
+                                    "indent": "__$",
+                                    "text": "y = est la hauteur, exprimée en mètres, du feu du mât principal au-dessus du feu du mât avant;"
+                                },
+                                {
+                                    "indent": "_",
+                                    "text": "a = est la hauteur, exprimée en mètres, du feu du mât avant au-dessus de la surface de l’eau, en cours d’exploitation;"
+                                },
+                                {
+                                    "indent": "_",
+                                    "text": "Ψ = est l’assiette en cours d’exploitation, exprimée en degrés;"
+                                },
+                                {
+                                    "indent": "_",
+                                    "text": "C = est la distance horizontale qui sépare les feux de tête de mât, exprimée en mètres"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "14",
+                            "title": "Agrément",
+                            "content": [
+                                {
+                                    "indent": "p",
+                                    "text": "La construction des feux et des marques et l’installation des feux à bord doivent être jugées satisfaisantes par l’autorité compétente de l’État dont le navire est autorisé à battre pavillon."
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
         {
             "id": "2",
             "title": "Annexe II",
-            "subtitle": "Signaux supplémentaires des navires de pêche péchant a proximite les uns des autres",
-            "content": [
+            "sections": [
                 {
-                    "indent": "1",
-                    "text": "Généralités"
-                },
-                {
-                    "indent": "p",
-                    "text": "Les feux mentionnés dans la présente Annexe doivent, s’ils sont montrés en application des dispositions de la règle 26) d), être placés à l’endroit le plus visible, à 0,9 mètre au moins les uns des autres et plus bas que les feux prescrits par la règle 26 b) i) et c) i). Ils doivent être visibles sur tout l’horizon à une distance d’un mille au moins, mais cette distance doit être inférieure à la portée des feux prescrits par les présentes Règles pour les navires de pêche."
-                },
-                {
-                    "indent": "2",
-                    "text": "**Signaux pour chalutiers**"
-                },
-                {
-                    "indent": "_a",
-                    "text": "Les navires d’une longueur égale ou supérieure à 20 mètres qui sont en train de chaluter au moyen d’un chalut ou de tout autre appareil immergé doivent montrer:"
-                },
-                {
-                    "indent": "__i",
-                    "text": "lorsqu’ils jettent leurs filets: deux feux blancs superposés;"
-                },
-                {
-                    "indent": "__ii",
-                    "text": "lorsqu’ils halent leurs filets: un feu blanc placé à la verticale au-dessus d’un feu rouge;"
-                },
-                {
-                    "indent": "__iii",
-                    "text": "lorsque leurs filets sont retenus par un obstacle: deux feux rouges superposés."
-                },
-                {
-                    "indent": "_b",
-                    "text": "Tous les navires d’une longueur égale ou supérieure à 20 mètres qui sont en train de chaluter à deux doivent montrer:"
-                },
-                {
-                    "indent": "__i",
-                    "text": "de nuit, un projecteur dirigé vers l’avant et en direction de l’autre navire faisant partie de l’équipe de chalutage à deux;"
-                },
-                {
-                    "indent": "__ii",
-                    "text": "lorsqu’ils jettent ou halent leurs filets ou lorsque leurs filets demeurent retenus par un obstacle, les feux prescrits par la section 2(a) ci-dessus."
-                },
-                {
-                    "indent": "_c",
-                    "text": "Un navire d’une longueur inférieure à 20 mètres qui est en train de chaluter au moyen d’un chalut ou de tout autre appareil immergé, ou en train de chaluter à deux, peut montrer les feux prescrits au paragraphe a) ou b) de la présente section, selon le cas."
-                },
-                {
-                    "indent": "3",
-                    "text": "**Signaux pour navires pêchant à la grande seine**"
-                },
-                {
-                    "indent": "",
-                    "text": "Les navires en train de pêcher à la grande seine peuvent montrer deux feux jaunes superposés. Ceux-ci doivent s’allumer alternativement toutes les secondes, avec des durées de lumière et d’obscurité égales. Ils ne peuvent être montrés que lorsque le navire est gêné par ses apparaux de pêche."
+                    "id": "1",
+                    "title": "Signaux supplémentaires des navires de pêche péchant a proximite les uns des autres",
+                    "rules": [
+                        {
+                            "id": "1",
+                            "title": "Généralités",
+                            "content": [
+                                {
+                                    "indent": "p",
+                                    "text": "Les feux mentionnés dans la présente Annexe doivent, s’ils sont montrés en application des dispositions de la règle 26(d), être placés à l’endroit le plus visible, à 0,9 mètre au moins les uns des autres et plus bas que les feux prescrits par la règle 26(b)(i) et (c)(i). Ils doivent être visibles sur tout l’horizon à une distance d’un mille au moins, mais cette distance doit être inférieure à la portée des feux prescrits par les présentes Règles pour les navires de pêche."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2",
+                            "title": "Signaux pour chalutiers",
+                            "content": [
+                                {
+                                    "indent": "a",
+                                    "text": "Les navires d’une longueur égale ou supérieure à 20 mètres qui sont en train de chaluter au moyen d’un chalut ou de tout autre appareil immergé doivent montrer:"
+                                },
+                                {
+                                    "indent": "_i",
+                                    "text": "lorsqu’ils jettent leurs filets: deux feux blancs superposés;"
+                                },
+                                {
+                                    "indent": "_ii",
+                                    "text": "lorsqu’ils halent leurs filets: un feu blanc placé à la verticale au-dessus d’un feu rouge;"
+                                },
+                                {
+                                    "indent": "_iii",
+                                    "text": "lorsque leurs filets sont retenus par un obstacle: deux feux rouges superposés."
+                                },
+                                {
+                                    "indent": "b",
+                                    "text": "Tous les navires d’une longueur égale ou supérieure à 20 mètres qui sont en train de chaluter à deux doivent montrer:"
+                                },
+                                {
+                                    "indent": "_i",
+                                    "text": "de nuit, un projecteur dirigé vers l’avant et en direction de l’autre navire faisant partie de l’équipe de chalutage à deux;"
+                                },
+                                {
+                                    "indent": "_ii",
+                                    "text": "lorsqu’ils jettent ou halent leurs filets ou lorsque leurs filets demeurent retenus par un obstacle, les feux prescrits par la section 2(a) ci-dessus."
+                                },
+                                {
+                                    "indent": "c",
+                                    "text": "Un navire d’une longueur inférieure à 20 mètres qui est en train de chaluter au moyen d’un chalut ou de tout autre appareil immergé, ou en train de chaluter à deux, peut montrer les feux prescrits au paragraphe a) ou b) de la présente section, selon le cas."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3",
+                            "title": "Signaux pour navires pêchant à la grande seine",
+                            "content": [
+                                {
+                                    "indent": "",
+                                    "text": "Les navires en train de pêcher à la grande seine peuvent montrer deux feux jaunes superposés. Ceux-ci doivent s’allumer alternativement toutes les secondes, avec des durées de lumière et d’obscurité égales. Ils ne peuvent être montrés que lorsque le navire est gêné par ses apparaux de pêche."
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },
         {
             "id": "3",
             "title": "Annexe III",
-            "subtitle": "Caracteristiques techniques du matériel de signalisation sonore",
-            "content": [
-                {
-                    "indent": "1",
-                    "text": "**Sifflets**"
-                },
-                {
-                    "indent": "_a",
-                    "text": "Fréquence et portée sonore"
-                },
-                {
-                    "indent": "_",
-                    "text": "La fréquence fondamentale du signal doit être comprise entre 70 et 700 Hz. La portée sonore du signal d’un sifflet est déterminée par ces fréquences, qui peuvent comprendre la fréquence fondamentale et/ou une ou plusieurs fréquences plus élevées, situées entre 180 et 700 Hz (±1 %) pour un navire de longueur égale ou supérieure à 20 m, ou situées entre 180 et 2100 Hz (± 1 %) pour un navire de longueur inférieure à 20 m, et fournissant les niveaux de pression acoustique spécifiés au paragraphe 1c) ci-dessous."
-                },
-                {
-                    "indent": "_b",
-                    "text": "Limites des fréquences fondamentales"
-                },
-                {
-                    "indent": "_",
-                    "text": "Afin de garantir une grande variété dans les caractéristiques des sifflets, la fréquence fondamentale d’un sifflet doit être comprise entre les limites suivantes:"
-                },
-                {
-                    "indent": "__i",
-                    "text": "entre 70 et 200 Hz à bord d’un navire de longueur égale ou supérieure à 200 mètres;"
-                },
-                {
-                    "indent": "__ii",
-                    "text": "entre 130 et 350 Hz à bord d’un navire de longueur égale ou supérieure à 75 mètres, mais inférieure à 200 mètres;"
-                },
-                {
-                    "indent": "__iii",
-                    "text": "entre 250 et 700 Hz à bord d’un navire de longueur inférieure a 75 mètres."
-                },
-                {
-                    "indent": "_c",
-                    "text": "Intensité du signal et portée sonore"
-                },
-                {
-                    "indent": "_",
-                    "text": "Un sifflet installé à bord d’un navire doit assurer, dans la direction de son intensité maximale, à une distance de 1m et dans au moins une bande d’un tiers d’octave située dans la gamme de fréquences 180 - 700 Hz (±1 %) pour un navire de longueur égale ou supérieure à 20 m, ou 180 - 2 100 Hz (± 1 %) pour un navire de longueur inférieure à 20 m, un niveau de pression acoustique au moins égal à la valeur appropriée du tableau ci-après."
-                },
-                {
-                    "indent": "",
-                    "text": "octave.png"
-                },
-                {
-                    "indent": "_",
-                    "text": "La portée sonore a été indiquée dans ce tableau à titre d’information. Elle correspond approximativement à la distance à laquelle un sifflet peut être entendu sur son axe avant avec une probabilité de 90 p. 100 en air calme, à bord d’un navire où le niveau du bruit de fond aux postes d’écoute est moyen (soit 68 dB dans la bande d’octave centrée sur la fréquence 250 Hz et à 63 dB dans la bande d’octave centrée sur 500 Hz)."
-                },
-                {
-                    "indent": "_",
-                    "text": "Dans la pratique, la distance à laquelle un sifflet peut être entendu est très variable et dépend beaucoup des conditions météorologiques. Les valeurs indiquées peuvent être considérées comme caractéristiques mais, en cas de vent violent ou lorsque le niveau du bruit aux postes d’écoutes est élevé, la portée sonore peut être réduite."
-                },
-                {
-                    "indent": "_d",
-                    "text": "Caractéristiques directionnelles"
-                },
-                {
-                    "indent": "_",
-                    "text": "Dans toutes directions du plan horizontal comprises dans un secteur de ± 45 degrés par rapport à l’axe, le niveau de pression acoustique d’un sifflet directionnel ne doit pas être inférieur de plus de 4 dB au niveau de pression acoustique prescrit sur l’axe. Dans toute autre direction du plan horizontal, le niveau de pression acoustique ne doit pas être inférieur de plus de 10 dB au niveau de la pression acoustique prescrit sur l’axe, de manière que la portée dans toute direction soit égale à la moitié au moins de la portée sur l’axe. Le niveau de pression acoustique doit être mesuré dans la bande d’un tiers d’octave qui produit la portée.."
-                },
-                {
-                    "indent": "_e",
-                    "text": "Emplacements des sifflets"
-                },
-                {
-                    "indent": "_",
-                    "text": "Lorsqu’un sifflet directionnel est utilisé comme sifflet unique à bord d’un navire, il doit être installé de manière à produire son intensité maximale vers l’avant du navire."
-                },
-                {
-                    "indent": "_",
-                    "text": "Les sifflets doivent être placés aussi haut que possible à bord du navire pour réduire l’interception, par des obstacles, des sons émis et pour réduire le plus possible les risques de troubles de l’ouïe chez les membres de l’équipage. Le niveau de pression acoustique du propre signal du navire ne doit pas dépasser 110 dB (A) aux postes d’écoute et ne devrait pas, autant que possible, dépasser 100 dB (A)."
-                },
-                {
-                    "indent": "_f",
-                    "text": "Installation de plusieurs sifflets"
-                },
-                {
-                    "indent": "_",
-                    "text": "Si des sifflets sont installés à plus de 100 mètres les uns des autres, ils doivent être montés de manière à ne pas être actionnés simultanément."
-                },
-                {
-                    "indent": "_g",
-                    "text": "Ensemble de sifflets"
-                },
-                {
-                    "indent": "_",
-                    "text": "Si, en raison de la présence d’obstacles, le champ acoustique d’un seul sifflet ou de l’un des sifflets mentionnés au paragraphe f) ci-dessus risque de présenter une zone où le niveau acoustique du signal est sensiblement réduit, il est recommandé d’utiliser un ensemble de sifflets installés de manière à éviter cette réduction du niveau acoustique. Aux fins des Règles, un ensemble de sifflets est considéré comme un sifflet unique. Les sifflets d’un tel ensemble ne doivent pas être situés à plus de 100 mètres les uns des autres et doivent être montés de manière à pouvoir être actionnés simultanément. Leurs fréquences doivent différer les unes des autres d’au moins 10 Hz."
-                },
-                {
-                    "indent": "2",
-                    "text": "**Cloche ou gong**"
-                },
-                {
-                    "indent": "_a",
-                    "text": "Intensité du signal"
-                },
-                {
-                    "indent": "_",
-                    "text": "Une cloche, un gong ou tout autre dispositif ayant des caractéristiques acoustiques semblables doivent assurer un niveau de pression acoustique d’au moins 110 dB à une distance de un mètre de ce matériel."
-                },
-                {
-                    "indent": "_b",
-                    "text": "Construction"
-                },
-                {
-                    "indent": "_",
-                    "text": "Les cloches et les gongs doivent être construits en un matériau résistant à la corrosion et conçus de manière à émettre un son clair. Le diamètre de l’ouverture de la cloche ne doit pas être inférieur à 300 mm pour les navires de longueur égale ou supérieure à 20 m. Lorsque cela est possible, il est recommandé d’installer un battant de cloche à commande mécanique, de manière à garantir une force d’impact constante, mais il doit être possible de l’actionner à la main. La masse du battant ne doit pas être inférieure à 3% de celle de la cloche."
-                },
-                {
-                    "indent": "3",
-                    "text": "**Agrément**"
-                },
-                {
-                    "indent": "",
-                    "text": "La construction et le fonctionnement du matériel de signalisation sonore ainsi que son installation à bord du navire doivent être jugés satisfaisants par l’autorité compétente de l’État dont le navire est autorisé à battre pavillon."
-                }
+            "sections": [
+                    {
+                        "id": "1",
+                        "title": "Caracteristiques techniques du matériel de signalisation sonore",
+                        "rules": [
+                            {
+                                "id": "1",
+                                "title": "Sifflets",
+                                "content": [
+                                    {
+                                        "indent": "a",
+                                        "text": "Fréquence et portée sonore"
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "La fréquence fondamentale du signal doit être comprise entre 70 et 700 Hz. La portée sonore du signal d’un sifflet est déterminée par ces fréquences, qui peuvent comprendre la fréquence fondamentale et/ou une ou plusieurs fréquences plus élevées, situées entre 180 et 700 Hz (±1 %) pour un navire de longueur égale ou supérieure à 20 m, ou situées entre 180 et 2100 Hz (± 1 %) pour un navire de longueur inférieure à 20 m, et fournissant les niveaux de pression acoustique spécifiés au paragraphe 1c) ci-dessous."
+                                    },
+                                    {
+                                        "indent": "b",
+                                        "text": "Limites des fréquences fondamentales"
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "Afin de garantir une grande variété dans les caractéristiques des sifflets, la fréquence fondamentale d’un sifflet doit être comprise entre les limites suivantes:"
+                                    },
+                                    {
+                                        "indent": "_i",
+                                        "text": "entre 70 et 200 Hz à bord d’un navire de longueur égale ou supérieure à 200 mètres;"
+                                    },
+                                    {
+                                        "indent": "_ii",
+                                        "text": "entre 130 et 350 Hz à bord d’un navire de longueur égale ou supérieure à 75 mètres, mais inférieure à 200 mètres;"
+                                    },
+                                    {
+                                        "indent": "_iii",
+                                        "text": "entre 250 et 700 Hz à bord d’un navire de longueur inférieure a 75 mètres."
+                                    },
+                                    {
+                                        "indent": "c",
+                                        "text": "Intensité du signal et portée sonore"
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "Un sifflet installé à bord d’un navire doit assurer, dans la direction de son intensité maximale, à une distance de 1m et dans au moins une bande d’un tiers d’octave située dans la gamme de fréquences 180 - 700 Hz (±1 %) pour un navire de longueur égale ou supérieure à 20 m, ou 180 - 2 100 Hz (± 1 %) pour un navire de longueur inférieure à 20 m, un niveau de pression acoustique au moins égal à la valeur appropriée du tableau ci-après."
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "octave.png"
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "La portée sonore a été indiquée dans ce tableau à titre d’information. Elle correspond approximativement à la distance à laquelle un sifflet peut être entendu sur son axe avant avec une probabilité de 90 p. 100 en air calme, à bord d’un navire où le niveau du bruit de fond aux postes d’écoute est moyen (soit 68 dB dans la bande d’octave centrée sur la fréquence 250 Hz et à 63 dB dans la bande d’octave centrée sur 500 Hz)."
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "Dans la pratique, la distance à laquelle un sifflet peut être entendu est très variable et dépend beaucoup des conditions météorologiques. Les valeurs indiquées peuvent être considérées comme caractéristiques mais, en cas de vent violent ou lorsque le niveau du bruit aux postes d’écoutes est élevé, la portée sonore peut être réduite."
+                                    },
+                                    {
+                                        "indent": "d",
+                                        "text": "Caractéristiques directionnelles"
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "Dans toutes directions du plan horizontal comprises dans un secteur de ± 45 degrés par rapport à l’axe, le niveau de pression acoustique d’un sifflet directionnel ne doit pas être inférieur de plus de 4 dB au niveau de pression acoustique prescrit sur l’axe. Dans toute autre direction du plan horizontal, le niveau de pression acoustique ne doit pas être inférieur de plus de 10 dB au niveau de la pression acoustique prescrit sur l’axe, de manière que la portée dans toute direction soit égale à la moitié au moins de la portée sur l’axe. Le niveau de pression acoustique doit être mesuré dans la bande d’un tiers d’octave qui produit la portée.."
+                                    },
+                                    {
+                                        "indent": "e",
+                                        "text": "Emplacements des sifflets"
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "Lorsqu’un sifflet directionnel est utilisé comme sifflet unique à bord d’un navire, il doit être installé de manière à produire son intensité maximale vers l’avant du navire."
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "Les sifflets doivent être placés aussi haut que possible à bord du navire pour réduire l’interception, par des obstacles, des sons émis et pour réduire le plus possible les risques de troubles de l’ouïe chez les membres de l’équipage. Le niveau de pression acoustique du propre signal du navire ne doit pas dépasser 110 dB (A) aux postes d’écoute et ne devrait pas, autant que possible, dépasser 100 dB (A)."
+                                    },
+                                    {
+                                        "indent": "f",
+                                        "text": "Installation de plusieurs sifflets"
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "Si des sifflets sont installés à plus de 100 mètres les uns des autres, ils doivent être montés de manière à ne pas être actionnés simultanément."
+                                    },
+                                    {
+                                        "indent": "g",
+                                        "text": "Ensemble de sifflets"
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "Si, en raison de la présence d’obstacles, le champ acoustique d’un seul sifflet ou de l’un des sifflets mentionnés au paragraphe f) ci-dessus risque de présenter une zone où le niveau acoustique du signal est sensiblement réduit, il est recommandé d’utiliser un ensemble de sifflets installés de manière à éviter cette réduction du niveau acoustique. Aux fins des Règles, un ensemble de sifflets est considéré comme un sifflet unique. Les sifflets d’un tel ensemble ne doivent pas être situés à plus de 100 mètres les uns des autres et doivent être montés de manière à pouvoir être actionnés simultanément. Leurs fréquences doivent différer les unes des autres d’au moins 10 Hz."
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "2",
+                                "title": "Cloche ou gong",
+                                "content": [
+                                    {
+                                        "indent": "a",
+                                        "text": "Intensité du signal"
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "Une cloche, un gong ou tout autre dispositif ayant des caractéristiques acoustiques semblables doivent assurer un niveau de pression acoustique d’au moins 110 dB à une distance de un mètre de ce matériel."
+                                    },
+                                    {
+                                        "indent": "b",
+                                        "text": "Construction"
+                                    },
+                                    {
+                                        "indent": "",
+                                        "text": "Les cloches et les gongs doivent être construits en un matériau résistant à la corrosion et conçus de manière à émettre un son clair. Le diamètre de l’ouverture de la cloche ne doit pas être inférieur à 300 mm pour les navires de longueur égale ou supérieure à 20 m. Lorsque cela est possible, il est recommandé d’installer un battant de cloche à commande mécanique, de manière à garantir une force d’impact constante, mais il doit être possible de l’actionner à la main. La masse du battant ne doit pas être inférieure à 3% de celle de la cloche."
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "3",
+                                "title": "Agrément",
+                                "content": [
+                                    {
+                                        "indent": "",
+                                        "text": "La construction et le fonctionnement du matériel de signalisation sonore ainsi que son installation à bord du navire doivent être jugés satisfaisants par l’autorité compétente de l’État dont le navire est autorisé à battre pavillon."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
             ]
         },
         {
             "id": "4",
             "title": "Annexe IV",
-            "subtitle": "Signaux de détresse",
-            "content": [
+            "sections": [
                 {
-                    "indent": "1",
-                    "text": "Les signaux suivants, utilisés ou montrés ensemble ou séparément, indiquent la détresse et le besoin d’assistance:"
-                },
-                {
-                    "indent": "_a",
-                    "text": "coup de canon ou autres signaux explosifs tirés à des intervalles d’une minute environ;"
-                },
-                {
-                    "indent": "_b",
-                    "text": "son continu produit par un appareil quelconque pour signaux de brume;"
-                },
-                {
-                    "indent": "_c",
-                    "text": "fusées ou bombes projetant des étoiles rouges lancées une à une à de courts intervalles;"
-                },
-                {
-                    "indent": "_d",
-                    "text": "signal émis par tout système de signalisation, constitué par le groupe …___… (SOS) du code Morse;"
-                },
-                {
-                    "indent": "_e",
-                    "text": "signal radiotéléphonique constitué par le mot **«MAYDAY»**;"
-                },
-                {
-                    "indent": "_f",
-                    "text": "signal de détresse NC du Code international de signaux;"
-                },
-                {
-                    "indent": "_g",
-                    "text": "signal constitué par un pavillon carré avec une boule ou un objet analogue au-dessus ou en dessous;"
-                },
-                {
-                    "indent": "_h",
-                    "text": "flammes sur le navire (telles qu’on peut en produire en brûlant un baril de goudron, un baril d’huile, etc.);"
-                },
-                {
-                    "indent": "_i",
-                    "text": "fusée à parachute ou feu à main produisant une lumière rouge;"
-                },
-                {
-                    "indent": "_j",
-                    "text": "signal fumigène produisant une fumée de couleur orange;"
-                },
-                {
-                    "indent": "_k",
-                    "text": "battements lents et répétés des bras étendus de chaque côté;"
-                },
-                {
-                    "indent": "_l",
-                    "text": "alerte de détresse émise par appel sélectif numérique (ASN) sur:"
-                },
-                {
-                    "indent": "__i",
-                    "text": "la voie 70 en ondes métriques, ou"
-                },
-                {
-                    "indent": "__ii",
-                    "text": "les fréquences 2187,5 kHz, 8414,5 kHz, 4207,5 kHz, 6312 kHz, 12577 kHz ou 16804,5 kHz en ondes hectométriques/décamétriques."
-                },
-                {
-                    "indent": "_m",
-                    "text": "alerte de détresse dans le sens navire-côtière émise par la station terrienne Inmarsat ou d’un autre prestataire de services mobiles par satellite du navire;"
-                },
-                {
-                    "indent": "_n",
-                    "text": "signaux émis par les radiobalises de localisation des sinistres;"
-                },
-                {
-                    "indent": "_o",
-                    "text": "signaux approuvés émis par des systèmes de radiocommunications, y compris les (r)épondeurs radar pour embarcations et radeaux de sauvetage."
-                },
-                {
-                    "indent": "2",
-                    "text": "Est interdit l’usage de l’un quelconque des signaux ci-dessus, sauf dans le but d’indiquer un cas de détresse ou un besoin d’assistance, ainsi que l’usage d’autres signaux susceptibles d’être confondus avec l’un des signaux ci-dessus."
-                },
-                {
-                    "indent": "3",
-                    "text": "Il convient de prêter attention aux chapitres pertinents du Code international de signaux, au Manuel international de recherche et de sauvetage aéronautiques et maritimes (volume III) et aux signaux suivants:"
-                },
-                {
-                    "indent": "_a",
-                    "text": "morceau de toile de couleur orange soit avec un carré et un cercle de couleur noire soit avec un autre symbole approprié (pour repérage aérien);"
-                },
-                {
-                    "indent": "_b",
-                    "text": "colorant."
+                    "id": "1",
+                    "title": "Signaux de détresse",
+                    "rules": [
+                        {
+                            "id": "1",
+                            "title": "Signaux de détresse",
+                            "content": [
+                                {
+                                    "indent": "p",
+                                    "text": "Les signaux suivants, utilisés ou montrés ensemble ou séparément, indiquent la détresse et le besoin d’assistance:"
+                                },
+                                {
+                                    "indent": "a",
+                                    "text": "coup de canon ou autres signaux explosifs tirés à des intervalles d’une minute environ;"
+                                },
+                                {
+                                    "indent": "b",
+                                    "text": "son continu produit par un appareil quelconque pour signaux de brume;"
+                                },
+                                {
+                                    "indent": "c",
+                                    "text": "fusées ou bombes projetant des étoiles rouges lancées une à une à de courts intervalles;"
+                                },
+                                {
+                                    "indent": "d",
+                                    "text": "signal émis par tout système de signalisation, constitué par le groupe …___… (SOS) du code Morse;"
+                                },
+                                {
+                                    "indent": "e",
+                                    "text": "signal radiotéléphonique constitué par le mot **«MAYDAY»**;"
+                                },
+                                {
+                                    "indent": "f",
+                                    "text": "signal de détresse NC du Code international de signaux;"
+                                },
+                                {
+                                    "indent": "g",
+                                    "text": "signal constitué par un pavillon carré avec une boule ou un objet analogue au-dessus ou en dessous;"
+                                },
+                                {
+                                    "indent": "h",
+                                    "text": "flammes sur le navire (telles qu’on peut en produire en brûlant un baril de goudron, un baril d’huile, etc.);"
+                                },
+                                {
+                                    "indent": "i",
+                                    "text": "fusée à parachute ou feu à main produisant une lumière rouge;"
+                                },
+                                {
+                                    "indent": "j",
+                                    "text": "signal fumigène produisant une fumée de couleur orange;"
+                                },
+                                {
+                                    "indent": "k",
+                                    "text": "battements lents et répétés des bras étendus de chaque côté;"
+                                },
+                                {
+                                    "indent": "l",
+                                    "text": "alerte de détresse émise par appel sélectif numérique (ASN) sur:"
+                                },
+                                {
+                                    "indent": "_i",
+                                    "text": "la voie 70 en ondes métriques, ou"
+                                },
+                                {
+                                    "indent": "_ii",
+                                    "text": "les fréquences 2187,5 kHz, 8414,5 kHz, 4207,5 kHz, 6312 kHz, 12577 kHz ou 16804,5 kHz en ondes hectométriques/décamétriques."
+                                },
+                                {
+                                    "indent": "m",
+                                    "text": "alerte de détresse dans le sens navire-côtière émise par la station terrienne Inmarsat ou d’un autre prestataire de services mobiles par satellite du navire;"
+                                },
+                                {
+                                    "indent": "n",
+                                    "text": "signaux émis par les radiobalises de localisation des sinistres;"
+                                },
+                                {
+                                    "indent": "o",
+                                    "text": "signaux approuvés émis par des systèmes de radiocommunications, y compris les (r)épondeurs radar pour embarcations et radeaux de sauvetage."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "2",
+                            "title": "Est interdit ...",
+                            "content": [
+                                {
+                                    "indent": "p",
+                                    "text": "Est interdit l’usage de l’un quelconque des signaux ci-dessus, sauf dans le but d’indiquer un cas de détresse ou un besoin d’assistance, ainsi que l’usage d’autres signaux susceptibles d’être confondus avec l’un des signaux ci-dessus."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "3",
+                            "title": "Interco, Iamsar",
+                            "content": [
+                                {
+                                    "indent": "",
+                                    "text": "Il convient de prêter attention aux chapitres pertinents du Code international de signaux, au Manuel international de recherche et de sauvetage aéronautiques et maritimes (volume III) et aux signaux suivants:"
+                                },
+                                {
+                                    "indent": "_a",
+                                    "text": "morceau de toile de couleur orange soit avec un carré et un cercle de couleur noire soit avec un autre symbole approprié (pour repérage aérien);"
+                                },
+                                {
+                                    "indent": "_b",
+                                    "text": "colorant."
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         }
     ]
-
 }

@@ -10,9 +10,9 @@ import Foundation
 final class AppViewModel: ObservableObject {
     
     @Published var colregs: ColregsModel?
-    @Published var annexesEn: AnnexesModel?
+    @Published var annexesEn: ColregsModel?
     @Published var ripam: RipamModel?
-    @Published var annexesFr: AnnexesModel?
+    @Published var annexesFr: RipamModel?
 
     let jsonFileName = "colregs"
     let annexEnFileName = "annexes_en"
@@ -33,21 +33,29 @@ final class AppViewModel: ObservableObject {
     /// Load Json file when the main screen appears
     
     func fetchData() {
+        
+        // En COLREGS
+        
         if let colregsJsonData = readLocalJSONFile(forName: jsonFileName),
-           let colregs = parseColregsData(jsonData: colregsJsonData){
+           let colregs = parseColregsData(jsonData: colregsJsonData) {
             self.colregs = colregs
         }
+        
         if let annexJsonData = readLocalJSONFile(forName: annexEnFileName),
-           let annexes = parseAnnexesData(jsonData: annexJsonData){
+           let annexes = parseColregsData(jsonData: annexJsonData) {
             self.annexesEn = annexes
         }
+        
+        // French RIPAM
+        
         if let ripamJsonData = readLocalJSONFile(forName: ripamFileName),
-           let ripam = parseRipamData(jsonData: ripamJsonData){
+           let ripam = parseRipamData(jsonData: ripamJsonData) {
             self.ripam = ripam
         }
-        if let annexJsonData = readLocalJSONFile(forName: annexFrFileName),
-           let annexes = parseAnnexesData(jsonData: annexJsonData){
-            self.annexesFr = annexes
+        
+        if let annexFrJsonData = readLocalJSONFile(forName: annexFrFileName),
+           let annexesFr = parseRipamData(jsonData: annexFrJsonData) {
+            self.annexesFr = annexesFr
         }
     }
     

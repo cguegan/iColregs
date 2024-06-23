@@ -36,14 +36,13 @@ extension RipamView {
                         }
                     }
                 }
-                
             }
             
-            if let annexes = appVM.annexesFr?.annexes {
+            if let annexes = appVM.annexesFr?.ripam {
                 Section("Annexes") {
                     ForEach(annexes) { annex in
                         NavigationLink(annex.title) {
-                            AnnexView(annex: annex)
+                            annexListView(part: annex)
                         }
                     }
                 }
@@ -90,7 +89,7 @@ extension RipamView {
     
     func ruleCellView(_ rule: RuleModel) -> some View {
         NavigationLink {
-            RuleView(rule: rule)
+            RuleView(rule: rule, title: "Règle")
         } label: {
             HStack(alignment: .center) {
                 Image(systemName: "\(rule.id).square.fill")
@@ -105,16 +104,51 @@ extension RipamView {
     /// Annex cell View
     /// –––––––––––––
     
-    func annexCellView(_ annex: AnnexModel) -> some View {
+    func annexListView(part: PartModel) -> some View {
+        List {
+            ForEach(part.sections) { section in
+                
+                if section.title.isEmpty {
+                    Section {
+                        ForEach(section.rules) { rule in
+                            annexCellView(rule)
+                        }
+                    }
+                } else {
+                    Section {
+                        ForEach(section.rules) { rule in
+                            annexCellView(rule)
+                        }
+                    } header: {
+                        // Show title of section
+                        Text(section.title)
+                            .textCase(nil)
+                            .foregroundColor(.primary)
+                            .font(.title3)
+                            .bold()
+                        
+                    }
+                }
+            }
+        }
+        .navigationTitle(part.title)
+        .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    /// Annex cell View
+    /// –––––––––––
+    
+    func annexCellView(_ rule: RuleModel) -> some View {
         NavigationLink {
-            //AnnexView(annex: annex)
+            RuleView(rule: rule, title: "Partie")
         } label: {
-            HStack(alignment: .center) {
-                Image(systemName: "\(annex.id).square.fill")
+            HStack(alignment: .top) {
+                Image(systemName: "\(rule.id).square.fill")
                     .foregroundColor(Color.accentColor)
                     .font(.title)
                 
-                Text("\(annex.title)")
+                Text("\(rule.title)")
+                    .padding(.top, 4)
             }
         }
     }

@@ -10,6 +10,7 @@ import SwiftUI
 struct RuleView: View {
     
     let rule: RuleModel
+    let title: String
     
     var body: some View {
         ScrollView {
@@ -30,7 +31,7 @@ struct RuleView: View {
                     
                 }
             }
-            .navigationTitle("Rule \(rule.id)")
+            .navigationTitle("\(title) \(rule.id):")
             .padding(.horizontal)
         }
     }
@@ -52,6 +53,6 @@ struct RuleView: View {
         ]
     )
     return NavigationStack {
-        RuleView(rule: ruleModel)
+        RuleView(rule: ruleModel, title: "Rule")
     }
 }
