@@ -239,7 +239,7 @@
                                     "text": "L’intensité minimale des feux doit être calculée à l’aide de la formule:"
                                 },
                                 {
-                                    "indent": "__",
+                                    "indent": "",
                                     "text": "I = 3.43 x 10^6 x T x D^2 x K^–D"
                                 },
                                 {
@@ -272,7 +272,8 @@
                                 },
                                 {
                                     "indent": "",
-                                    "text": "rangeTable"
+                                    "text": "",
+                                    "image": "I(8)(b)"
                                 },
                                 {
                                     "indent": "Note:",
@@ -367,6 +368,11 @@
                                 {
                                     "indent": "b",
                                     "text": "A bord des engins à grande vitesse d’une longueur égale ou supérieure à 50 m, de la distance verticale requise entre le feu du mât avant et celui du mât principal, que le paragraphe 2) a) ii) de la présente annexe fixe à 4.5 m peut être modifiée à la condition que sa valeur ne soit pas inférieure à celle qui est déterminée en appliquant la formule suivante:"
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "",
+                                    "image": "I(13)(b)"
                                 },
                                 {
                                     "indent": "__",
@@ -529,7 +535,7 @@
                                     {
                                         "indent": "",
                                         "text": "",
-                                        "image": "octave"
+                                        "image": "III(1)(c)"
                                     },
                                     {
                                         "indent": "",

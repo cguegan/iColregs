@@ -721,6 +721,11 @@
                                 "text": "**”Sternlight”** means a white light placed as nearly as practicable at the stern showing an unbroken light over an arc of the horizon of 135 degrees and so fixed as to show the light 67.5 degrees from right aft on each side of the vessel."
                             },
                             {
+                                "indent": "",
+                                "text": "",
+                                "image": "C(21)(a)(b)(c)"
+                            },
+                            {
                                 "indent": "d",
                                 "text": "**”Towing light”** means a yellow light having the same characteristics as the **”sternlight”** defined in paragraph (c) of this Rule."
                             },
@@ -849,16 +854,46 @@
                                 "text": "a sternlight."
                             },
                             {
+                                "indent": "",
+                                "text": "",
+                                "image": "C(23)(a)_port"
+                            },
+                            {
+                                "indent": "",
+                                "text": "",
+                                "image": "C(23)(a)_stbd"
+                            },
+                            {
+                                "indent": "",
+                                "text": "",
+                                "image": "C(23)(a)_fwd"
+                            },
+                            {
                                 "indent": "b",
                                 "text": "An air-cushion vessel when operating in the non-displacement mode shall, in addition to the lights prescribed in paragraph (a) of this Rule, exhibit an all-round flashing yellow light."
+                            },
+                            {
+                                "indent": "",
+                                "text": "",
+                                "image": "C(23)(b)"
                             },
                             {
                                 "indent": "c",
                                 "text": "A WIG craft only when taking off, landing and in flight near the surface shall, in addition to the lights prescribed in paragraph (a) of this Rule, exhibit a high intensity all-round flashing red light."
                             },
                             {
+                                "indent": "",
+                                "text": "",
+                                "image": "C(23)(c)"
+                            },
+                            {
                                 "indent": "d_i",
                                 "text": "A power-driven vessel of less than 12 metres in length may in lieu of the lights prescribed in paragraph (a) of this Rule exhibit an all-round white light and sidelights;"
+                            },
+                            {
+                                "indent": "",
+                                "text": "",
+                                "image": "C(23)(d)"
                             },
                             {
                                 "indent": "_ii",
@@ -995,6 +1030,11 @@
                             {
                                 "indent": "_ii",
                                 "text": "a sternlight."
+                            },
+                            {
+                                "indent": "",
+                                "text": "",
+                                "image": "C(25)(a)"
                             },
                             {
                                 "indent": "b",

@@ -27,6 +27,8 @@ struct RuleView: View {
                         Image(image)
                             .resizable()
                             .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                            .shadow(color: .gray.opacity(0.2), radius: 10)
                             .padding(.horizontal)
                             .padding(.bottom)
                     } else {

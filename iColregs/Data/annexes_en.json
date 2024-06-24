@@ -239,7 +239,7 @@
                                     "text": "The minimum luminous intensity of lights shall be calculated by using the formula:"
                                 },
                                 {
-                                    "indent": "____",
+                                    "indent": "",
                                     "text": "I = 3.43 x 10^6 x T x D^2 x K^–D"
                                 },
                                 {
@@ -268,7 +268,8 @@
                                 },
                                 {
                                     "indent": "",
-                                    "text": "rangeTable"
+                                    "text": "",
+                                    "image": "I(8)(b)"
                                 },
                                 {
                                     "indent": "Note:",
@@ -365,12 +366,17 @@
                                     "text": "On high sped craft of 50m or more in length, the vertical separation between foremast and minmast of 4.5m required in paragraph 2(a)(ii) of this annex may be modified provided that such distance shall not be less than the value determined by the following formula:"
                                 },
                                 {
+                                    "indent": "",
+                                    "text": "",
+                                    "image": "I(13)(b)"
+                                },
+                                {
                                     "indent": "__",
                                     "text": "where:"
                                 },
                                 {
                                     "indent": "___",
-                                    "text": "y is the height of the mainmast light above the foremast light in metres;"
+                                    "text": "y is the height of the main mast light above the foremast light in metres;"
                                 },
                                 {
                                     "indent": "___",
@@ -517,7 +523,7 @@
                                 {
                                     "indent": "",
                                     "text": "",
-                                    "image": "octave"
+                                    "image": "III(1)(c)"
                                 },
                                 {
                                     "indent": "",

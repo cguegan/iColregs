@@ -246,7 +246,7 @@
                                 },
                                 {
                                     "indent": "b",
-                                    "text": "S’il y a à bord un équipement radar en état de marche, on doit l’utiliser de façon appropriée en recourant, en particulier, au balayage à longue portée afin de déceler à l’avance un risque d’abordage, ainsi qu’au **« plotting »** radar ou à toute autre observation systématique équivalente des objets détectés."
+                                    "text": "S’il y a à bord un équipement radar en état de marche, on doit l’utiliser de façon appropriée en recourant, en particulier, au balayage à longue portée afin de déceler à l’avance un risque d’abordage, ainsi qu’au **«plotting»** radar ou à toute autre observation systématique équivalente des objets détectés."
                                 },
                                 {
                                     "indent": "c",
@@ -710,19 +710,24 @@
                             "content":[
                                 {
                                     "indent": "a",
-                                    "text": "L’expression **« feu de tête de mât »** désigne un feu blanc placé au-dessus de l’axe longitudinal du navire, projetant une lumière ininterrompue sur tout le parcours d’un arc d’horizon de 225 degrés et disposé de manière à projeter cette lumière depuis l’avant jusqu’à 22,5 degrés sur l’arrière du travers de chaque bord."
+                                    "text": "L’expression **«feu de tête de mât»** désigne un feu blanc placé au-dessus de l’axe longitudinal du navire, projetant une lumière ininterrompue sur tout le parcours d’un arc d’horizon de 225 degrés et disposé de manière à projeter cette lumière depuis l’avant jusqu’à 22,5 degrés sur l’arrière du travers de chaque bord."
                                 },
                                 {
                                     "indent": "b",
-                                    "text": "L’expression **« feu de côté »** désigne un feu vert placé à tribord et un feu rouge placé à bâbord, projetant chacun une lumière ininterrompue sur tout le parcours d’un arc d’horizon de 112,5 degrés et disposés de manière a projeter cette lumière depuis l’avant jusqu’à 22,5 degrés sur l’arrière du travers de leur côté respectif. A bord des navires de longueur inférieure à 20 mètres les feux de côté peuvent être combinés en un seul fanal placé dans l’axe longitudinal du navire."
+                                    "text": "L’expression **«feu de côté»** désigne un feu vert placé à tribord et un feu rouge placé à bâbord, projetant chacun une lumière ininterrompue sur tout le parcours d’un arc d’horizon de 112,5 degrés et disposés de manière a projeter cette lumière depuis l’avant jusqu’à 22,5 degrés sur l’arrière du travers de leur côté respectif. A bord des navires de longueur inférieure à 20 mètres les feux de côté peuvent être combinés en un seul fanal placé dans l’axe longitudinal du navire."
                                 },
                                 {
                                     "indent": "c",
-                                    "text": "L’expression **« feu de poupe »** désigne un feu blanc placé aussi près que possible de la poupe, projetant une lumière ininterrompue sur tout le parcours d’un arc d’horizon de 135 degrés et disposé de manière à projeter cette lumière sur un secteur de 67,5 degrés de chaque bord à partir de l’arrière."
+                                    "text": "L’expression **«feu de poupe»** désigne un feu blanc placé aussi près que possible de la poupe, projetant une lumière ininterrompue sur tout le parcours d’un arc d’horizon de 135 degrés et disposé de manière à projeter cette lumière sur un secteur de 67,5 degrés de chaque bord à partir de l’arrière."
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "",
+                                    "image": "C(21)(a)(b)(c)"
                                 },
                                 {
                                     "indent": "d",
-                                    "text": "L’expression **« feu de remorquage »** désigne un feu jaune ayant les mêmes caractéristiques que le feu de poupe défini au paragraphe c) de la présente règle."
+                                    "text": "L’expression **«feu de remorquage»** désigne un feu jaune ayant les mêmes caractéristiques que le feu de poupe défini au paragraphe c) de la présente règle."
                                 },
                                 {
                                     "indent": "e",
@@ -849,16 +854,46 @@
                                     "text": "un feu de poupe."
                                 },
                                 {
+                                    "indent": "",
+                                    "text": "",
+                                    "image": "C(23)(a)_port"
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "",
+                                    "image": "C(23)(a)_stbd"
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "",
+                                    "image": "C(23)(a)_fwd"
+                                },
+                                {
                                     "indent": "b",
                                     "text": "Un aéroglisseur exploité sans tirant d’eau doit, outre les feux prescrits au paragraphe (a) de la présente règle, montrer un feu jaune à éclats visible sur tout l’horizon."
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "",
+                                    "image": "C(23)(b)"
                                 },
                                 {
                                     "indent": "c",
                                     "text": "Lorsqu’il décolle, atterrit ou vole près de la surface, un navion doit montrer, outre les feux prescrits au paragraphe (a) de la présente règle, un feu rouge à éclats de fortes intensité, visible sur tout l’horizon."
                                 },
                                 {
+                                    "indent": "",
+                                    "text": "",
+                                    "image": "C(23)(c)"
+                                },
+                                {
                                     "indent": "d_i",
                                     "text": "Un navire à propulsion mécanique de longueur inférieure à 12 mètres peut, au lieu des feux prescrits au paragraphe a) de la présente règle, montrer un feu blanc visible sur tout l’horizon et des feux de côté."
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "",
+                                    "image": "C(23)(d)"
                                 },
                                 {
                                     "indent": "_ii",
@@ -995,6 +1030,11 @@
                                 {
                                     "indent": "_ii",
                                     "text": "un feu de poupe."
+                                },
+                                {
+                                    "indent": "",
+                                    "text": "",
+                                    "image": "C(25)(a)"
                                 },
                                 {
                                     "indent": "b",
