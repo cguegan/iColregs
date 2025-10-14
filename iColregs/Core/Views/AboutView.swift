@@ -33,7 +33,7 @@ struct AboutView: View {
                 
                 Text(
 """
-Christophe Guegan is qualified MCA Master 3000 (Professional captain), ISM DPA and iOS amateur programmer. This app has been made in the purpose of self-teaching SwiftUI© and iOS© programming.
+Christophe Guegan is a qualified MCA Master 3000 (professional captain), ISM DPA, and iOS amateur programmer. This app has been made for the purpose of self‑teaching SwiftUI© and iOS© programming.
 """
                 )
                     .padding(.bottom)
@@ -45,7 +45,7 @@ Christophe Guegan is qualified MCA Master 3000 (Professional captain), ISM DPA a
                 
                 Text(
 """
-This app is for sole purpose to help students of studying the "COLREGS" or "RIPAM" and should not be taken as a source of truth or as a legal requirement to have onboard the official text on a printed version.
+This app is for the sole purpose of helping students study the "COLREGS" or "RIPAM" and should not be taken as a source of truth or as a legal requirement to have on board the official text in a printed version.
 
 The author has endeavoured to make the information on this app as accurate as possible but cannot take responsibility for any errors or misinterpretation on the application of the rules leading to an accident. The prudent mariner should not rely on this app as a sole source of information.
 """
@@ -66,6 +66,8 @@ These do not include works of the Organization of American States, United Nation
 The UK version of the COLREGs is provided by the MCA, in the Merchant Shipping (Distress Signals and Prevention of Collisions) Regulations of 1996. They are distributed and accessed in the form of a "Merchant Shipping Notice" (MSN), which is used to convey mandatory information that must be complied with under UK legislation. These MSNs relate to Statutory Instruments and contain the technical detail of such regulations. Material published by the MCA is subject to Crown copyright protection, but the MCA allows it to be reproduced free of charge in any format or medium for research or private study, provided it is reproduced accurately and not used in a misleading context.
 
 Pour la version française, seule la version publiée au Journal Officiel de la république française fait foi. Les données de Légifrance sont mises à disposition pour une réutilisation gratuite comme disposé par l'Arrêté du 24 juin 2014 relatif à la gratuité de la réutilisation des bases de données juridiques de la direction de l'information légale et administrative.
+
+All pictures are originals from the author.
 """
                 )
                 
@@ -77,6 +79,7 @@ Pour la version française, seule la version publiée au Journal Officiel de la 
                     .frame(height: 350)
                 
                 Text("This application is made available to users, free of charge, generously sponsored by:")
+                    .frame(maxWidth: .infinity, alignment: .center)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal)
                 

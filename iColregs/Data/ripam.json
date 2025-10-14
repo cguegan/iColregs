@@ -11,7 +11,7 @@
                         {
                             "id": "1",
                             "title": "Champ d’application",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Les présentes Règles s’appliquent à tous les navires en haute mer et dans toutes les eaux attenantes accessibles aux navires de mer."
@@ -37,7 +37,7 @@
                         {
                             "id": "2",
                             "title": "Responsabilité",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Aucune disposition des présentes Règles ne saurait exonérer soit un navire, soit son propriétaire, son capitaine ou son équipage des conséquences d’une négligence quelconque quant à l’application des présentes Règles ou quant à toute précaution que commandent l’expérience ordinaire du marin ou les circonstances particulières dans lesquelles se trouve le navire."
@@ -51,7 +51,7 @@
                         {
                             "id": "3",
                             "title": "Définitions générales",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Aux fins des présentes Règles, sauf dispositions contraires résultant du contexte :"
@@ -307,7 +307,7 @@
                         {
                             "id": "9",
                             "title": "Chenaux étroits",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Les navires faisant route dans un chenal étroit ou une voie d’accès doivent, lorsque cela peut se faire sans danger, naviguer aussi près que possible de la limite extérieure droite du chenal ou de la voie d’accès."
@@ -429,7 +429,7 @@
                         {
                             "id": "11",
                             "title": "Application",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Les règles de la présente section s’appliquent aux navires qui sont en vue les uns des autres."
@@ -439,7 +439,7 @@
                         {
                             "id": "12",
                             "title": "Navires à voile",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Lorsque deux navires à voile s’approchent l’un de l’autre de manière à faire craindre un abordage, l’un d’eux doit s’écarter de la route de l’autre comme suit:"
@@ -465,7 +465,7 @@
                         {
                             "id": "13",
                             "title": "Navire qui en rattrape un autre",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Nonobstant toute disposition des règles des sections I et II de la partie B, tout navire qui en rattrape un autre doit s’écarter de la route de ce dernier."
@@ -487,7 +487,7 @@
                         {
                             "id": "14",
                             "title": "Navires qui font des routes directement opposées",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Lorsque deux navires à propulsion mécanique font des routes directement opposées ou à peu près opposées de telle sorte qu’il existe un risque d’abordage, chacun d’eux doit venir sur tribord pour passer par bâbord l’un de l’autre."
@@ -505,7 +505,7 @@
                         {
                             "id": "15",
                             "title": "Navires dont les routes se croisent",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Lorsque deux navires à propulsion mécanique font des routes qui se croisent de telle sorte qu’il existe un risque d’abordage, le navire qui voit l’autre navire sur tribord doit s’écarter de la route de celui-ci et, si les circonstances le permettent, éviter de croiser sa route sur l’avant."
@@ -515,7 +515,7 @@
                         {
                             "id": "16",
                             "title": "Manœuvre du navire non privilégié",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Tout navire qui est tenu de s’écarter de la route d’un autre navire doit, autant que possible, manœuvrer de bonne heure et franchement de manière à s’écarter largement."
@@ -525,7 +525,7 @@
                         {
                             "id": "17",
                             "title": "Manœuvre du navire privilégié",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a-i",
                                     "text": "Lorsqu’un navire est tenu de s’écarter de la route d’un autre navire, cet autre navire doit maintenir son cap et sa vitesse."
@@ -551,7 +551,7 @@
                         {
                             "id": "18",
                             "title": "Responsabilités réciproques des navires",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Sauf dispositions contraires des règles 9, 10 et 13:"
@@ -635,7 +635,7 @@
                         {
                             "id": "19",
                             "title": "Conduire des navires par visibilité réduite",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "La présente règle s’applique aux navires qui ne sont pas en vue les uns des autres et qui naviguent à l’intérieur ou à proximité de zones de visibilité réduite."
@@ -681,7 +681,7 @@
                         {
                             "id": "20",
                             "title": "Champ d’application",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Les règles de la présente partie doivent être observées par tous les temps."
@@ -707,7 +707,7 @@
                         {
                             "id": "21",
                             "title": "Définitions",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "L’expression **«feu de tête de mât»** désigne un feu blanc placé au-dessus de l’axe longitudinal du navire, projetant une lumière ininterrompue sur tout le parcours d’un arc d’horizon de 225 degrés et disposé de manière à projeter cette lumière depuis l’avant jusqu’à 22,5 degrés sur l’arrière du travers de chaque bord."
@@ -742,7 +742,7 @@
                         {
                             "id": "22",
                             "title": "Portée lumineuse des feux",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Les feux prescrits par les présentes Règles doivent avoir l’intensité spécifiée à la section 8 de l’annexe I du présent Règlement, de manière à être visibles aux distances minimales suivantes:"
@@ -832,7 +832,7 @@
                         {
                             "id": "23",
                             "title": "Navires à propulsion mécanique faisant route",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Un navire à propulsion mécanique faisant route doit montrer:"
@@ -908,7 +908,7 @@
                         {
                             "id": "24",
                             "title": "Remorquage et poussage",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Un navire à propulsion mécanique en train de remorquer doit montrer:"
@@ -1018,7 +1018,7 @@
                         {
                             "id": "25",
                             "title": "Navires à voile faisant route et navires à l’aviron",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Un navire à voile qui fait route doit montrer:"
@@ -1061,7 +1061,7 @@
                         {
                             "id": "26",
                             "title": "Navires de pêche",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Un navire en train de pêcher ne doit, lorsqu’il fait route ou lorsqu’il est au mouillage, montrer que les feux et marques prescrits par la présente règle."
@@ -1111,7 +1111,7 @@
                         {
                             "id": "27",
                             "title": "Navires qui ne sont pas maîtres de leur manœuvre et navires à capacité de manœuvre restreinte",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Un navire qui n’est pas maître de sa manœuvre doit montrer:"
@@ -1197,7 +1197,7 @@
                         {
                             "id": "28",
                             "title": "Vessels constrained by their draught",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Un navire handicapé par son tirant d’eau peut, outre les feux prescrits pour les navires à propulsion mécanique par la règle 23, montrer à l’endroit le plus visible trois feux rouges superposés visibles sur tout l’horizon ou une marque cylindrique."
@@ -1207,7 +1207,7 @@
                         {
                             "id": "29",
                             "title": "Bateaux-pilotes",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Un bateau-pilote en service de pilotage doit montrer:"
@@ -1233,7 +1233,7 @@
                         {
                             "id": "30",
                             "title": "Navires au mouillage et navires échoués",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Un navire au mouillage doit montrer à l’endroit le plus visible:"
@@ -1279,7 +1279,7 @@
                         {
                             "id": "31",
                             "title": "Hydravions",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Un hydravion ou un navion qui est dans l’impossibilité de montrer les feux et marques présentant les caractéristiques ou situés aux emplacements prescrits par les règles de la présente partie, doit montrer des feux et marques se rapprochant le plus possible de ceux prescrits par ces règles."
@@ -1297,11 +1297,11 @@
                 {
                     "id": "1",
                     "title": "",
-                    "rules":[
+                    "rules": [
                         {
                             "id": "32",
                             "title": "Définitions",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Le terme **«sifflet»** désigne tout appareil de signalisation sonore capable d’émettre les sons prescrits et conforme aux spécifications de l’annexe III du présent Règlement."
@@ -1319,7 +1319,7 @@
                         {
                             "id": "33",
                             "title": "Matériel de signalisation sonore",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Les navires de longueur égale ou supérieure à 12 m doivent être pourvus d’un sifflet, les navires de longueur égale ou supérieure à 20 m doivent être pourvus d’une cloche en sus d’un sifflet et les navires de longueur égale ou supérieure à 100 m doivent être en outre pourvus d’un gong dont le son et le timbre ne doivent pas pouvoir être confondus avec ceux de la cloche. Le sifflet, la cloche et le gong doivent satisfaire aux spécifications de l’Annexe III du présent Règlement. La cloche ou le gong, ou les deux, peuvent être remplacés par un autre matériel ayant respectivement les mêmes caractéristiques sonores, à condition qu’il soit toujours possible d’actionner manuellement les signaux prescrits."
@@ -1333,7 +1333,7 @@
                         {
                             "id": "34",
                             "title": "Signaux de manœuvre et signaux d’avertissement",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Lorsque des navires sont en vue les uns des autres, un navire à propulsion mécanique faisant route doit, lorsqu’il effectue des manœuvres autorisées ou prescrites par les présentes Règles, indiquer ces manœuvres par les signaux suivants, émis au sifflet:"
@@ -1419,7 +1419,7 @@
                         {
                             "id": "35",
                             "title": "Signaux sonores par visibilité réduite",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Tant de jour que de nuit, à l’intérieur ou à proximité d’une zone où la visibilité est réduite, les signaux prescrits par la présente règle doivent être utilisés comme suit:"
@@ -1473,7 +1473,7 @@
                         {
                             "id": "36",
                             "title": "Signals to attract attention",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Tout navire peut, s’il juge nécessaire d’appeler l’attention d’un autre navire, émettre des signaux lumineux ou sonores ne pouvant être confondus avec tout autre signal autorisé par l’une quelconque des présentes règles, ou bien orienter le faisceau de son projecteur en direction du danger qui menace un navire de façon telle que ce faisceau ne puisse gêner d’autres navires."
@@ -1487,7 +1487,7 @@
                         {
                             "id": "37",
                             "title": "Signaux de détresse",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Un navire qui est en détresse et demande assistance doit utiliser ou montrer les signaux décrits à l’annexe IV du présent Règlement."
@@ -1509,7 +1509,7 @@
                         {
                             "id": "38",
                             "title": "Exemptions",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Tout navire (ou catégorie de navires) qui satisfait aux prescriptions des Règles internationales de 1960 pour prévenir les abordages en mer et dont la quille est posée, ou qui se trouve à un stade de construction équivalent, avant l’entrée en vigueur du présent Règlement, peut bénéficier des exemptions suivantes qui s’appliquent audit Règlement:"
@@ -1567,7 +1567,7 @@
                         {
                             "id": "39",
                             "title": "Définitions",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Audit désigne un processus systématique, indépendant et dûment étayé qui vise à obtenir des preuves d’audit et à les analyser objectivement pour déterminer la mesure dans laquelle les critères d’audit sont remplis."
@@ -1589,7 +1589,7 @@
                         {
                             "id": "40",
                             "title": "Application",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "p",
                                     "text": "Les Gouvernements contractants utilisent les dispositions du Code d’application lorsqu’ils s’acquittent des devoirs et responsabilités qui leur incombent en vertu de la présente Convention."
@@ -1599,7 +1599,7 @@
                         {
                             "id": "41",
                             "title": "Vérification de la conformité",
-                            "content":[
+                            "content": [
                                 {
                                     "indent": "a",
                                     "text": "Toute Partie contractante fait l’objet d’audits périodiques qu’effectue l’Organisation conformément à la norme d’audit en vue de vérifier qu’elle respecte et applique les dispositions de la présente Convention."
