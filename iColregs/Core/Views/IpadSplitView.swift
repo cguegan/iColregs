@@ -11,6 +11,7 @@ struct IpadSplitView: View {
   
   @Environment(AppService.self) private var appService
   @State private var language: Language = .en
+  @State private var searchText: String = ""
   @State private var expandedParts: Set<String> = []
   @State private var expandedSections: [String: Set<String>] = [:]
   @AppStorage("IpadSplitView.expandedParts.en") private var storedExpandedPartsEN: String = "[]"
@@ -48,11 +49,64 @@ struct IpadSplitView: View {
                          parts: expandedParts,
                          sections: expandedSections)
       loadExpansionState(for: newValue)
+      searchText = ""
     }
   }
 }
 
 extension IpadSplitView {
+  
+  private var searchQuery: String? {
+    let trimmed = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+    return trimmed.isEmpty ? nil : trimmed
+  }
+  
+  private var ruleDetailTitle: String {
+    language == .en ? "Rule" : "Règle"
+  }
+  
+  private var articleDetailTitle: String {
+    "Article"
+  }
+  
+  private var searchPlaceholder: String {
+    language == .en ? "Search Colregs" : "Rechercher RIPAM"
+  }
+  
+  private var noResultsMessage: String {
+    language == .en ? "No matches found" : "Aucun résultat"
+  }
+  
+  private var rulesDataset: [PartModel] {
+    switch language {
+    case .en:
+      return appService.colregs?.colregs ?? []
+    case .fr:
+      return appService.ripam?.ripam ?? []
+    }
+  }
+  
+  private var annexDataset: [PartModel] {
+    switch language {
+    case .en:
+      return appService.annexesEn?.colregs ?? []
+    case .fr:
+      return appService.annexesFr?.ripam ?? []
+    }
+  }
+  
+  private var searchResults: [SearchResult] {
+    guard let query = searchQuery else { return [] }
+    var results = performSearch(in: rulesDataset,
+                                query: query,
+                                detailTitle: ruleDetailTitle,
+                                source: .rule)
+    results += performSearch(in: annexDataset,
+                             query: query,
+                             detailTitle: articleDetailTitle,
+                             source: .annex)
+    return results
+  }
   
   // MARK: - Sidebar Content Builders
   // ————————————————————————————————
@@ -60,16 +114,22 @@ extension IpadSplitView {
   @ViewBuilder
   private var sidebarList: some View {
     List {
-      switch language {
-      case .en:
-        englishColregsList
-      case .fr:
-        frenchRipamList
+      if let query = searchQuery {
+        searchResultsSection(query: query)
+      } else {
+        switch language {
+        case .en:
+          englishColregsList
+        case .fr:
+          frenchRipamList
+        }
       }
-      sidebarSeparator(title: language == .en ? "Information" : "Informations")
       aboutSection
     }
     .listStyle(.sidebar)
+    .searchable(text: $searchText,
+                placement: .sidebar,
+                prompt: Text(searchPlaceholder))
   }
   
   // MARK: - English Colregs List
@@ -117,6 +177,61 @@ extension IpadSplitView {
         sidebarSeparator(title: "Annexes")
         partList(for: annexes, ruleLabel: "Article")
       }
+    }
+  }
+  
+  @ViewBuilder
+  private func searchResultsSection(query: String) -> some View {
+    Section(language == .en ? "Results" : "Résultats") {
+      if searchResults.isEmpty {
+        Text(noResultsMessage)
+          .foregroundStyle(.secondary)
+      } else {
+        ForEach(searchResults) { result in
+          NavigationLink {
+            RuleView(rule: result.rule,
+                     title: result.detailTitle,
+                     highlightTerm: query)
+          } label: {
+            searchResultRow(result: result, query: query)
+          }
+        }
+      }
+    }
+  }
+  
+  @ViewBuilder
+  private func searchResultRow(result: SearchResult, query: String) -> some View {
+    HStack(alignment: .top, spacing: 12) {
+      Image(systemName: "\(result.rule.id).square.fill")
+        .font(.title3)
+        .foregroundStyle(result.source == .annex ? Color.orange : Color.accentColor)
+        .accessibilityHidden(true)
+        .padding(.top, 2)
+      VStack(alignment: .leading, spacing: 4) {
+        Text(result.displayTitle)
+          .font(.subheadline.weight(.semibold))
+          .foregroundStyle(.primary)
+          .lineLimit(2)
+        Text(result.contextDescription)
+          .font(.caption)
+          .foregroundStyle(.secondary)
+        highlightedText(result.snippet, query: query)
+          .font(.footnote)
+          .foregroundStyle(.secondary)
+        Text("\(result.matchCount) \(matchLabel(for: result.matchCount))")
+          .font(.caption2)
+          .foregroundStyle(.secondary)
+      }
+    }
+    .padding(.vertical, 6)
+  }
+  
+  private func matchLabel(for count: Int) -> String {
+    if language == .en {
+      return count == 1 ? "match" : "matches"
+    } else {
+      return count > 1 ? "occurrences" : "occurrence"
     }
   }
   
@@ -182,10 +297,12 @@ private extension IpadSplitView {
   ///
   @ViewBuilder
   var aboutSection: some View {
-    NavigationLink {
-      AboutView()
-    } label: {
-      Label("About iColregs", systemImage: "info.circle")
+    Section(language == .en ? "Information" : "Informations") {
+      NavigationLink {
+        AboutView()
+      } label: {
+        Label("About iColregs", systemImage: "info.circle")
+      }
     }
   }
   
@@ -205,9 +322,13 @@ private extension IpadSplitView {
   /// Rule Row View
   ///
   @ViewBuilder
-  func ruleRow(rule: RuleModel, detailTitle: String) -> some View {
+  func ruleRow(rule: RuleModel,
+               detailTitle: String,
+               highlightTerm: String? = nil) -> some View {
     NavigationLink {
-      RuleView(rule: rule, title: detailTitle )
+      RuleView(rule: rule,
+               title: detailTitle,
+               highlightTerm: highlightTerm)
     } label: {
       HStack(alignment: .firstTextBaseline, spacing: 8) {
         Image(systemName: "\(rule.id).square.fill")

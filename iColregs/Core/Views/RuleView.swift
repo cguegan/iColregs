@@ -11,6 +11,13 @@ struct RuleView: View {
   
   let rule: RuleModel
   let title: String
+  let highlightTerm: String?
+  
+  init(rule: RuleModel, title: String, highlightTerm: String? = nil) {
+    self.rule = rule
+    self.title = title
+    self.highlightTerm = highlightTerm?.trimmingCharacters(in: .whitespacesAndNewlines)
+  }
   
   var body: some View {
     ScrollView {
@@ -28,17 +35,21 @@ struct RuleView: View {
           } else {
             HStack(alignment: .top) {
               Text(content.levels)
-              Text(content.content)
+              highlightedText(content.text, query: trimmedHighlight)
             }
             .padding(.vertical, content.indent.contains("_") ? 1 : 8)
           }
         }
       }
       .padding(.top)
-      .navigationTitle("Rule \(rule.id): \(rule.title) ")
+      .navigationTitle("\(title) \(rule.id): \(rule.title)")
       .navigationBarTitleDisplayMode(.inline)
       .padding(.horizontal)
     }
+  }
+  
+  private var trimmedHighlight: String {
+    highlightTerm ?? ""
   }
 }
 
