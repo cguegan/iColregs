@@ -66,6 +66,8 @@ extension IpadSplitView {
       case .fr:
         frenchRipamList
       }
+      sidebarSeparator(title: language == .en ? "Information" : "Informations")
+      aboutSection
     }
     .listStyle(.sidebar)
   }
@@ -83,6 +85,7 @@ extension IpadSplitView {
         .foregroundStyle(.secondary)
     } else {
       if !rules.isEmpty {
+        sidebarSeparator(title: "Rules")
         partList(for: rules, ruleLabel: "Rule")
       }
       
@@ -106,6 +109,7 @@ extension IpadSplitView {
         .foregroundStyle(.secondary)
     } else {
       if !rules.isEmpty {
+        sidebarSeparator(title: "Règles")
         partList(for: rules, ruleLabel: "Règle")
       }
       
@@ -171,6 +175,17 @@ private extension IpadSplitView {
           }
         }
       }
+    }
+  }
+  
+  /// About Section
+  ///
+  @ViewBuilder
+  var aboutSection: some View {
+    NavigationLink {
+      AboutView()
+    } label: {
+      Label("About iColregs", systemImage: "info.circle")
     }
   }
   
@@ -315,6 +330,7 @@ private extension IpadSplitView {
     }
     return dictionary.mapValues { Set($0) }
   }
+  
 }
 
 #Preview {
