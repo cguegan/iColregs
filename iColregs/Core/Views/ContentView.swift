@@ -12,29 +12,12 @@ enum version: Codable {
   case ripam
 }
 
-enum device: Codable {
-  case iphone
-  case ipad
-}
-
 struct ContentView: View {
   
-  // Device idiom helpers
-  private var isPhone: Bool {
-    UIDevice.current.userInterfaceIdiom == .phone
-  }
+  // Device type
+  private var deviceType: DeviceIdiom { DeviceIdiomProvider.current() }
   
-  private var isPad: Bool {
-    UIDevice.current.userInterfaceIdiom == .pad
-  }
-
-  private var deviceType: device {
-    if isPhone {
-      return .iphone
-    } else {
-      return .ipad
-    }
-  }
+  // Main view body
   var body: some View {
     switch deviceType {
     case .ipad:
@@ -43,6 +26,7 @@ struct ContentView: View {
       PhoneTabView()
     }
   }
+  
 }
 
 

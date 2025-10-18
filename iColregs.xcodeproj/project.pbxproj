@@ -30,6 +30,7 @@
 		EFED4F652C270B4E00149FD9 /* Ripam.md in Resources */ = {isa = PBXBuildFile; fileRef = EFED4F632C270B4E00149FD9 /* Ripam.md */; };
 		EFED4F662C270B4E00149FD9 /* Colregs.md in Resources */ = {isa = PBXBuildFile; fileRef = EFED4F622C270B4E00149FD9 /* Colregs.md */; };
 		EFED4F6A2C276BCA00149FD9 /* annexes_fr.json in Resources */ = {isa = PBXBuildFile; fileRef = EFED4F692C276BCA00149FD9 /* annexes_fr.json */; };
+		EFED4F6C2C3B33BB00149FD9 /* DeviceIdiom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFED4F6B2C3B33BB00149FD9 /* DeviceIdiom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		EFED4F622C270B4E00149FD9 /* Colregs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Colregs.md; sourceTree = "<group>"; };
 		EFED4F632C270B4E00149FD9 /* Ripam.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Ripam.md; sourceTree = "<group>"; };
 		EFED4F692C276BCA00149FD9 /* annexes_fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = annexes_fr.json; sourceTree = "<group>"; };
+		EFED4F6B2C3B33BB00149FD9 /* DeviceIdiom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIdiom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				EF2C63D52C21B10900948AAA /* Models */,
 				EF2C63E32C21BEF200948AAA /* Services */,
 				EF2C63E02C21BED700948AAA /* Views */,
+				EFED4F6D2C3B33F200149FD9 /* Helpers */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -171,6 +174,14 @@
 				EF2C63E12C21BEEB00948AAA /* AppService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		EFED4F6D2C3B33F200149FD9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EFED4F6B2C3B33BB00149FD9 /* DeviceIdiom.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		EFED4F642C270B4E00149FD9 /* Original Texts */ = {
@@ -259,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2C63E22C21BEEB00948AAA /* AppService.swift in Sources */,
+				EFED4F6C2C3B33BB00149FD9 /* DeviceIdiom.swift in Sources */,
 				EF2C63E72C21D55C00948AAA /* ColregsView.swift in Sources */,
 				EF2C63C32C21AE2800948AAA /* ContentView.swift in Sources */,
 				EF5169A02C2427B700F0ED95 /* RipamModel.swift in Sources */,
@@ -408,7 +420,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_ASSET_PATHS = "\"iColregs/Preview Content\"";
 				DEVELOPMENT_TEAM = AFN965WVDV;
 				ENABLE_PREVIEWS = YES;
@@ -448,7 +460,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 12;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_ASSET_PATHS = "\"iColregs/Preview Content\"";
 				DEVELOPMENT_TEAM = AFN965WVDV;
 				ENABLE_PREVIEWS = YES;
