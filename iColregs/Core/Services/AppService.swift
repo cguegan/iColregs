@@ -1,11 +1,12 @@
 //
-//  ContentViewModel.swift
+//  AppService.swift
 //  iColregs
 //
 //  Created by Christophe Guégan on 18/06/2024.
 //
 
 import Foundation
+import Observation
 
 enum Language: String, Codable, CaseIterable, Identifiable {
   case en = "EN"
@@ -14,12 +15,13 @@ enum Language: String, Codable, CaseIterable, Identifiable {
   var id: String { self.rawValue }
 }
 
-final class AppViewModel: ObservableObject {
+@Observable
+final class AppService {
     
-    @Published var colregs: ColregsModel?
-    @Published var annexesEn: ColregsModel?
-    @Published var ripam: RipamModel?
-    @Published var annexesFr: RipamModel?
+    var colregs: ColregsModel?
+    var annexesEn: ColregsModel?
+    var ripam: RipamModel?
+    var annexesFr: RipamModel?
 
     let jsonFileName = "colregs"
     let annexEnFileName = "annexes_en"

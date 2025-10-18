@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RipamView: View {
     
-    @EnvironmentObject var appVM: AppViewModel    
+    @Environment(AppService.self) private var appService    
     @Environment(\.colorScheme) var cs
 
     
@@ -30,7 +30,7 @@ extension RipamView {
     @ViewBuilder
     var partListView: some View {
         List {
-            if let ripam = appVM.ripam?.ripam {
+            if let ripam = appService.ripam?.ripam {
                 Section("Règles") {
                     ForEach(ripam) { part in
                         NavigationLink(part.title) {
@@ -40,7 +40,7 @@ extension RipamView {
                 }
             }
             
-            if let annexes = appVM.annexesFr?.ripam {
+            if let annexes = appService.annexesFr?.ripam {
                 Section("Annexes") {
                     ForEach(annexes) { annex in
                         NavigationLink(annex.title) {
@@ -163,5 +163,5 @@ extension RipamView {
 // ————————————————
 #Preview {
     RipamView()
-        .environmentObject(AppViewModel())
+        .environment(AppService())
 }

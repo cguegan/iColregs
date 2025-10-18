@@ -9,8 +9,6 @@ import SwiftUI
 
 struct PhoneTabView: View {
   
-  @StateObject private var appVM = AppViewModel()
-
     var body: some View {
       TabView {
           ColregsView()
@@ -28,10 +26,10 @@ struct PhoneTabView: View {
                   Label("About", systemImage: "info.circle.fill")
               }
       }
-      .environmentObject(appVM)
     }
 }
 
 #Preview {
   PhoneTabView()
+    .environment(AppService())
 }

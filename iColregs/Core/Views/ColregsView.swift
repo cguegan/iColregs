@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ColregsView: View {
   
-  @EnvironmentObject var appVM: AppViewModel
+  @Environment(AppService.self) private var appService
   @Environment(\.colorScheme) var cs
   
   var body: some View {
@@ -32,7 +32,7 @@ extension ColregsView {
   @ViewBuilder
   var partListView: some View {
     List {
-      if let colregs = appVM.colregs?.colregs {
+      if let colregs = appService.colregs?.colregs {
         Section("Colregs") {
           ForEach(colregs) { part in
             NavigationLink(part.title) {
@@ -43,7 +43,7 @@ extension ColregsView {
         
       }
       
-      if let annexes = appVM.annexesEn?.colregs {
+      if let annexes = appService.annexesEn?.colregs {
         Section("Annexes") {
           ForEach(annexes) { annex in
             NavigationLink(annex.title) {
@@ -170,5 +170,5 @@ extension ColregsView {
 
 #Preview {
   ColregsView()
-    .environmentObject(AppViewModel())
+    .environment(AppService())
 }

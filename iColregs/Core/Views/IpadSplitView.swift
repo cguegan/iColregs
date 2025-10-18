@@ -9,7 +9,7 @@ import SwiftUI
 
 struct IpadSplitView: View {
   
-  @StateObject private var appVM = AppViewModel()
+  @Environment(AppService.self) private var appService
   @State private var language: Language = .en
   @State private var expandedParts: Set<String> = []
   @State private var expandedSections: [String: Set<String>] = [:]
@@ -40,7 +40,6 @@ struct IpadSplitView: View {
       Text("Select an option from the sidebar")
         .foregroundStyle(.secondary)
     }
-    .environmentObject(appVM)
     .onAppear {
       loadExpansionState(for: language)
     }
@@ -76,15 +75,14 @@ extension IpadSplitView {
   
   @ViewBuilder
   private var englishColregsList: some View {
-    let rules = appVM.colregs?.colregs ?? []
-    let annexes = appVM.annexesEn?.colregs ?? []
+    let rules = appService.colregs?.colregs ?? []
+    let annexes = appService.annexesEn?.colregs ?? []
     
     if rules.isEmpty && annexes.isEmpty {
       Text("Error…")
         .foregroundStyle(.secondary)
     } else {
       if !rules.isEmpty {
-        sidebarSeparator(title: "Rules")
         partList(for: rules, ruleLabel: "Rule")
       }
       
@@ -100,15 +98,14 @@ extension IpadSplitView {
   
   @ViewBuilder
   private var frenchRipamList: some View {
-    let rules = appVM.ripam?.ripam ?? []
-    let annexes = appVM.annexesFr?.ripam ?? []
+    let rules = appService.ripam?.ripam ?? []
+    let annexes = appService.annexesFr?.ripam ?? []
     
     if rules.isEmpty && annexes.isEmpty {
       Text("Erreur…")
         .foregroundStyle(.secondary)
     } else {
       if !rules.isEmpty {
-        sidebarSeparator(title: "Règles")
         partList(for: rules, ruleLabel: "Règle")
       }
       
@@ -322,4 +319,5 @@ private extension IpadSplitView {
 
 #Preview {
   IpadSplitView()
+    .environment(AppService())
 }

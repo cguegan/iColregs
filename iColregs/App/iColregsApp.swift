@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct iColregsApp: App {
+    @State private var appService = AppService()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(appService)
         }
     }
 }

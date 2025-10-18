@@ -35,9 +35,6 @@ struct ContentView: View {
       return .ipad
     }
   }
-  
-  @StateObject private var appVM = AppViewModel()
-  
   var body: some View {
     switch deviceType {
     case .ipad:
@@ -54,4 +51,5 @@ struct ContentView: View {
 
 #Preview {
   ContentView()
+    .environment(AppService())
 }
