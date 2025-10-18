@@ -48,7 +48,7 @@
                             }
                         ]
                     },
-                    {
+                    { 
                         "id": "3",
                         "title": "General definitions",
                         "content":[
@@ -291,7 +291,7 @@
                                 "text": "If necessary to avoid collision or allow more time to assess the situation, a vessel shall slacken her speed or take all way off by stopping or reversing her means of propulsion."
                             },
                             {
-                                "indent": "f-i",
+                                "indent": "f_i",
                                 "text": "A vessel which, by any of these Rules, is required not to impede the passage or safe passage of another vessel shall, when required by the circumstances of the case, take early action to allow sufficient sea-room for the safe passage of the other vessel."
                             },
                             {
@@ -371,7 +371,7 @@
                                 "text": "A vessel shall, so far as practicable, avoid crossing traffic lanes but if obliged to do so shall cross on a heading as nearly as practicable at right angles to the general direction of traffic flow."
                             },
                             {
-                                "indent": "d-i",
+                                "indent": "d_i",
                                 "text": "A vessel shall not use an inshore traffic zone when she can safely use the appropriate traffic lane within the adjacent traffic separation scheme. However, vessels of less than 20 metres in length, sailing vessels and vessels engaged in fishing may use the inshore traffic zone."
                             },
                             {
@@ -1535,6 +1535,80 @@
                 ]
             }
         ]
+    },
+    {
+      "id": "F",
+      "title": "Part F - Verification Of Compliance With The Provisions Of The Convention",
+      "sections": [
+        {
+          "id": "1",
+          "title": "",
+          "rules":[
+            {
+              "id": "39",
+              "title": "Definitions",
+              "content":[
+                {
+                  "indent": "a",
+                  "text": "**“Audit“** means a systematic, independent and documented process for obtaining audit evidence and evaluating it objectively to determine the extent to which audit criteria are fulfilled."
+                },
+                {
+                  "indent": "b",
+                  "text": "**“Audit Scheme“** means the IMO Member State Audit Scheme established by the Organization and taking into account the guidelines developed by the Organization"
+                },
+                {
+                  "indent": "c",
+                  "text": "**“Code for Implementation“** means the IMO Instruments Implementation Code (III Code) adopted by the Organization by resolution A.1070(28)."
+                },
+                {
+                  "indent": "d",
+                  "text": "**“Audit Standard“** means the Code for Implementation."
+                }
+              ]
+            },
+            {
+              "id": "40",
+              "title": "Application",
+              "content":[
+                {
+                  "indent": "p",
+                  "text": "Contracting Parties shall use the provisions of the Code for Implementation in the execution of their obligations and responsibilities contained in the present Convention."
+                }
+              ]
+            },
+            {
+              "id": "41",
+              "title": "Verification of compliance",
+              "content":[
+                {
+                  "indent": "a",
+                  "text": "Every Contracting Party shall be subject to periodic audits by the Organization in accordance with the audit standard to verify compliance with and implementation of the present Convention."
+                },
+                {
+                  "indent": "b",
+                  "text": "The Secretary-General of the Organization shall have responsibility for administering the Audit Scheme, based on the guidelines developed by the Organization."
+                },
+                {
+                  "indent": "c",
+                  "text": "Every Contracting Party shall have responsibility for facilitating the conduct of the audit and implementation of a programme of actions to address the findings, based on the guidelines developed by the Organization."
+                },
+                {
+                  "indent": "d",
+                  "text": "Audit of all Contracting Parties shall be:"
+                },
+                {
+                  "indent": "_i",
+                  "text": "based on an overall schedule developed by the Secretary-General of the Organization, taking into account the guidelines developed by the Organization; and"
+                },
+                {
+                  "indent": "_ii",
+                  "text": "conducted at periodic intervals, taking into account the guidelines developed by the Organization."
+                },
+              ]
+            }
+          ],
+        }
+      ]
     }
 ]
 }

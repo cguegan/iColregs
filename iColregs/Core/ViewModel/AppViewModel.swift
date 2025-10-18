@@ -7,6 +7,13 @@
 
 import Foundation
 
+enum Language: String, Codable, CaseIterable, Identifiable {
+  case en = "EN"
+  case fr = "FR"
+  
+  var id: String { self.rawValue }
+}
+
 final class AppViewModel: ObservableObject {
     
     @Published var colregs: ColregsModel?

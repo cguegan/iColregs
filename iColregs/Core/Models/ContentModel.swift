@@ -9,39 +9,42 @@ import Foundation
 import SwiftUI
 
 struct ContentModel: Identifiable, Decodable {
-    let indent: String
-    let text: String
-    let image: String?
+  let indent: String
+  let text: String
+  let image: String?
+  
+  /// Returns a unique identifier for the content item.
+  var id: String {
+    UUID().uuidString
+  }
+  
+  /// Returns the localized string key for the text content.
+  var content: LocalizedStringKey {
+    return LocalizedStringKey(text)
+  }
+  
+  /// Returns the levels of indentation based on the indent string.
+  var levels: String {
     
-    var id: String {
-        UUID().uuidString
+    var currentLevel = ""
+    
+    for level in indent.components(separatedBy: "_") {
+      // Paragraph
+      if level == "p" {
+        return ""
+        // Add
+      } else if level != "" && level != "•" {
+        currentLevel = currentLevel + "(\(level))\t"
+      } else if level == "•" {
+        // Add
+        currentLevel = currentLevel + "\(level)"
+      } else {
+        // Add tab if -
+        currentLevel = currentLevel + "\t"
+      }
     }
     
-    var content: LocalizedStringKey {
-        return LocalizedStringKey(text)
-    }
+    return currentLevel
     
-    var levels: String {
-        
-        var currentLevel = ""
-        
-        for level in indent.components(separatedBy: "_") {
-            // Paragraph
-            if level == "p" {
-                return ""
-            // Add
-            } else if level != "" && level != "•" {
-                currentLevel = currentLevel + "(\(level))\t"
-            } else if level == "•" {
-                // Add
-                currentLevel = currentLevel + "\(level)"
-            } else {
-                // Add tab if -
-                currentLevel = currentLevel + "\t"
-            }
-        }
-        
-        return currentLevel
-        
-    }
+  }
 }

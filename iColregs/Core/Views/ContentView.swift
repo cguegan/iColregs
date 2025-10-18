@@ -8,33 +8,44 @@
 import SwiftUI
 
 enum version: Codable {
-    case colregs
-    case ripam
+  case colregs
+  case ripam
+}
+
+enum device: Codable {
+  case iphone
+  case ipad
 }
 
 struct ContentView: View {
-    
-    @StateObject private var appVM = AppViewModel()
-    
-    var body: some View {
-        TabView {
-            ColregsView()
-                .tabItem {
-                    Label("Colregs", systemImage: "list.bullet.rectangle.portrait.fill")
-                }
-            
-            RipamView()
-                .tabItem {
-                    Label("Ripam", systemImage: "list.bullet.rectangle.portrait.fill")
-                }
-            
-            AboutView()
-                .tabItem {
-                    Label("About", systemImage: "info.circle.fill")
-                }
-        }
-        .environmentObject(appVM)
+  
+  // Device idiom helpers
+  private var isPhone: Bool {
+    UIDevice.current.userInterfaceIdiom == .phone
+  }
+  
+  private var isPad: Bool {
+    UIDevice.current.userInterfaceIdiom == .pad
+  }
+
+  private var deviceType: device {
+    if isPhone {
+      return .iphone
+    } else {
+      return .ipad
     }
+  }
+  
+  @StateObject private var appVM = AppViewModel()
+  
+  var body: some View {
+    switch deviceType {
+    case .ipad:
+      IpadSplitView()
+    case .iphone:
+      PhoneTabView()
+    }
+  }
 }
 
 
@@ -42,5 +53,5 @@ struct ContentView: View {
 // ————————————————
 
 #Preview {
-    ContentView()
+  ContentView()
 }
