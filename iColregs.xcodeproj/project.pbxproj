@@ -35,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D94590DCB8C74747B7377C66 /* SearchSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSupport.swift; sourceTree = "<group>"; };
 		EF1516472E9F846B00BB6FF5 /* PhoneTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTabView.swift; sourceTree = "<group>"; };
 		EF1516492E9F863D00BB6FF5 /* IpadSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadSplitView.swift; sourceTree = "<group>"; };
 		EF2C63BD2C21AE2800948AAA /* iColregs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iColregs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,7 +62,6 @@
 		EFED4F632C270B4E00149FD9 /* Ripam.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Ripam.md; sourceTree = "<group>"; };
 		EFED4F692C276BCA00149FD9 /* annexes_fr.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = annexes_fr.json; sourceTree = "<group>"; };
 		EFED4F6B2C3B33BB00149FD9 /* DeviceIdiom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceIdiom.swift; sourceTree = "<group>"; };
-		D94590DCB8C74747B7377C66 /* SearchSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchSupport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,15 +178,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		EFED4F6D2C3B33F200149FD9 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				EFED4F6B2C3B33BB00149FD9 /* DeviceIdiom.swift */,
-				D94590DCB8C74747B7377C66 /* SearchSupport.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		EFED4F642C270B4E00149FD9 /* Original Texts */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,6 +185,15 @@
 				EFED4F632C270B4E00149FD9 /* Ripam.md */,
 			);
 			path = "Original Texts";
+			sourceTree = "<group>";
+		};
+		EFED4F6D2C3B33F200149FD9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EFED4F6B2C3B33BB00149FD9 /* DeviceIdiom.swift */,
+				D94590DCB8C74747B7377C66 /* SearchSupport.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,7 +424,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"iColregs/Preview Content\"";
 				DEVELOPMENT_TEAM = AFN965WVDV;
 				ENABLE_PREVIEWS = YES;
@@ -464,7 +464,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 13;
+				CURRENT_PROJECT_VERSION = 14;
 				DEVELOPMENT_ASSET_PATHS = "\"iColregs/Preview Content\"";
 				DEVELOPMENT_TEAM = AFN965WVDV;
 				ENABLE_PREVIEWS = YES;

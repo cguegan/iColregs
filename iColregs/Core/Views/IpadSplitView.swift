@@ -9,18 +9,68 @@ import SwiftUI
 
 struct IpadSplitView: View {
   
+  /// Environment Properties
   @Environment(AppService.self) private var appService
+  
+  /// State Properties
   @State private var language: Language = .en
   @State private var searchText: String = ""
   @State private var expandedParts: Set<String> = []
   @State private var expandedSections: [String: Set<String>] = [:]
+  
+  /// Stored Properties
   @AppStorage("IpadSplitView.expandedParts.en") private var storedExpandedPartsEN: String = "[]"
   @AppStorage("IpadSplitView.expandedParts.fr") private var storedExpandedPartsFR: String = "[]"
   @AppStorage("IpadSplitView.expandedSections.en") private var storedExpandedSectionsEN: String = "{}"
   @AppStorage("IpadSplitView.expandedSections.fr") private var storedExpandedSectionsFR: String = "{}"
   
+  /// Computed Properties
+  private var searchQuery:        String? {
+    let trimmed = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+    return trimmed.isEmpty ? nil : trimmed
+  }
+  private var ruleDetailTitle:    String {
+    language == .en ? "Rule" : "Règle"
+  }
+  private var articleDetailTitle: String {
+    "Article"
+  }
+  private var searchPlaceholder:  String {
+    language == .en ? "Search Colregs" : "Rechercher RIPAM"
+  }
+  private var noResultsMessage:   String {
+    language == .en ? "No matches found" : "Aucun résultat"
+  }
+  private var rulesDataset:       [PartModel] {
+    switch language {
+    case .en:
+      return appService.colregs?.colregs ?? []
+    case .fr:
+      return appService.ripam?.ripam ?? []
+    }
+  }
+  private var annexDataset:       [PartModel] {
+    switch language {
+    case .en:
+      return appService.annexesEn?.colregs ?? []
+    case .fr:
+      return appService.annexesFr?.ripam ?? []
+    }
+  }
+  private var searchResults:      [SearchResult] {
+    guard let query = searchQuery else { return [] }
+    var results = performSearch(in: rulesDataset,
+                                query: query,
+                                detailTitle: ruleDetailTitle,
+                                source: .rule)
+    results += performSearch(in: annexDataset,
+                             query: query,
+                             detailTitle: articleDetailTitle,
+                             source: .annex)
+    return results
+  }
+  
   /// Main Body View
-  ///
   var body: some View {
     NavigationSplitView {
       // Picker
@@ -52,65 +102,17 @@ struct IpadSplitView: View {
       searchText = ""
     }
   }
+  
 }
 
+
+// MARK: - Sidebar Views
+// —————————————————————
+
 extension IpadSplitView {
-  
-  private var searchQuery: String? {
-    let trimmed = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
-    return trimmed.isEmpty ? nil : trimmed
-  }
-  
-  private var ruleDetailTitle: String {
-    language == .en ? "Rule" : "Règle"
-  }
-  
-  private var articleDetailTitle: String {
-    "Article"
-  }
-  
-  private var searchPlaceholder: String {
-    language == .en ? "Search Colregs" : "Rechercher RIPAM"
-  }
-  
-  private var noResultsMessage: String {
-    language == .en ? "No matches found" : "Aucun résultat"
-  }
-  
-  private var rulesDataset: [PartModel] {
-    switch language {
-    case .en:
-      return appService.colregs?.colregs ?? []
-    case .fr:
-      return appService.ripam?.ripam ?? []
-    }
-  }
-  
-  private var annexDataset: [PartModel] {
-    switch language {
-    case .en:
-      return appService.annexesEn?.colregs ?? []
-    case .fr:
-      return appService.annexesFr?.ripam ?? []
-    }
-  }
-  
-  private var searchResults: [SearchResult] {
-    guard let query = searchQuery else { return [] }
-    var results = performSearch(in: rulesDataset,
-                                query: query,
-                                detailTitle: ruleDetailTitle,
-                                source: .rule)
-    results += performSearch(in: annexDataset,
-                             query: query,
-                             detailTitle: articleDetailTitle,
-                             source: .annex)
-    return results
-  }
-  
-  // MARK: - Sidebar Content Builders
-  // ————————————————————————————————
-  
+
+  // MARK: - Sidebar List View
+  // —————————————————————————
   @ViewBuilder
   private var sidebarList: some View {
     List {
@@ -132,9 +134,9 @@ extension IpadSplitView {
                 prompt: Text(searchPlaceholder))
   }
   
+  
   // MARK: - English Colregs List
   // ———————————————————————————}
-  
   @ViewBuilder
   private var englishColregsList: some View {
     let rules = appService.colregs?.colregs ?? []
@@ -156,9 +158,9 @@ extension IpadSplitView {
     }
   }
   
+  
   // MARK: - French Ripam List
   // —————————————————————————
-  
   @ViewBuilder
   private var frenchRipamList: some View {
     let rules = appService.ripam?.ripam ?? []
@@ -180,6 +182,10 @@ extension IpadSplitView {
     }
   }
   
+  
+  // MARK: - Search Results Section
+  // ——————————————————————————————
+  
   @ViewBuilder
   private func searchResultsSection(query: String) -> some View {
     Section(language == .en ? "Results" : "Résultats") {
@@ -200,6 +206,10 @@ extension IpadSplitView {
     }
   }
   
+  
+  // MARK: - Search Result Row View
+  // ——————————————————————————————
+  
   @ViewBuilder
   private func searchResultRow(result: SearchResult, query: String) -> some View {
     HStack(alignment: .top, spacing: 12) {
@@ -216,7 +226,7 @@ extension IpadSplitView {
         Text(result.contextDescription)
           .font(.caption)
           .foregroundStyle(.secondary)
-        highlightedText(result.snippet, query: query)
+        markdownHighlightedText(result.snippet, query: query)
           .font(.footnote)
           .foregroundStyle(.secondary)
         Text("\(result.matchCount) \(matchLabel(for: result.matchCount))")
@@ -226,36 +236,11 @@ extension IpadSplitView {
     }
     .padding(.vertical, 6)
   }
-  
-  private func matchLabel(for count: Int) -> String {
-    if language == .en {
-      return count == 1 ? "match" : "matches"
-    } else {
-      return count > 1 ? "occurrences" : "occurrence"
-    }
-  }
-  
-}
 
-// MARK: - Helpers
-private extension IpadSplitView {
   
-  func bindingForSection(partID: String,
-                         sectionID: String) -> Binding<Bool> {
-    Binding(
-      get: {
-        expandedSections[partID, default: []].contains(sectionID)
-      },
-      set: { newValue in
-        updateSectionExpansion(partID: partID,
-                               sectionID: sectionID,
-                               isExpanded: newValue)
-      }
-    )
-  }
+  // MARK: - Part List View
+  // ——————————————————————
   
-  /// Part List View
-  ///
   @ViewBuilder
   func partList(for parts: [PartModel], ruleLabel: String) -> some View {
     ForEach(parts) { part in
@@ -293,8 +278,10 @@ private extension IpadSplitView {
     }
   }
   
-  /// About Section
-  ///
+  
+  // MARK: - About Section
+  // —————————————————————
+  
   @ViewBuilder
   var aboutSection: some View {
     Section(language == .en ? "Information" : "Informations") {
@@ -306,8 +293,10 @@ private extension IpadSplitView {
     }
   }
   
-  /// Sidebar Separator View
-  ///
+  
+  // MARK: - Sidebar Separator View
+  // ——————————————————————————————
+  
   @ViewBuilder
   func sidebarSeparator(title: String) -> some View {
     VStack(alignment: .leading, spacing: 5) {
@@ -318,8 +307,50 @@ private extension IpadSplitView {
       Divider()
     }
   }
+}
+
+
+// MARK: - Helpers
+private extension IpadSplitView {
+  
+  /// Match Label Helper
+  /// - Parameter count: The match count
+  /// - Returns: The appropriate label for the match count
+  ///
+  private func matchLabel(for count: Int) -> String {
+    if language == .en {
+      return count == 1 ? "match" : "matches"
+    } else {
+      return count > 1 ? "occurrences" : "occurrence"
+    }
+  }
+  
+  /// Section Expansion Binding
+  /// - Parameters:
+  ///   - partID: The part ID
+  ///   - sectionID: The section ID
+  /// - Returns: A Binding<Bool> for the section expansion state
+  ///
+  func bindingForSection(partID: String,
+                         sectionID: String) -> Binding<Bool> {
+    Binding(
+      get: {
+        expandedSections[partID, default: []].contains(sectionID)
+      },
+      set: { newValue in
+        updateSectionExpansion(partID: partID,
+                               sectionID: sectionID,
+                               isExpanded: newValue)
+      }
+    )
+  }
   
   /// Rule Row View
+  /// - Parameters:
+  ///  - rule: The rule model
+  ///  - detailTitle: The detail title
+  ///  - highlightTerm: The term to highlight
+  /// - Returns: A View for the rule row
   ///
   @ViewBuilder
   func ruleRow(rule: RuleModel,
@@ -341,7 +372,14 @@ private extension IpadSplitView {
     }
   }
   
-  func updatePartExpansion(partID: String, isExpanded: Bool) {
+  /// Expansion State Management
+  /// - Parameters:
+  ///  - partID: The part ID
+  ///  - isExpanded: The expansion state
+  /// - Returns: Void
+  ///
+  func updatePartExpansion( partID: String,
+                            isExpanded: Bool ) {
     if isExpanded {
       expandedParts.insert(partID)
     } else {
@@ -351,9 +389,16 @@ private extension IpadSplitView {
     persistCurrentExpansionState()
   }
   
-  func updateSectionExpansion(partID: String,
-                              sectionID: String,
-                              isExpanded: Bool) {
+  /// Expansion State Management
+  /// - Parameters:
+  ///  - partID: The part ID
+  ///  - sectionID: The section ID
+  ///  - isExpanded: The expansion state
+  /// - Returns: Void
+  ///
+  func updateSectionExpansion( partID: String,
+                               sectionID: String,
+                               isExpanded: Bool ) {
     var partSet = expandedSections[partID] ?? []
     if isExpanded {
       partSet.insert(sectionID)
@@ -364,24 +409,42 @@ private extension IpadSplitView {
     persistCurrentExpansionState()
   }
   
+  /// Persistence of Expansion State
+  /// - Returns: Void
+  ///
   func persistCurrentExpansionState() {
     saveExpansionState(for: language,
                        parts: expandedParts,
                        sections: expandedSections)
   }
   
+  /// Load Expansion State
+  /// - Parameter language: The current language
+  /// - Returns: Void
+  ///
   func loadExpansionState(for language: Language) {
     expandedParts = decodeSet(from: rawParts(for: language))
     expandedSections = decodeSections(from: rawSections(for: language))
   }
   
-  func saveExpansionState(for language: Language,
-                          parts: Set<String>,
-                          sections: [String: Set<String>]) {
+  /// Save Expansion State
+  /// - Parameters:
+  ///  - language: The current language
+  ///  - parts: The expanded parts
+  ///  - sections: The expanded sections
+  /// - Returns: Void
+  ///
+  func saveExpansionState( for language: Language,
+                           parts: Set<String>,
+                           sections: [String: Set<String>]) {
     setRawParts(encodeSet(parts), for: language)
     setRawSections(encodeSections(sections), for: language)
   }
   
+  /// Raw Parts Getter/Setter
+  /// - Parameter language: The current language
+  /// - Returns: The raw stored parts string
+  ///
   func rawParts(for language: Language) -> String {
     switch language {
     case .en:
@@ -391,7 +454,14 @@ private extension IpadSplitView {
     }
   }
   
-  func setRawParts(_ value: String, for language: Language) {
+  /// Raw Parts Setter
+  /// - Parameters:
+  ///  - value: The raw string value
+  ///  - language: The current language
+  /// - Returns: Void
+  ///
+  func setRawParts( _ value: String,
+                    for language: Language ) {
     switch language {
     case .en:
       storedExpandedPartsEN = value
@@ -400,6 +470,10 @@ private extension IpadSplitView {
     }
   }
   
+  /// Raw Sections Getter/Setter
+  /// - Parameter language: The current language
+  /// - Returns: The raw stored sections string
+  ///
   func rawSections(for language: Language) -> String {
     switch language {
     case .en:
@@ -409,7 +483,14 @@ private extension IpadSplitView {
     }
   }
   
-  func setRawSections(_ value: String, for language: Language) {
+  /// Raw Sections Setter
+  /// - Parameters:
+  ///  - value: The raw string value
+  ///  - language: The current language
+  /// - Returns: Void
+  ///
+  func setRawSections( _ value: String,
+                       for language: Language ) {
     switch language {
     case .en:
       storedExpandedSectionsEN = value
@@ -418,6 +499,10 @@ private extension IpadSplitView {
     }
   }
   
+  /// Encoding/Decoding Helpers
+  /// - Parameter set: The set to encode
+  /// - Returns: The encoded string
+  ///
   func encodeSet(_ set: Set<String>) -> String {
     let array = Array(set)
     guard let data = try? JSONEncoder().encode(array),
@@ -427,6 +512,10 @@ private extension IpadSplitView {
     return string
   }
   
+  /// Decoding Helper
+  /// - Parameter raw: The raw string to decode
+  /// - Returns: The decoded set
+  ///
   func decodeSet(from raw: String) -> Set<String> {
     guard let data = raw.data(using: .utf8),
           let array = try? JSONDecoder().decode([String].self, from: data) else {
@@ -435,6 +524,10 @@ private extension IpadSplitView {
     return Set(array)
   }
   
+  /// Encoding/Decoding Helpers
+  /// - Parameter sections: The sections to encode
+  /// - Returns: The encoded string
+  ///
   func encodeSections(_ sections: [String: Set<String>]) -> String {
     let dictionary = sections.mapValues { Array($0) }
     guard let data = try? JSONEncoder().encode(dictionary),
@@ -444,6 +537,10 @@ private extension IpadSplitView {
     return string
   }
   
+  /// Decoding Helper
+  /// - Parameter raw: The raw string to decode
+  /// - Returns: The decoded sections
+  ///
   func decodeSections(from raw: String) -> [String: Set<String>] {
     guard let data = raw.data(using: .utf8),
           let dictionary = try? JSONDecoder().decode([String: [String]].self, from: data) else {
@@ -453,6 +550,10 @@ private extension IpadSplitView {
   }
   
 }
+
+
+// MARK: - Preview
+// —————————————-—
 
 #Preview {
   IpadSplitView()

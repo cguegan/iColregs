@@ -96,7 +96,7 @@ extension ColregsView {
         Text(result.contextDescription)
           .font(.caption)
           .foregroundStyle(.secondary)
-        highlightedText(result.snippet, query: query)
+        markdownHighlightedText(result.snippet, query: query)
           .font(.footnote)
           .foregroundStyle(.secondary)
         Text("\(result.matchCount) \(matchLabel(for: result.matchCount))")

@@ -8,11 +8,15 @@
 import Foundation
 import SwiftUI
 
+/// Identifies whether a match belongs to a rule or an annex.
+///
 enum SearchSource: String {
   case rule
   case annex
 }
 
+/// View-model representing a single search hit and its metadata.
+///
 struct SearchResult: Identifiable {
   let id: String
   let rule: RuleModel
@@ -23,10 +27,12 @@ struct SearchResult: Identifiable {
   let snippet: String
   let matchCount: Int
 
+  // Computed properties for display purposes
   var displayTitle: String {
     "\(detailTitle) \(rule.id): \(rule.title)"
   }
 
+  // Context description combining part and section titles
   var contextDescription: String {
     if let sectionTitle, !sectionTitle.isEmpty {
       return "\(partTitle) • \(sectionTitle)"
@@ -35,16 +41,28 @@ struct SearchResult: Identifiable {
   }
 }
 
-func performSearch(in parts: [PartModel],
-                   query: String,
-                   detailTitle: String,
-                   source: SearchSource,
-                   snippetRadius: Int = 45) -> [SearchResult] {
+/// Scans the provided parts and returns every rule/annex that matches the query.
+///
+/// - Parameters:
+///   - parts: Collection of parts to inspect.
+///   - query: Raw user query (will be trimmed/validated).
+///   - detailTitle: Localized label used when pushing the detail screen.
+///   - source: Origin of the records (`.rule` or `.annex`).
+///   - snippetRadius: Number of characters kept on each side of the first match for display.
+/// - Returns: Sorted list of results (highest match count first).
+///
+func performSearch( in parts: [PartModel],
+                    query: String,
+                    detailTitle: String,
+                    source: SearchSource,
+                    snippetRadius: Int = 45 ) -> [SearchResult] {
+  
   let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines)
   guard !trimmed.isEmpty else { return [] }
 
   var results: [SearchResult] = []
 
+  /// Iterate through every rule in each part/section to find matches.
   for part in parts {
     for section in part.sections {
       for rule in section.rules {
@@ -86,6 +104,7 @@ func performSearch(in parts: [PartModel],
     }
   }
 
+  /// Sort results by match count (highest first), then by rule ID.
   return results.sorted { lhs, rhs in
     if lhs.matchCount == rhs.matchCount {
       return lhs.rule.id < rhs.rule.id
@@ -94,6 +113,13 @@ func performSearch(in parts: [PartModel],
   }
 }
 
+/// Highlights each occurrence of `query` inside `text` and returns a SwiftUI `Text`.
+/// - Parameters:
+///   - text: Full text to process.
+///   - query: Substring to highlight.
+///   - highlightColor: Background color used for highlighting (default: semi-transparent yellow).
+/// - Returns: SwiftUI `Text` with highlighted substrings.
+///
 func highlightedText(_ text: String,
                      query: String,
                      highlightColor: Color = Color.yellow.opacity(0.35)) -> Text {
@@ -102,30 +128,68 @@ func highlightedText(_ text: String,
   let matchRanges = ranges(of: query, in: text)
   guard !matchRanges.isEmpty else { return Text(text) }
 
-  var composed = AttributedString()
-  var cursor = text.startIndex
+  var attributedString: AttributedString
 
-  for matchRange in matchRanges {
-    if cursor < matchRange.lowerBound {
-      let prefix = text[cursor..<matchRange.lowerBound]
-      composed.append(AttributedString(String(prefix)))
+  if let markdown = try? AttributedString(
+    markdown: text,
+    options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)
+  ) {
+    attributedString = markdown
+  } else {
+    attributedString = AttributedString(text)
+  }
+
+  for range in matchRanges {
+    if let lower = AttributedString.Index(range.lowerBound, within: attributedString),
+       let upper = AttributedString.Index(range.upperBound, within: attributedString) {
+      attributedString[lower..<upper].backgroundColor = highlightColor
     }
-
-    var highlighted = AttributedString(String(text[matchRange]))
-    highlighted.backgroundColor = highlightColor
-    composed.append(highlighted)
-    cursor = matchRange.upperBound
   }
 
-  if cursor < text.endIndex {
-    let suffix = text[cursor..<text.endIndex]
-    composed.append(AttributedString(String(suffix)))
-  }
-
-  return Text(composed)
+  return Text(attributedString)
 }
 
-private func ranges(of query: String, in text: String) -> [Range<String.Index>] {
+func markdownHighlightedText(_ text: String,
+                             query: String,
+                             highlightColor: Color = Color.yellow.opacity(0.35)) -> Text {
+  let trimmedQuery = query.trimmingCharacters(in: .whitespacesAndNewlines)
+
+  guard !trimmedQuery.isEmpty else {
+    if let attributed = try? AttributedString(
+      markdown: text,
+      options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)
+    ) {
+      return Text(attributed)
+    }
+    return Text(text)
+  }
+
+  guard var attributed = try? AttributedString(
+    markdown: text,
+    options: .init(interpretedSyntax: .inlineOnlyPreservingWhitespace)
+  ) else {
+    return highlightedText(text, query: trimmedQuery, highlightColor: highlightColor)
+  }
+
+  let plain = String(attributed.characters)
+  for range in ranges(of: trimmedQuery, in: plain) {
+    if let lower = AttributedString.Index(range.lowerBound, within: attributed),
+       let upper = AttributedString.Index(range.upperBound, within: attributed) {
+      attributed[lower..<upper].backgroundColor = highlightColor
+    }
+  }
+
+  return Text(attributed)
+}
+
+/// Utility to fetch every case/diacritic-insensitive range of `query` within `text`.
+/// - Parameters:
+///  - query: Substring to search for.
+///  - text: Full text to inspect.
+/// - Returns: Array of ranges where `query` occurs within `text`.
+///
+private func ranges( of query: String,
+                     in text: String ) -> [Range<String.Index>] {
   guard !query.isEmpty else { return [] }
   var results: [Range<String.Index>] = []
   var searchStart = text.startIndex
@@ -142,9 +206,17 @@ private func ranges(of query: String, in text: String) -> [Range<String.Index>] 
   return results
 }
 
-private func snippet(for text: String,
-                     around range: Range<String.Index>?,
-                     radius: Int) -> String {
+/// Extracts a short snippet around the first matched range so result rows remain compact.
+/// - Parameters:
+///  - text: Full text to extract from.
+///  - range: Range around which to build the snippet.
+///  - radius: Number of characters to keep on each side of the range.
+/// - Returns: Snippet string with ellipses if truncated.
+///
+private func snippet( for text: String,
+                      around range: Range<String.Index>?,
+                      radius: Int) -> String {
+  
   guard let range else { return text }
 
   let lowerBound = text.index(range.lowerBound,

@@ -13,12 +13,21 @@ struct RuleView: View {
   let title: String
   let highlightTerm: String?
   
-  init(rule: RuleModel, title: String, highlightTerm: String? = nil) {
+  /// Computed Properties
+  private var trimmedHighlight: String {
+    highlightTerm ?? ""
+  }
+  
+  /// Initializer
+  init( rule: RuleModel,
+        title: String,
+        highlightTerm: String? = nil ) {
     self.rule = rule
     self.title = title
     self.highlightTerm = highlightTerm?.trimmingCharacters(in: .whitespacesAndNewlines)
   }
   
+  /// Main Body View
   var body: some View {
     ScrollView {
       VStack(alignment: .leading) {
@@ -35,7 +44,7 @@ struct RuleView: View {
           } else {
             HStack(alignment: .top) {
               Text(content.levels)
-              highlightedText(content.text, query: trimmedHighlight)
+              markdownHighlightedText(content.text, query: trimmedHighlight)
             }
             .padding(.vertical, content.indent.contains("_") ? 1 : 8)
           }
@@ -47,12 +56,7 @@ struct RuleView: View {
       .padding(.horizontal)
     }
   }
-  
-  private var trimmedHighlight: String {
-    highlightTerm ?? ""
-  }
 }
-
 
 // MARK: - Previews
 // ————————————————
@@ -65,7 +69,6 @@ struct RuleView: View {
       ContentModel(indent: "_•", text: "Any action taken to avoid collision shall be taken in accordance with the Rules of this Part and shall, if the circumstances of the case admit, be positive, made in ample time and with due regard to the observance of good seamanship.", image: ""),
       ContentModel(indent: "a", text: "Any alteration of course and/or speed to avoid collision shall, if the circumstances of the case admit, be large enough to be readily apparent to another vessel observing visually or by radar; a succession of small alterations of course and/or speed should be avoided.", image: "octave"),
       ContentModel(indent: "_i", text: "A vessel the passage of which is not to be impeded remains fully obliged to comply with the Rules of this Part when the two vessels are approaching one another so as to involve risk of collision.", image: "")
-      
     ]
   )
   return NavigationStack {
