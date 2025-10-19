@@ -117,4 +117,21 @@ final class AppService {
         return nil
     }
 
+    /// Returns the rules and annexes associated with a given language.
+    /// - Parameter language: Target language for the dataset.
+    /// - Returns: Tuple containing rule parts and annex parts.
+    func datasets(for language: Language) -> (rules: [PartModel], annexes: [PartModel]) {
+        switch language {
+        case .en:
+            return (
+                colregs?.colregs ?? [],
+                annexesEn?.colregs ?? []
+            )
+        case .fr:
+            return (
+                ripam?.ripam ?? [],
+                annexesFr?.ripam ?? []
+            )
+        }
+    }
 }

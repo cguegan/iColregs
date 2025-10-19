@@ -299,7 +299,7 @@ private func snippet( for text: String,
 ///  - matchLabel:  Closure that returns a localized label for the number of matches.
 /// - Returns:      A SwiftUI `View` displaying the search result.
 ///
-private struct SearchResultRow: View {
+struct SearchResultRow: View {
   
   let result: SearchResult
   let query: String
@@ -329,5 +329,32 @@ private struct SearchResultRow: View {
       }
     }
     .padding(.vertical, 6)
+  }
+}
+
+extension PartSearchConfiguration {
+  static func forLanguage(_ language: Language) -> PartSearchConfiguration {
+    switch language {
+    case .en:
+      return PartSearchConfiguration(
+        resultsTitle: "Results",
+        noResultsMessage: "No matches found",
+        searchPlaceholder: "Search Colregs",
+        rulesSectionTitle: "Colregs",
+        ruleDetailTitle: "Rule",
+        articleDetailTitle: "Article",
+        matchLabel: { $0 == 1 ? "match" : "matches" }
+      )
+    case .fr:
+      return PartSearchConfiguration(
+        resultsTitle: "Résultats",
+        noResultsMessage: "Aucun résultat",
+        searchPlaceholder: "Rechercher RIPAM",
+        rulesSectionTitle: "Règles",
+        ruleDetailTitle: "Règle",
+        articleDetailTitle: "Article",
+        matchLabel: { $0 > 1 ? "occurrences" : "occurrence" }
+      )
+    }
   }
 }

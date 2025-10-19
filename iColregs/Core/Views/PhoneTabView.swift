@@ -18,12 +18,17 @@ struct PhoneTabView: View {
           
           ColregsView(language: .fr)
               .tabItem {
-                  Label("Ripam", systemImage: "list.bullet.rectangle.portrait.fill")
+                  Label("RIPAM", systemImage: "list.bullet.rectangle.portrait.fill")
               }
           
           AboutView()
               .tabItem {
                   Label("About", systemImage: "info.circle.fill")
+              }
+          
+          SearchTabView()
+              .tabItem {
+                  Label("Search", systemImage: "magnifyingglass")
               }
       }
     }

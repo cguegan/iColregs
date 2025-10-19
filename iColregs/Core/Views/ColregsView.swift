@@ -9,105 +9,72 @@ import SwiftUI
 import Observation
 
 struct ColregsView: View {
+  
+  /// Instance Properties
   let language: Language
   
+  /// Environment Properties
   @Environment(AppService.self) private var appService
   @Environment(\.colorScheme) private var colorScheme
-  @State private var searchService: SearchService
   
+  /// State Properties
+  @State private var viewModel: SearchViewModel
+  
+  /// Initializer
   init(language: Language = .en) {
     self.language = language
-    let initialConfig = ColregsView.configuration(for: language)
-    _searchService = State(initialValue: SearchService(configuration: initialConfig,
-                                                       ruleParts: [],
-                                                       annexParts: []))
+    _viewModel = State(initialValue: SearchViewModel(language: language))
   }
   
-  private static func configuration(for language: Language) -> PartSearchConfiguration {
-    switch language {
-    case .en:
-      return PartSearchConfiguration(
-        resultsTitle: "Results",
-        noResultsMessage: "No matches found",
-        searchPlaceholder: "Search Colregs",
-        rulesSectionTitle: "Colregs",
-        ruleDetailTitle: "Rule",
-        articleDetailTitle: "Article",
-        matchLabel: { $0 == 1 ? "match" : "matches" }
-      )
-    case .fr:
-      return PartSearchConfiguration(
-        resultsTitle: "Résultats",
-        noResultsMessage: "Aucun résultat",
-        searchPlaceholder: "Rechercher RIPAM",
-        rulesSectionTitle: "Règles",
-        ruleDetailTitle: "Règle",
-        articleDetailTitle: "Article",
-        matchLabel: { $0 > 1 ? "occurrences" : "occurrence" }
-      )
-    }
-  }
-  
+  /// Computed Properties
   private var configuration: PartSearchConfiguration {
-    Self.configuration(for: language)
+    viewModel.configuration
+  }
+  private var rulePartsFromApp: [PartModel] {
+    appService.datasets(for: language).rules
+  }
+  private var annexPartsFromApp: [PartModel] {
+    appService.datasets(for: language).annexes
   }
   
-  private var ruleParts: [PartModel] {
-    switch language {
-    case .en:
-      return appService.colregs?.colregs ?? []
-    case .fr:
-      return appService.ripam?.ripam ?? []
-    }
-  }
-  
-  private var annexParts: [PartModel] {
-    switch language {
-    case .en:
-      return appService.annexesEn?.colregs ?? []
-    case .fr:
-      return appService.annexesFr?.ripam ?? []
-    }
-  }
-  
-  private var trimmedQuery: String? {
-    let trimmed = searchService.searchText.trimmingCharacters(in: .whitespacesAndNewlines)
-    return trimmed.isEmpty ? nil : trimmed
-  }
-  
+  /// Main Body View
   var body: some View {
-    @Bindable var binding = searchService
+    
+    @Bindable var binding = viewModel.service
+    
     NavigationStack {
       partListView
         .navigationTitle(language == .en ? "Colregs" : "RIPAM")
     }
-    .searchable(text: $binding.searchText,
-                placement: .navigationBarDrawer(displayMode: .always),
-                prompt: Text(configuration.searchPlaceholder))
-    .onAppear(perform: syncService)
-    .onChange(of: ruleParts.map(\.id)) { _ in syncService() }
-    .onChange(of: annexParts.map(\.id)) { _ in syncService() }
+    .searchable( text: $binding.searchText,
+                 placement: .navigationBarDrawer(displayMode: .always),
+                 prompt: Text(configuration.searchPlaceholder) )
+    .onAppear(perform: syncViewModel)
+    .onChange(of: rulePartsFromApp.map(\.id)) { _, _ in syncViewModel() }
+    .onChange(of: annexPartsFromApp.map(\.id)) { _, _ in syncViewModel() }
   }
 }
 
+
+// MARK: - Subviews
+// ————————————————
+
 private extension ColregsView {
-  func syncService() {
-    searchService.update(configuration: configuration,
-                         ruleParts: ruleParts,
-                         annexParts: annexParts)
-  }
   
+  /// Part List View
+  /// - Returns:  a view displaying the list of parts or search results.
+  ///
   @ViewBuilder
   var partListView: some View {
     List {
-      if let query = trimmedQuery {
+      if let query = viewModel.trimmedQuery {
         PartSearchResultsSection(configuration: configuration,
                                  query: query,
-                                 results: searchService.results)
+                                 results: viewModel.results)
       } else {
-        if !ruleParts.isEmpty {
+        if !viewModel.ruleParts.isEmpty {
           Section(configuration.rulesSectionTitle) {
-            ForEach(ruleParts) { part in
+            ForEach(viewModel.ruleParts) { part in
               NavigationLink(part.title) {
                 ruleListView(part: part)
               }
@@ -115,9 +82,9 @@ private extension ColregsView {
           }
         }
         
-        if !annexParts.isEmpty {
+        if !viewModel.annexParts.isEmpty {
           Section("Annexes") {
-            ForEach(annexParts) { annex in
+            ForEach(viewModel.annexParts) { annex in
               NavigationLink(annex.title) {
                 annexListView(part: annex)
               }
@@ -128,6 +95,10 @@ private extension ColregsView {
     }
   }
   
+  /// Rule List View
+  /// - Parameter part: PartModel
+  /// - Returns: a view displaying the list of rules in a part.
+  ///
   func ruleListView(part: PartModel) -> some View {
     List {
       ForEach(part.sections) { section in
@@ -156,9 +127,14 @@ private extension ColregsView {
     .navigationBarTitleDisplayMode(.inline)
   }
   
+  /// Rule Cell View
+  /// - Parameter rule: RuleModel
+  /// - Returns: a view displaying a navigation link to a rule detail view.
+  ///
   func ruleCellView(_ rule: RuleModel) -> some View {
     NavigationLink {
-      RuleView(rule: rule, title: configuration.ruleDetailTitle)
+      RuleView(rule: rule,
+               title: configuration.ruleDetailTitle)
     } label: {
       HStack(alignment: .center) {
         Image(systemName: "\(rule.id).square.fill")
@@ -169,6 +145,10 @@ private extension ColregsView {
     }
   }
   
+  /// Annex List View
+  /// - Parameter part: PartModel
+  /// - Returns: a view displaying the list of annex rules in a part.
+  ///
   func annexListView(part: PartModel) -> some View {
     List {
       ForEach(part.sections) { section in
@@ -197,9 +177,14 @@ private extension ColregsView {
     .navigationBarTitleDisplayMode(.inline)
   }
   
+  /// Annex Cell View
+  /// - Parameter rule: RuleModel
+  /// - Returns: a view displaying a navigation link to an annex article detail view.
+  ///
   func annexCellView(_ rule: RuleModel) -> some View {
     NavigationLink {
-      RuleView(rule: rule, title: configuration.articleDetailTitle)
+      RuleView(rule: rule,
+               title: configuration.articleDetailTitle)
     } label: {
       HStack(alignment: .top) {
         Image(systemName: "\(rule.id).square.fill")
@@ -210,7 +195,27 @@ private extension ColregsView {
       }
     }
   }
+  
 }
+
+
+// MARK: - Private Methods
+// ———————————————————————
+
+private extension ColregsView {
+  
+  /// Sync ViewModel Data
+  func syncViewModel() {
+    viewModel.setLanguage( language,
+                           ruleParts: rulePartsFromApp,
+                           annexParts: annexPartsFromApp )
+  }
+  
+}
+
+
+// MARK: - Previews
+// ————————————————
 
 #Preview {
   ColregsView(language: .en)
