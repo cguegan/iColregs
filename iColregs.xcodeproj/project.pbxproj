@@ -19,13 +19,13 @@
 		EF2C63DB2C21B29F00948AAA /* RuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63DA2C21B29F00948AAA /* RuleModel.swift */; };
 		EF2C63DF2C21B39F00948AAA /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63DE2C21B39F00948AAA /* ContentModel.swift */; };
 		EF2C63E22C21BEEB00948AAA /* AppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E12C21BEEB00948AAA /* AppService.swift */; };
+		EF3756C42EA3FED9000791EF /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3756C22EA3FDDB000791EF /* SearchService.swift */; };
 		EF2C63E52C21C5FB00948AAA /* ColregsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E42C21C5FB00948AAA /* ColregsModel.swift */; };
 		EF2C63E72C21D55C00948AAA /* ColregsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E62C21D55C00948AAA /* ColregsView.swift */; };
 		EF2C63E92C21D59000948AAA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63E82C21D59000948AAA /* AboutView.swift */; };
 		EF2C63EB2C21EB2400948AAA /* RuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2C63EA2C21EB2400948AAA /* RuleView.swift */; };
-		EF51699C2C241EF700F0ED95 /* ripam.json in Resources */ = {isa = PBXBuildFile; fileRef = EF51699B2C241EF700F0ED95 /* ripam.json */; };
-		EF51699E2C2426A100F0ED95 /* RipamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51699D2C2426A100F0ED95 /* RipamView.swift */; };
-		EF5169A02C2427B700F0ED95 /* RipamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51699F2C2427B700F0ED95 /* RipamModel.swift */; };
+				EF51699C2C241EF700F0ED95 /* ripam.json in Resources */ = {isa = PBXBuildFile; fileRef = EF51699B2C241EF700F0ED95 /* ripam.json */; };
+				EF5169A02C2427B700F0ED95 /* RipamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF51699F2C2427B700F0ED95 /* RipamModel.swift */; };
 		EFE5CC7D2C2221610018F367 /* annexes_en.json in Resources */ = {isa = PBXBuildFile; fileRef = EFE5CC7C2C2221610018F367 /* annexes_en.json */; };
 		EFED4F652C270B4E00149FD9 /* Ripam.md in Resources */ = {isa = PBXBuildFile; fileRef = EFED4F632C270B4E00149FD9 /* Ripam.md */; };
 		EFED4F662C270B4E00149FD9 /* Colregs.md in Resources */ = {isa = PBXBuildFile; fileRef = EFED4F622C270B4E00149FD9 /* Colregs.md */; };
@@ -49,14 +49,14 @@
 		EF2C63DA2C21B29F00948AAA /* RuleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleModel.swift; sourceTree = "<group>"; };
 		EF2C63DE2C21B39F00948AAA /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		EF2C63E12C21BEEB00948AAA /* AppService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppService.swift; sourceTree = "<group>"; };
+		EF3756C22EA3FDDB000791EF /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		EF2C63E42C21C5FB00948AAA /* ColregsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColregsModel.swift; sourceTree = "<group>"; };
 		EF2C63E62C21D55C00948AAA /* ColregsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColregsView.swift; sourceTree = "<group>"; };
 		EF2C63E82C21D59000948AAA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		EF2C63EA2C21EB2400948AAA /* RuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleView.swift; sourceTree = "<group>"; };
-		EF51699A2C238DB800F0ED95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+				EF51699A2C238DB800F0ED95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EF51699B2C241EF700F0ED95 /* ripam.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ripam.json; sourceTree = "<group>"; };
-		EF51699D2C2426A100F0ED95 /* RipamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipamView.swift; sourceTree = "<group>"; };
-		EF51699F2C2427B700F0ED95 /* RipamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipamModel.swift; sourceTree = "<group>"; };
+				EF51699F2C2427B700F0ED95 /* RipamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipamModel.swift; sourceTree = "<group>"; };
 		EFE5CC7C2C2221610018F367 /* annexes_en.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = annexes_en.json; sourceTree = "<group>"; };
 		EFED4F622C270B4E00149FD9 /* Colregs.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Colregs.md; sourceTree = "<group>"; };
 		EFED4F632C270B4E00149FD9 /* Ripam.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Ripam.md; sourceTree = "<group>"; };
@@ -163,7 +163,6 @@
 				EF1516472E9F846B00BB6FF5 /* PhoneTabView.swift */,
 				EF1516492E9F863D00BB6FF5 /* IpadSplitView.swift */,
 				EF2C63E62C21D55C00948AAA /* ColregsView.swift */,
-				EF51699D2C2426A100F0ED95 /* RipamView.swift */,
 				EF2C63EA2C21EB2400948AAA /* RuleView.swift */,
 				EF2C63E82C21D59000948AAA /* AboutView.swift */,
 			);
@@ -174,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				EF2C63E12C21BEEB00948AAA /* AppService.swift */,
+				EF3756C22EA3FDDB000791EF /* SearchService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -273,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF2C63E22C21BEEB00948AAA /* AppService.swift in Sources */,
+				EF3756C42EA3FED9000791EF /* SearchService.swift in Sources */,
 				FB739CC44C884298BADDF515 /* SearchSupport.swift in Sources */,
 				EFED4F6C2C3B33BB00149FD9 /* DeviceIdiom.swift in Sources */,
 				EF2C63E72C21D55C00948AAA /* ColregsView.swift in Sources */,
@@ -282,7 +283,6 @@
 				EF2C63D72C21B12500948AAA /* SectionModel.swift in Sources */,
 				EF2C63E92C21D59000948AAA /* AboutView.swift in Sources */,
 				EF2C63EB2C21EB2400948AAA /* RuleView.swift in Sources */,
-				EF51699E2C2426A100F0ED95 /* RipamView.swift in Sources */,
 				EF2C63D92C21B1BE00948AAA /* PartModel.swift in Sources */,
 				EF2C63E52C21C5FB00948AAA /* ColregsModel.swift in Sources */,
 				EF2C63C12C21AE2800948AAA /* iColregsApp.swift in Sources */,

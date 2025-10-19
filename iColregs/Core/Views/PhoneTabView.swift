@@ -11,12 +11,12 @@ struct PhoneTabView: View {
   
     var body: some View {
       TabView {
-          ColregsView()
+          ColregsView(language: .en)
               .tabItem {
                   Label("Colregs", systemImage: "list.bullet.rectangle.portrait.fill")
               }
           
-          RipamView()
+          ColregsView(language: .fr)
               .tabItem {
                   Label("Ripam", systemImage: "list.bullet.rectangle.portrait.fill")
               }

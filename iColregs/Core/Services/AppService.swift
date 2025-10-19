@@ -8,6 +8,11 @@
 import Foundation
 import Observation
 
+/// Supported languages
+/// - en: English
+/// - fr: French
+/// - id: language code
+///
 enum Language: String, Codable, CaseIterable, Identifiable {
   case en = "EN"
   case fr = "FR"
@@ -28,9 +33,7 @@ final class AppService {
     let ripamFileName = "ripam"
     let annexFrFileName = "annexes_fr"
 
-    // MARK: - Init
-    // ————————————
-    
+    /// Initializer
     init() {
         self.fetchData()
     }

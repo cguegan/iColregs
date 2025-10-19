@@ -19,8 +19,8 @@ struct IpadSplitView: View {
   @State private var expandedSections: [String: Set<String>] = [:]
   
   /// Stored Properties
-  @AppStorage("IpadSplitView.expandedParts.en") private var storedExpandedPartsEN: String = "[]"
-  @AppStorage("IpadSplitView.expandedParts.fr") private var storedExpandedPartsFR: String = "[]"
+  @AppStorage("IpadSplitView.expandedParts.en")    private var storedExpandedPartsEN: String = "[]"
+  @AppStorage("IpadSplitView.expandedParts.fr")    private var storedExpandedPartsFR: String = "[]"
   @AppStorage("IpadSplitView.expandedSections.en") private var storedExpandedSectionsEN: String = "{}"
   @AppStorage("IpadSplitView.expandedSections.fr") private var storedExpandedSectionsFR: String = "{}"
   
@@ -111,8 +111,8 @@ struct IpadSplitView: View {
 
 extension IpadSplitView {
 
-  // MARK: - Sidebar List View
-  // —————————————————————————
+  /// Sidebar List View
+  ///
   @ViewBuilder
   private var sidebarList: some View {
     List {
@@ -129,14 +129,13 @@ extension IpadSplitView {
       aboutSection
     }
     .listStyle(.sidebar)
-    .searchable(text: $searchText,
-                placement: .sidebar,
-                prompt: Text(searchPlaceholder))
+    .searchable( text: $searchText,
+                 placement: .sidebar,
+                 prompt: Text(searchPlaceholder) )
   }
   
-  
-  // MARK: - English Colregs List
-  // ———————————————————————————}
+  /// English Colregs List
+  ///
   @ViewBuilder
   private var englishColregsList: some View {
     let rules = appService.colregs?.colregs ?? []
@@ -158,9 +157,8 @@ extension IpadSplitView {
     }
   }
   
-  
-  // MARK: - French Ripam List
-  // —————————————————————————
+  /// French Ripam List
+  ///
   @ViewBuilder
   private var frenchRipamList: some View {
     let rules = appService.ripam?.ripam ?? []
@@ -182,10 +180,8 @@ extension IpadSplitView {
     }
   }
   
-  
-  // MARK: - Search Results Section
-  // ——————————————————————————————
-  
+  /// Search Results Section
+  ///
   @ViewBuilder
   private func searchResultsSection(query: String) -> some View {
     Section(language == .en ? "Results" : "Résultats") {
@@ -206,10 +202,8 @@ extension IpadSplitView {
     }
   }
   
-  
-  // MARK: - Search Result Row View
-  // ——————————————————————————————
-  
+  /// Search Result Row View
+  ///
   @ViewBuilder
   private func searchResultRow(result: SearchResult, query: String) -> some View {
     HStack(alignment: .top, spacing: 12) {
@@ -237,10 +231,8 @@ extension IpadSplitView {
     .padding(.vertical, 6)
   }
 
-  
-  // MARK: - Part List View
-  // ——————————————————————
-  
+  /// Part List View
+  ///
   @ViewBuilder
   func partList(for parts: [PartModel], ruleLabel: String) -> some View {
     ForEach(parts) { part in
@@ -278,25 +270,20 @@ extension IpadSplitView {
     }
   }
   
-  
-  // MARK: - About Section
-  // —————————————————————
-  
+  /// About Section
+  ///
   @ViewBuilder
   var aboutSection: some View {
-    Section(language == .en ? "Information" : "Informations") {
-      NavigationLink {
-        AboutView()
-      } label: {
-        Label("About iColregs", systemImage: "info.circle")
-      }
+    sidebarSeparator(title: language == .en ? "Information" : "Informations")
+    NavigationLink {
+      AboutView()
+    } label: {
+      Label("About iColregs", systemImage: "info.circle")
     }
   }
   
-  
-  // MARK: - Sidebar Separator View
-  // ——————————————————————————————
-  
+  /// Sidebar Separator View
+  ///
   @ViewBuilder
   func sidebarSeparator(title: String) -> some View {
     VStack(alignment: .leading, spacing: 5) {
@@ -307,10 +294,13 @@ extension IpadSplitView {
       Divider()
     }
   }
+  
 }
 
 
-// MARK: - Helpers
+// MARK: - Private Methods
+// ———————————————————————
+
 private extension IpadSplitView {
   
   /// Match Label Helper

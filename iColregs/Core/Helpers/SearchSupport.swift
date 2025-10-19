@@ -15,8 +15,7 @@ enum SearchSource: String {
   case annex
 }
 
-/// View-model representing a single search hit and its metadata.
-///
+// Lightweight view model describing a single hit returned by the search engine.
 struct SearchResult: Identifiable {
   let id: String
   let rule: RuleModel
@@ -26,13 +25,11 @@ struct SearchResult: Identifiable {
   let source: SearchSource
   let snippet: String
   let matchCount: Int
-
-  // Computed properties for display purposes
+  
   var displayTitle: String {
     "\(detailTitle) \(rule.id): \(rule.title)"
   }
-
-  // Context description combining part and section titles
+  
   var contextDescription: String {
     if let sectionTitle, !sectionTitle.isEmpty {
       return "\(partTitle) • \(sectionTitle)"
@@ -41,8 +38,18 @@ struct SearchResult: Identifiable {
   }
 }
 
+// Declarative configuration defining how the search UI should present itself.
+struct PartSearchConfiguration {
+  let resultsTitle: String
+  let noResultsMessage: String
+  let searchPlaceholder: String
+  let rulesSectionTitle: String
+  let ruleDetailTitle: String
+  let articleDetailTitle: String
+  let matchLabel: (Int) -> String
+}
+
 /// Scans the provided parts and returns every rule/annex that matches the query.
-///
 /// - Parameters:
 ///   - parts: Collection of parts to inspect.
 ///   - query: Raw user query (will be trimmed/validated).
@@ -149,6 +156,13 @@ func highlightedText(_ text: String,
   return Text(attributedString)
 }
 
+/// Highlights each occurrence of `query` inside markdown-formatted `text` and returns a SwiftUI `Text`.
+/// - Parameters:
+///  - text: Full markdown text to process.
+///  - query: Substring to highlight.
+///  - highlightColor: Background color used for highlighting (default: semi-transparent yellow).
+/// - Returns: SwiftUI `Text` with highlighted substrings.
+///
 func markdownHighlightedText(_ text: String,
                              query: String,
                              highlightColor: Color = Color.yellow.opacity(0.35)) -> Text {
@@ -180,6 +194,45 @@ func markdownHighlightedText(_ text: String,
   }
 
   return Text(attributed)
+}
+
+/// SwiftUI View representing a section of search results.
+/// - Parameters:
+///  - configuration: Configuration object defining UI texts and labels.
+///  - query:         Raw user query (used for highlighting).
+///  - results:       Collection of `SearchResult` objects to display.
+/// - Returns:        A SwiftUI `View` displaying the search results.
+///
+struct PartSearchResultsSection: View {
+  
+  let configuration: PartSearchConfiguration
+  let query: String
+  let results: [SearchResult]
+  
+  var body: some View {
+    Section(configuration.resultsTitle) {
+      if results.isEmpty {
+        Text(configuration.noResultsMessage)
+          .foregroundStyle(.secondary)
+      } else {
+        ForEach(results) { result in
+          NavigationLink {
+            RuleView(
+              rule: result.rule,
+              title: result.detailTitle,
+              highlightTerm: query
+            )
+          } label: {
+            SearchResultRow(
+              result: result,
+              query: query,
+              matchLabel: configuration.matchLabel
+            )
+          }
+        }
+      }
+    }
+  }
 }
 
 /// Utility to fetch every case/diacritic-insensitive range of `query` within `text`.
@@ -237,4 +290,44 @@ private func snippet( for text: String,
   }
 
   return snippet
+}
+
+/// SwiftUI View representing a single search result row.
+/// - Parameters:
+///  - result:      The `SearchResult` to display.
+///  - query:       The raw user query (used for highlighting).
+///  - matchLabel:  Closure that returns a localized label for the number of matches.
+/// - Returns:      A SwiftUI `View` displaying the search result.
+///
+private struct SearchResultRow: View {
+  
+  let result: SearchResult
+  let query: String
+  let matchLabel: (Int) -> String
+  
+  var body: some View {
+    HStack(alignment: .top, spacing: 12) {
+      Image(systemName: "\(result.rule.id).square.fill")
+        .font(.title3)
+        .foregroundStyle(result.source == .annex ? Color.orange : Color.accentColor)
+        .accessibilityHidden(true)
+        .padding(.top, 2)
+      VStack(alignment: .leading, spacing: 4) {
+        Text(result.displayTitle)
+          .font(.subheadline.weight(.semibold))
+          .foregroundStyle(.primary)
+          .lineLimit(2)
+        Text(result.contextDescription)
+          .font(.caption)
+          .foregroundStyle(.secondary)
+        markdownHighlightedText(result.snippet, query: query)
+          .font(.footnote)
+          .foregroundStyle(.secondary)
+        Text("\(result.matchCount) \(matchLabel(result.matchCount))")
+          .font(.caption2)
+          .foregroundStyle(.secondary)
+      }
+    }
+    .padding(.vertical, 6)
+  }
 }
