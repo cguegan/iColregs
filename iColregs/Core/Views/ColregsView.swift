@@ -46,9 +46,6 @@ struct ColregsView: View {
       partListView
         .navigationTitle(language == .en ? "Colregs" : "RIPAM")
     }
-    .searchable( text: $binding.searchText,
-                 placement: .navigationBarDrawer(displayMode: .always),
-                 prompt: Text(configuration.searchPlaceholder) )
     .onAppear(perform: syncViewModel)
     .onChange(of: rulePartsFromApp.map(\.id)) { _, _ in syncViewModel() }
     .onChange(of: annexPartsFromApp.map(\.id)) { _, _ in syncViewModel() }
