@@ -247,13 +247,18 @@ private func ranges( of query: String,
   var results: [Range<String.Index>] = []
   var searchStart = text.startIndex
 
-  while searchStart < text.endIndex,
-        let range = text.range(of: query,
-                               options: [.caseInsensitive, .diacriticInsensitive],
-                               range: searchStart..<text.endIndex,
-                               locale: .current) {
-    results.append(range)
-    searchStart = range.upperBound
+  while searchStart < text.endIndex {
+    let slice = text[searchStart...]
+    guard slice.localizedCaseInsensitiveContains(query) else { break }
+
+    guard let range = slice.range(of: query,
+                                  options: [.caseInsensitive, .diacriticInsensitive],
+                                  locale: .current) else { break }
+
+    let lower = range.lowerBound
+    let upper = range.upperBound
+    results.append(lower..<upper)
+    searchStart = upper
   }
 
   return results
